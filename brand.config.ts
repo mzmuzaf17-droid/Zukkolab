@@ -3,7 +3,7 @@ export const brand = {
   name: "Zukkolab",
   wordmark: { first: "Zukko", second: "lab" },
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  telegramBot: process.env.NEXT_PUBLIC_TELEGRAM_BOT_USERNAME ?? "zukkolab_demo_bot",
+  telegramBot: process.env.NEXT_PUBLIC_TELEGRAM_BOT_USERNAME ?? "oquvmarkaz_dbot",
   phone: "+998712000000",
   email: "info@zukkolab.uz",
   social: {
