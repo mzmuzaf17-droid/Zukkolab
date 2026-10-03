@@ -14,7 +14,6 @@ import { LeadForm } from "@/components/forms/lead-form";
 import { BranchCard } from "@/components/site/branch-card";
 import { CourseCard } from "@/components/site/course-card";
 import { DirectionIcon } from "@/components/site/direction-icon";
-import { FaqList } from "@/components/site/faq-list";
 import { HeroPreview } from "@/components/site/hero-preview";
 import { Section } from "@/components/site/section";
 import { TeacherCard } from "@/components/site/teacher-card";
@@ -24,7 +23,6 @@ import {
   getBranches,
   getCourses,
   getDirections,
-  getFaq,
   getOpenGroups,
   getTeachers,
   getTestimonials,
@@ -54,7 +52,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const locale = raw as Locale;
   setRequestLocale(locale);
 
-  const [t, tc, directions, courses, groups, teachers, testimonials, branches, faq] = await Promise.all([
+  const [t, tc, directions, courses, groups, teachers, testimonials, branches] = await Promise.all([
     getTranslations("home"),
     getTranslations("cta"),
     getDirections(),
@@ -63,7 +61,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     getTeachers(),
     getTestimonials(),
     getBranches(),
-    getFaq(),
   ]);
   const tt = await getTranslations("testimonials");
   const tl = await getTranslations("leadForm");
@@ -276,11 +273,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </div>
           ))}
         </div>
-      </Section>
-
-      {/* FAQ */}
-      <Section id="savollar" title={t("faqTitle")} className="pt-0 md:pt-0">
-        <FaqList items={faq} />
       </Section>
 
       {/* Yakuniy blok */}

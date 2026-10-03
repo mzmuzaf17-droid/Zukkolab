@@ -24,7 +24,6 @@
     "test": "Level test",
     "branches": "Branches",
     "prices": "Prices",
-    "faq": "FAQ",
     "menu": "Menu",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -94,7 +93,6 @@
     },
     "branchesTitle": "Branches",
     "branchesSubtitle": "Every branch is next to a metro station.",
-    "faqTitle": "Frequently asked questions",
     "finalTitle": "Your first lesson is free",
     "finalSubtitle": "Pick a branch and time that suit you — our manager will explain the rest.",
     "finalTest": "Take the test first",
@@ -378,6 +376,7 @@
   "ai": {
     "button": "Ask a question",
     "title": "Zukkolab assistant",
+    "status": "Online, replies right away",
     "intro": "Hi! Ask about courses, prices, branches or the trial lesson.",
     "presets": [
       "How much are the courses?",

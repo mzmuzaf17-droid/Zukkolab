@@ -24,7 +24,6 @@
     "test": "Daraja testi",
     "branches": "Filiallar",
     "prices": "Narxlar",
-    "faq": "Savollar",
     "menu": "Menyu",
     "openMenu": "Menyuni ochish",
     "closeMenu": "Menyuni yopish",
@@ -94,7 +93,6 @@
     },
     "branchesTitle": "Filiallar",
     "branchesSubtitle": "Har bir filial metro yonida.",
-    "faqTitle": "Koʻp beriladigan savollar",
     "finalTitle": "Birinchi dars — bepul",
     "finalSubtitle": "Qulay filial va vaqtni tanlang, qolganini menejerimiz tushuntiradi.",
     "finalTest": "Avval testdan oʻtish",
@@ -378,6 +376,7 @@
   "ai": {
     "button": "Savol bering",
     "title": "Zukkolab yordamchisi",
+    "status": "Onlayn, darhol javob beradi",
     "intro": "Salom! Kurslar, narxlar, filiallar yoki sinov darsi haqida soʻrang.",
     "presets": ["Narxlar qancha?", "Qaysi filial menga yaqin?", "10 yoshli bolaga qaysi kurs?"],
     "placeholder": "Savolingizni yozing…",

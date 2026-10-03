@@ -4,7 +4,8 @@ import { brand } from "@/brand.config";
 import type { AiContext, AiKnowledge, AiProvider, AiReply, ChatMessage } from "./types";
 
 // gemini rejimi (9-bo'lim): Gemini Flash REST. Kontekst har so'rovda bazadan — vektor baza kerak emas.
-const TIMEOUT_MS = 10_000;
+// Yangi Flash modellar javobdan oldin "o'ylaydi" — bu biroz vaqt va token oladi.
+const TIMEOUT_MS = 15_000;
 const API = "https://generativelanguage.googleapis.com/v1beta/models";
 
 export function knowledgeText(k: AiKnowledge): string {
@@ -67,7 +68,9 @@ export const geminiProvider: AiProvider = {
         })),
         generationConfig: {
           temperature: 0.3,
-          maxOutputTokens: 400,
+          // O'ylash tokenlari ham shu limitga kiradi: 400 kam bo'lsa javob bo'sh qaytib, faq rejimiga tushardi.
+          // Javob uzunligini promptdagi 80 so'z qoidasi va replySchema cheklaydi.
+          maxOutputTokens: 2048,
           responseMimeType: "application/json",
           responseSchema: {
             type: "OBJECT",
@@ -81,8 +84,17 @@ export const geminiProvider: AiProvider = {
       }),
     });
     if (!res.ok) throw new Error(`gemini ${res.status}: ${(await res.text()).slice(0, 200)}`);
-    const data = (await res.json()) as { candidates?: { content?: { parts?: { text?: string }[] } }[] };
-    const raw = data.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("") ?? "";
+    const data = (await res.json()) as {
+      candidates?: { finishReason?: string; content?: { parts?: { text?: string; thought?: boolean }[] } }[];
+    };
+    const candidate = data.candidates?.[0];
+    const raw =
+      candidate?.content?.parts
+        ?.filter((p) => !p.thought)
+        .map((p) => p.text ?? "")
+        .join("") ?? "";
+    // Vercel loglarida sababi ko'rinsin (masalan, MAX_TOKENS yoki SAFETY).
+    if (!raw.trim()) throw new Error(`gemini empty reply (${candidate?.finishReason ?? "no candidate"})`);
     return replySchema.parse(JSON.parse(raw));
   },
 };

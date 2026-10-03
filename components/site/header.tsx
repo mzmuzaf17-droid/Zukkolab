@@ -13,7 +13,6 @@ export async function Header() {
     { href: "/test", label: t("test") },
     { href: "/filiallar", label: t("branches") },
     { href: "/#narxlar", label: t("prices") },
-    { href: "/#savollar", label: t("faq") },
   ];
 
   return (
