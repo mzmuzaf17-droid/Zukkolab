@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Zukkolab — English, Russian, Math and IT courses",
+    "description": "Find out your level for free and book a trial lesson. 3 branches in Tashkent."
+  },
+  "demo": {
+    "banner": "This is a demo: all data is fictional"
+  },
+  "nav": {
+    "courses": "Courses",
+    "test": "Level test",
+    "branches": "Branches",
+    "prices": "Prices",
+    "faq": "FAQ",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "cta": {
+    "trial": "Book a trial lesson",
+    "test": "Start the test",
+    "telegram": "Telegram"
+  },
+  "bottomBar": {
+    "test": "Test",
+    "trial": "Trial lesson",
+    "telegram": "Telegram"
+  },
+  "home": {
+    "heroTitle": "Find out your level in 3 minutes",
+    "heroSubtitle": "A free test, a clear recommendation and a free first lesson.",
+    "heroPrimary": "Check your level for free",
+    "heroSecondary": "Book a trial lesson"
+  },
+  "footer": {
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved"
+  },
+  "locales": {
+    "uz": "Oʻzbekcha",
+    "ru": "Русский",
+    "en": "English"
+  }
+}

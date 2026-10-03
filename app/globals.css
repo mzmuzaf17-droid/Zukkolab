@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Rang tokenlari brand.config.ts bilan bir xil; yangi mijoz uchun ikkalasi almashtiriladi. */
+:root {
+  --color-bg: #fafaf7;
+  --color-ink: #14121f;
+  --color-brand: #6d4aff;
+  --color-cta: #c6f432;
+  --color-coral: #ff6b57;
+  --color-muted: #6b6880;
+  --color-line: #e7e5ee;
+  --bottom-bar-height: 64px;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-ink: var(--color-ink);
+  --color-brand: var(--color-brand);
+  --color-cta: var(--color-cta);
+  --color-coral: var(--color-coral);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-display: var(--font-unbounded), var(--font-manrope), system-ui, sans-serif;
+  --radius-card: 20px;
+  --radius-button: 14px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

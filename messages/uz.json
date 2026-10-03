@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Zukkolab — ingliz tili, rus tili, matematika va IT kurslari",
+    "description": "Darajangizni bepul aniqlang va sinov darsiga yoziling. Toshkentda 3 ta filial."
+  },
+  "demo": {
+    "banner": "Bu demo: barcha maʼlumotlar toʻqima"
+  },
+  "nav": {
+    "courses": "Kurslar",
+    "test": "Daraja testi",
+    "branches": "Filiallar",
+    "prices": "Narxlar",
+    "faq": "Savollar",
+    "menu": "Menyu",
+    "language": "Til"
+  },
+  "cta": {
+    "trial": "Sinov darsiga yozilish",
+    "test": "Testni boshlash",
+    "telegram": "Telegram"
+  },
+  "bottomBar": {
+    "test": "Test",
+    "trial": "Sinov darsi",
+    "telegram": "Telegram"
+  },
+  "home": {
+    "heroTitle": "Darajangizni 3 daqiqada bilib oling",
+    "heroSubtitle": "Bepul test, aniq tavsiya va birinchi dars — bepul.",
+    "heroPrimary": "Darajangizni bepul aniqlang",
+    "heroSecondary": "Sinov darsiga yoziling"
+  },
+  "footer": {
+    "privacy": "Maxfiylik siyosati",
+    "rights": "Barcha huquqlar himoyalangan"
+  },
+  "locales": {
+    "uz": "Oʻzbekcha",
+    "ru": "Русский",
+    "en": "English"
+  }
+}
