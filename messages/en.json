@@ -10,7 +10,13 @@
   },
   "demo": {
     "banner": "This is a demo: all data is fictional",
-    "badge": "Demo"
+    "badge": "Demo",
+    "qrTitle": "Scan with your phone",
+    "qrText": "Book a trial lesson for your child — a Telegram reminder arrives in 30 seconds and a second one in 60 seconds. In a real centre these come 24 hours and 2 hours before.",
+    "step1": "Scan the QR code",
+    "step2": "Book a trial lesson and connect Telegram",
+    "step3": "Watch reminders and the manager panel work in real time",
+    "openLink": "Or open the link"
   },
   "nav": {
     "home": "Home",

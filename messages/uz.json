@@ -10,7 +10,13 @@
   },
   "demo": {
     "banner": "Bu demo: barcha maʼlumotlar toʻqima",
-    "badge": "Demo"
+    "badge": "Demo",
+    "qrTitle": "Telefoningiz bilan skanerlang",
+    "qrText": "Farzandingizni sinov darsiga yozing — 30 soniyadan keyin Telegram’ga eslatma keladi, 60 soniyadan keyin esa ikkinchisi. Haqiqiy markazda bu 24 soat va 2 soat oldin boʻladi.",
+    "step1": "QR kodni skanerlang",
+    "step2": "Sinov darsiga yoziling va Telegram’ni ulang",
+    "step3": "Eslatmalar va menejer paneli real vaqtda ishlashini koʻring",
+    "openLink": "Yoki havolani oching"
   },
   "nav": {
     "home": "Bosh sahifa",

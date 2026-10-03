@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope, Unbounded } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -9,22 +8,9 @@ import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
 import { TelegramMiniApp } from "@/components/site/telegram-mini-app";
 import { isDemoMode } from "@/lib/env";
+import { manrope, unbounded } from "@/lib/fonts";
 import { routing } from "@/lib/i18n/routing";
 import "../globals.css";
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
-
-const unbounded = Unbounded({
-  variable: "--font-unbounded",
-  subsets: ["latin", "cyrillic"],
-  weight: ["600", "700"],
-  display: "swap",
-});
 
 export const viewport: Viewport = {
   themeColor: "#14121F",
