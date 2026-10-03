@@ -2,9 +2,10 @@ import { CheckCircle2, CircleAlert, QrCode } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { AdSpendForm, DemoResetForm } from "@/components/admin/settings-forms";
+import { AdSpendForm, DemoResetForm, TelegramConnectForm } from "@/components/admin/settings-forms";
 import { requireAdmin } from "@/lib/admin/auth";
 import { SOURCE_LABEL, sourceLabel } from "@/lib/admin/labels";
+import { requestTime, timeAgo } from "@/lib/admin/time";
 import { todayInTashkent } from "@/lib/data/content";
 import { isDemoMode } from "@/lib/env";
 import { formatAmount, formatDay } from "@/lib/format";
@@ -55,6 +56,8 @@ export default async function SettingsPage() {
   ]);
   const get = (key: string) => value(settings?.find((s) => s.key === key)?.value);
   const groupId = get("tg_group_chat_id");
+  const tickValue = settings?.find((x) => x.key === "last_tick_at")?.value;
+  const lastTick = typeof tickValue === "string" ? Date.parse(tickValue) : null;
   const demo = isDemoMode();
   const sources = Object.entries(SOURCE_LABEL)
     .filter(([k]) => !["direct", "referral", "demo"].includes(k))
@@ -75,10 +78,13 @@ export default async function SettingsPage() {
               ? "Menejerlar guruhi ulangan — yangi lidlar shu yerga tushadi"
               : "Guruh ulanmagan — botni guruhga qoʻshib, guruhda /setup yozing"}
           </Check>
-          <Check ok={Boolean(process.env.CRON_SECRET)}>
-            Eslatmalar (cron) {process.env.CRON_SECRET ? "sozlangan" : "uchun CRON_SECRET yoʻq"}
+          <Check ok={lastTick != null && requestTime() - lastTick < 15 * 60_000}>
+            {lastTick != null
+              ? `Cron oxirgi marta ishladi: ${timeAgo(new Date(lastTick).toISOString())}`
+              : "Cron hali ishlamagan — Supabase cron’dagi va Vercel’dagi CRON_SECRET bir xil boʻlishi kerak"}
           </Check>
         </ul>
+        <TelegramConnectForm />
         <p className="text-muted text-sm">
           Javob berish muddati (SLA): <b className="text-ink">{get("sla_minutes") ?? 15} daqiqa</b>, keyin
           guruhga eslatma; <b className="text-ink">{get("sla_escalation_minutes") ?? 30} daqiqa</b>dan keyin

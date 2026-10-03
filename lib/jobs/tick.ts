@@ -77,6 +77,10 @@ export async function runTick() {
   };
 
   if (!telegramApi()) report.telegram = "not configured";
+  // Panel "Sozlamalar"da cron ishlayotganini ko'rsatish uchun.
+  await db
+    .from("settings")
+    .upsert({ key: "last_tick_at", value: new Date().toISOString() }, { onConflict: "key" });
 
   // 1. Guruhga yetib bormagan lid kartalarini qayta yuborish.
   await step("resend", async () => {

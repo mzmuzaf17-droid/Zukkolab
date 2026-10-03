@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { resetDemo, saveAdSpend, type ActionResult } from "@/app/admin/actions";
+import { connectTelegram, resetDemo, saveAdSpend, type ActionResult } from "@/app/admin/actions";
 import { inputClass } from "@/components/forms/fields";
 import { buttonClass } from "@/components/ui/button";
 
@@ -83,6 +83,22 @@ export function DemoResetForm() {
       <div className="w-full">
         <Result state={state} ok="Tayyor: 40 ta demo lid va 14 kunlik jadval yaratildi." />
       </div>
+    </form>
+  );
+}
+
+// Telegram webhook va menyuni bitta tugma bilan o'rnatish (sir brauzer manziliga yozilmaydi).
+export function TelegramConnectForm() {
+  const [state, action, pending] = useActionState<(ActionResult & { info?: string }) | null, FormData>(
+    connectTelegram,
+    null,
+  );
+  return (
+    <form action={action} className="space-y-2">
+      <button type="submit" disabled={pending} className={buttonClass("dark", "md")}>
+        {pending ? "Ulanmoqda…" : "Telegram botni ulash"}
+      </button>
+      <Result state={state} ok={state && state.ok ? (state.info ?? "Ulandi") : ""} />
     </form>
   );
 }

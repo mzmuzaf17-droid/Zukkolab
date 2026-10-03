@@ -6,6 +6,7 @@ import { z } from "zod";
 import { requireAdmin, requireStaff } from "@/lib/admin/auth";
 import { NEXT_STATUSES } from "@/lib/admin/labels";
 import { supabaseAdmin } from "@/lib/supabase/admin";
+import { setupTelegram } from "@/lib/telegram/setup";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import type { Enums } from "@/lib/supabase/types";
 
@@ -137,6 +138,27 @@ export async function resetDemo(_: ActionResult | null, form: FormData): Promise
   if (error) return { ok: false, error: error.message };
   revalidatePath("/", "layout");
   return { ok: true };
+}
+
+// Telegram'ni panel tugmasi bilan ulash: webhook, buyruqlar va Mini App tugmasi. Sirlar faqat serverda o'qiladi.
+export async function connectTelegram(): Promise<ActionResult & { info?: string }> {
+  await requireAdmin();
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const secret = process.env.TELEGRAM_WEBHOOK_SECRET;
+  const site = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  if (!token || !secret || !site) {
+    return {
+      ok: false,
+      error: "Vercel’da TELEGRAM_BOT_TOKEN, TELEGRAM_WEBHOOK_SECRET va NEXT_PUBLIC_SITE_URL boʻlishi kerak",
+    };
+  }
+  try {
+    const r = await setupTelegram(token, secret, site);
+    revalidatePath("/admin/settings");
+    return { ok: true, info: `${r.bot} ulandi → ${r.webhook}` };
+  } catch (e) {
+    return { ok: false, error: `Telegram xatosi: ${e instanceof Error ? e.message : String(e)}` };
+  }
 }
 
 export async function signOut(): Promise<void> {
