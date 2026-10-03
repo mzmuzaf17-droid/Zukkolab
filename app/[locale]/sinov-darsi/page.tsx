@@ -4,11 +4,12 @@ import { BookingWizard } from "@/components/booking/booking-wizard";
 import { getBranches, getCourses, getDirections } from "@/lib/data/content";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
+import { alternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/sinov-darsi">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("bookingTitle") };
+  return { title: t("bookingTitle"), alternates: alternates(locale, "/sinov-darsi") };
 }
 
 const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) || undefined;

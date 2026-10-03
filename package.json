@@ -12,7 +12,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "bot:set-webhook": "tsx --env-file=.env.local scripts/set-webhook.ts",
-    "db:types": "supabase gen types typescript --project-id ljtvsaofbtbwbmtjkpje > lib/supabase/types.ts"
+    "db:types": "supabase gen types typescript --project-id ljtvsaofbtbwbmtjkpje > lib/supabase/types.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
@@ -30,6 +31,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@playwright/test": "1.56.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/qrcode": "^1.5.6",

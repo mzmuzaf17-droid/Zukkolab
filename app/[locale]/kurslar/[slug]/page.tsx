@@ -19,6 +19,8 @@ import { Link } from "@/lib/i18n/navigation";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
 import { levelScale } from "@/lib/levels";
+import { alternates } from "@/lib/seo";
+import { textOn } from "@/lib/utils";
 
 export const revalidate = 60;
 
@@ -39,6 +41,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/kurslar/
   return {
     title: pick(course, "title", locale as Locale),
     description: pick(course, "description", locale as Locale),
+    alternates: alternates(locale, `/kurslar/${slug}`),
   };
 }
 
@@ -87,8 +90,8 @@ export default async function CoursePage({ params }: PageProps<"/[locale]/kursla
             <div className="flex flex-wrap items-center gap-2">
               {direction && (
                 <span
-                  className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold text-white"
-                  style={{ backgroundColor: direction.color }}
+                  className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold"
+                  style={{ backgroundColor: direction.color, color: textOn(direction.color) }}
                 >
                   <DirectionIcon name={direction.icon} className="size-3.5" />
                   {pick(direction, "name", locale)}

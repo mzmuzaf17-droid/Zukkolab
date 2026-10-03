@@ -362,7 +362,14 @@
     "enroll": "🔥 {name} guruhga yozilmoqchi — qoʻngʻiroq qiling!",
     "setupDone": "✅ Guruh ulandi. Yangi lidlar shu yerga keladi.",
     "setupDenied": "Faqat guruh adminlari ulay oladi.",
-    "stats": "📊 Bugun: {leads} lid · {bookings} bron · {paid} toʻlov"
+    "stats": "📊 Bugun: {leads} lid · {bookings} bron · {paid} toʻlov",
+    "dailyTitle": "☀️ Kunlik hisobot",
+    "dailyLeads": "Kecha: {count} ta lid",
+    "dailyResponse": "Oʻrtacha birinchi javob: {minutes} daq",
+    "dailyPaid": "Kecha toʻlovlar: {count}",
+    "dailyUnanswered": "Hozir javobsiz: {count}",
+    "dailyTrials": "Bugungi sinov darslari ({count}):",
+    "dailyNoTrials": "Bugun sinov darsi yoʻq."
   },
   "ai": {
     "button": "Savol bering",

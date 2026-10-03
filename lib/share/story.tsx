@@ -1,17 +1,10 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { brand } from "@/brand.config";
+import { ogFonts } from "./fonts";
 
 // v1.1, 4-qaror: ulashiladigan test natijasi — Instagram story o'lchami.
 export const STORY_SIZE = { width: 1080, height: 1920 };
-
-// Shriftlar bir marta o'qiladi (Unbounded'da ʻ U+02BB bor — Manrope'da yo'q, satori Unbounded'dan oladi).
-const fonts = Promise.all([
-  readFile(join(process.cwd(), "assets/fonts/Unbounded-Bold.ttf")),
-  readFile(join(process.cwd(), "assets/fonts/Manrope-SemiBold.ttf")),
-]);
 
 export type StoryCard = {
   kicker: string;
@@ -26,7 +19,6 @@ export type StoryCard = {
 const c = brand.colors;
 
 export async function renderStory(card: StoryCard): Promise<ImageResponse> {
-  const [unbounded, manrope] = await fonts;
   const site = brand.siteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "");
   // Unbounded keng shrift: eng uzun so'z ≈ 800 px ga sig'adigan o'lcham (Олимпиадный, Boshlangʻich).
   const longestWord = Math.max(...card.label.split(/\s+/).map((w) => w.length));
@@ -148,10 +140,7 @@ export async function renderStory(card: StoryCard): Promise<ImageResponse> {
     </div>,
     {
       ...STORY_SIZE,
-      fonts: [
-        { name: "Manrope", data: manrope, weight: 600, style: "normal" },
-        { name: "Unbounded", data: unbounded, weight: 700, style: "normal" },
-      ],
+      fonts: await ogFonts(),
     },
   );
 }

@@ -6,7 +6,7 @@ import { Field, Honeypot, inputClass, PhoneInput } from "@/components/forms/fiel
 import { useTurnstile } from "@/components/forms/use-turnstile";
 import { buttonClass } from "@/components/ui/button";
 import { Link, useRouter } from "@/lib/i18n/navigation";
-import { nameSchema, phoneSchema } from "@/lib/schemas/lead";
+import { isValidName, isValidPhone } from "@/lib/schemas/rules";
 
 // Yakuniy blokdagi qisqa ariza (FR-SITE-03): ism, telefon, yo'nalish (ixtiyoriy), roziliq.
 export function LeadForm({ directions }: { directions: { slug: string; name: string }[] }) {
@@ -33,8 +33,8 @@ export function LeadForm({ directions }: { directions: { slug: string; name: str
   const [sending, setSending] = useState(false);
 
   const check = {
-    fullName: () => (nameSchema.safeParse(fullName).success ? undefined : tv("name")),
-    phone: () => (phoneSchema.safeParse(phone).success ? undefined : tv("phone")),
+    fullName: () => (isValidName(fullName) ? undefined : tv("name")),
+    phone: () => (isValidPhone(phone) ? undefined : tv("phone")),
     consent: () => (consent ? undefined : tv("consent")),
   };
 

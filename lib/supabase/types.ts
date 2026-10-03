@@ -674,6 +674,10 @@ export type Database = {
         Args: { p_demo_seconds?: number };
         Returns: { booking_id: string; chat_id: number; kind: string }[];
       };
+      claim_daily_report: {
+        Args: { p_today: string };
+        Returns: Json;
+      };
     };
     Enums: {
       age_group: "kids" | "teens" | "adults";

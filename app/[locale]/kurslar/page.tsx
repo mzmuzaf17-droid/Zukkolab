@@ -7,6 +7,7 @@ import { Link } from "@/lib/i18n/navigation";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
 import { cn } from "@/lib/utils";
+import { alternates } from "@/lib/seo";
 
 const AGES = ["kids", "teens", "adults"] as const;
 type Filters = { direction?: string; age?: string; branch?: string };
@@ -14,7 +15,7 @@ type Filters = { direction?: string; age?: string; branch?: string };
 export async function generateMetadata({ params }: PageProps<"/[locale]/kurslar">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("catalogTitle") };
+  return { title: t("catalogTitle"), alternates: alternates(locale, "/kurslar") };
 }
 
 function one(value: string | string[] | undefined): string | undefined {
@@ -109,9 +110,9 @@ export default async function CatalogPage({ params, searchParams }: PageProps<"/
       </div>
 
       <div className="mt-8 flex items-center justify-between gap-4">
-        <p className="text-muted text-sm font-semibold" aria-live="polite">
+        <h2 className="text-muted text-sm font-semibold" aria-live="polite">
           {t("count", { count: list.length })}
-        </p>
+        </h2>
         {hasFilters && (
           <Link
             href="/kurslar"

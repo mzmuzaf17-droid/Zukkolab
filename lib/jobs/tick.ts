@@ -1,4 +1,5 @@
 import "server-only";
+import { todayInTashkent } from "@/lib/data/content";
 import { formatTime } from "@/lib/format";
 import {
   getSetting,
@@ -22,6 +23,40 @@ function slaMessage(title: string, rows: Row[]): string {
       `• ${escapeHtml(r.full_name)}, <a href="tel:${r.phone}">${formatUzPhone(r.phone)}</a> (${formatTime(r.created_at)})`,
   );
   return [`<b>${escapeHtml(title)}</b>`, ...lines].join("\n");
+}
+
+const DAILY_REPORT_HOUR = 9;
+
+export type DailyReport = {
+  leads: number;
+  sources: Record<string, number>;
+  avg_response_min: number | null;
+  unanswered: number;
+  paid: number;
+  trials_today: { starts_at: string; name: string; direction: string; branch: string }[];
+};
+
+export function dailyReportMessage(r: DailyReport): string {
+  const t = groupT("uz");
+  const sources = Object.entries(r.sources)
+    .map(([s, n]) => `${s} ${n}`)
+    .join(", ");
+  const lines = [
+    `<b>${escapeHtml(t("dailyTitle"))}</b>`,
+    escapeHtml(t("dailyLeads", { count: r.leads })) + (sources ? ` (${escapeHtml(sources)})` : ""),
+    ...(r.avg_response_min != null ? [escapeHtml(t("dailyResponse", { minutes: r.avg_response_min }))] : []),
+    escapeHtml(t("dailyPaid", { count: r.paid })),
+    escapeHtml(t("dailyUnanswered", { count: r.unanswered })),
+    "",
+    escapeHtml(
+      r.trials_today.length ? t("dailyTrials", { count: r.trials_today.length }) : t("dailyNoTrials"),
+    ),
+    ...r.trials_today.map(
+      (b) =>
+        `• ${formatTime(b.starts_at)} — ${escapeHtml(b.name)} (${escapeHtml(b.direction)}, ${escapeHtml(b.branch)})`,
+    ),
+  ];
+  return lines.join("\n");
 }
 
 async function numberSetting(key: string, fallback: number) {
@@ -90,7 +125,19 @@ export async function runTick() {
   await step("reminders2h", () => processReminders("2h"));
   await step("followups", () => processFollowups());
 
-  // 7. AI suhbatlari 30 kun saqlanadi (9-bo'lim).
+  // 7. Kunlik hisobot — 09:00 (Toshkent) dan keyingi birinchi tick, kuniga bir marta.
+  await step("dailyReport", async () => {
+    if (Number(formatTime(new Date().toISOString()).slice(0, 2)) < DAILY_REPORT_HOUR) return 0;
+    const { data, error } = await db.rpc("claim_daily_report", { p_today: todayInTashkent() });
+    if (error) throw new Error(error.message);
+    if (!data) return 0;
+    if (await sendToGroup(dailyReportMessage(data as unknown as DailyReport))) return 1;
+    // Yuborilmadi — belgini bo'shatamiz, keyingi tick qayta urinadi.
+    await db.from("settings").update({ value: null }).eq("key", "daily_report_date");
+    return 0;
+  });
+
+  // 8. AI suhbatlari 30 kun saqlanadi (9-bo'lim).
   await step("aiCleanup", async () => {
     const before = new Date(Date.now() - 30 * 24 * 60 * 60_000).toISOString();
     const { count, error } = await db.from("ai_messages").delete({ count: "exact" }).lt("created_at", before);

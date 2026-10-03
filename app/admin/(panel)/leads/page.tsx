@@ -205,7 +205,7 @@ export default async function LeadsPage({ searchParams }: PageProps<"/admin/lead
                   </td>
                   <td className="px-4 py-3 whitespace-nowrap">
                     <span
-                      className={cn(sla && "bg-coral rounded-full px-2 py-0.5 font-semibold text-white")}
+                      className={cn(sla && "bg-coral text-ink rounded-full px-2 py-0.5 font-semibold")}
                       title={sla ? `${slaMinutes} daqiqadan beri javobsiz` : undefined}
                     >
                       {timeAgo(l.created_at, now)}

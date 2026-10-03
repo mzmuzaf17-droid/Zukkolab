@@ -362,7 +362,14 @@
     "enroll": "🔥 {name} wants to join a group — call now!",
     "setupDone": "✅ Group connected. New leads will arrive here.",
     "setupDenied": "Only group admins can connect it.",
-    "stats": "📊 Today: {leads} leads · {bookings} bookings · {paid} payments"
+    "stats": "📊 Today: {leads} leads · {bookings} bookings · {paid} payments",
+    "dailyTitle": "☀️ Daily report",
+    "dailyLeads": "Yesterday: {count} leads",
+    "dailyResponse": "Average first response: {minutes} min",
+    "dailyPaid": "Payments yesterday: {count}",
+    "dailyUnanswered": "Unanswered now: {count}",
+    "dailyTrials": "Trial lessons today ({count}):",
+    "dailyNoTrials": "No trial lessons today."
   },
   "ai": {
     "button": "Ask a question",
