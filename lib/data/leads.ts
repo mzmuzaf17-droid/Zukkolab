@@ -27,7 +27,7 @@ export type BookingDetails = {
   cancelToken: string;
 };
 export type BookingResult =
-  | { ok: true; bookingId: string; leadId: string }
+  | { ok: true; bookingId: string; leadId: string; chatBound: boolean; demo: boolean }
   | { ok: false; code: "SLOT_FULL" | "ALREADY_BOOKED" | "NOT_FOUND"; startsAt?: string };
 
 const HORIZON_DAYS = 14;
@@ -206,6 +206,34 @@ export async function createLead(input: {
   return upsertLead({ ...input, ...(await ids(input.directionSlug, input.courseSlug)) });
 }
 
+// Telegram'dan kelgan lid (operator so'radi yoki Mini App): kontakt va chat bog'lanadi.
+export async function createTelegramLead(input: {
+  fullName: string;
+  phone: string;
+  locale: Locale;
+  source: string;
+  chatId: number;
+  username?: string;
+  operator?: boolean;
+}): Promise<{ leadId: string; duplicate: boolean }> {
+  const result = await upsertLead({
+    fullName: input.fullName,
+    phone: input.phone,
+    locale: input.locale,
+    source: { utm_source: input.source === "telegram" ? "tg" : input.source },
+    channel: "telegram",
+  });
+  await supabaseAdmin()
+    .from("leads")
+    .update({
+      tg_chat_id: input.chatId,
+      tg_username: input.username ?? null,
+      ...(input.operator ? { operator_requested: true } : {}),
+    })
+    .eq("id", result.leadId);
+  return result;
+}
+
 // ───────────── Bron ─────────────
 export async function createBooking(input: {
   slotId: string;
@@ -218,6 +246,7 @@ export async function createBooking(input: {
   demo?: boolean;
   locale: Locale;
   source: SourceInfo;
+  tgUser?: { id: number; username?: string } | null;
 }): Promise<BookingResult> {
   const demoAccelerated = Boolean(input.demo && isDemoMode());
 
@@ -240,7 +269,7 @@ export async function createBooking(input: {
       leadName: input.fullName,
       cancelToken: randomUUID(),
     });
-    return { ok: true, bookingId: id, leadId };
+    return { ok: true, bookingId: id, leadId, chatBound: false, demo: demoAccelerated };
   }
 
   const db = supabaseAdmin();
@@ -260,6 +289,7 @@ export async function createBooking(input: {
     courseId,
     source: input.source,
     demoLive: demoAccelerated,
+    channel: input.tgUser ? "miniapp" : "web",
   });
 
   // O'quvchi: ota-ona bitta telefon bilan bir nechta farzandni yozishi mumkin (v1.1, 6-qaror).
@@ -300,6 +330,14 @@ export async function createBooking(input: {
     throw new Error(error.message);
   }
 
+  if (input.tgUser) {
+    await db.from("bookings").update({ tg_chat_id: input.tgUser.id }).eq("id", booking.id);
+    await db
+      .from("leads")
+      .update({ tg_chat_id: input.tgUser.id, tg_username: input.tgUser.username ?? null })
+      .eq("id", leadId);
+  }
+
   if (input.testAttemptId) {
     await db
       .from("test_attempts")
@@ -312,7 +350,7 @@ export async function createBooking(input: {
       .eq("id", leadId)
       .is("test_attempt_id", null);
   }
-  return { ok: true, bookingId: booking.id, leadId };
+  return { ok: true, bookingId: booking.id, leadId, chatBound: Boolean(input.tgUser), demo: demoAccelerated };
 }
 
 export async function getBookingDetails(bookingId: string): Promise<BookingDetails | null> {

@@ -45,6 +45,8 @@ export const bookingSchema = z.object({
   courseSlug: z.string().max(80).optional(),
   testAttemptId: z.uuid().optional(),
   demo: z.boolean().optional(),
+  // Mini App ichida: Telegram imzolagan initData — bron chatga avtomatik bog'lanadi.
+  tgInitData: z.string().max(4096).optional(),
   locale,
   consent: z.literal(true, "consent"),
   turnstileToken: z.string().max(4096).optional(),

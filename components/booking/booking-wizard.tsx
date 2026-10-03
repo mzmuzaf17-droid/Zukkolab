@@ -5,11 +5,13 @@ import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Field, Honeypot, inputClass, PhoneInput } from "@/components/forms/fields";
 import { useTurnstile } from "@/components/forms/use-turnstile";
+import { useTelegramWebApp } from "@/components/site/telegram-mini-app";
 import { buttonClass } from "@/components/ui/button";
 import { formatDateTime, formatDay, formatTime, tashkentDate, weekdayShort } from "@/lib/format";
 import { Link, useRouter } from "@/lib/i18n/navigation";
 import type { Locale } from "@/lib/i18n/routing";
 import { nameSchema, phoneSchema } from "@/lib/schemas/lead";
+import { maskUzPhone } from "@/lib/phone";
 import { cn } from "@/lib/utils";
 
 type Option = { slug: string; name: string };
@@ -31,6 +33,7 @@ export function BookingWizard({
   const tc = useTranslations("course");
   const locale = useLocale() as Locale;
   const router = useRouter();
+  const webApp = useTelegramWebApp();
 
   // Test yoki kurs sahifasidan kelsa — yo'nalish oldindan tanlangan.
   const [step, setStep] = useState(1);
@@ -130,6 +133,7 @@ export function BookingWizard({
           courseSlug: initial.course,
           testAttemptId: initial.attempt,
           demo: initial.demo,
+          tgInitData: webApp?.initData || undefined,
           locale,
           consent,
           turnstileToken: turnstileToken,
@@ -351,6 +355,23 @@ export function BookingWizard({
           <Field label={t("phone")} error={errors.phone}>
             {(p) => <PhoneInput {...p} value={phone} onChange={setPhone} onBlur={() => blur("phone")} />}
           </Field>
+          {webApp?.requestContact && (
+            <button
+              type="button"
+              className={buttonClass("secondary", "sm", "w-full")}
+              onClick={() =>
+                webApp.requestContact?.((ok, res) => {
+                  const number = res?.responseUnsafe?.contact?.phone_number;
+                  if (ok && number) {
+                    setPhone(maskUzPhone(number));
+                    setErrors((e) => ({ ...e, phone: undefined }));
+                  }
+                })
+              }
+            >
+              {t("tgContact")}
+            </button>
+          )}
           <div className="grid gap-4 sm:grid-cols-[1fr_140px]">
             <Field
               label={t("studentName")}

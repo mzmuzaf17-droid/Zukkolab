@@ -656,6 +656,23 @@ export type Database = {
         Returns: boolean;
       };
       reset_demo_data: { Args: never; Returns: Json };
+      claim_unnotified_leads: { Args: { p_limit?: number }; Returns: string[] };
+      claim_sla_alerts: {
+        Args: { p_minutes?: number };
+        Returns: { id: string; full_name: string; phone: string; created_at: string }[];
+      };
+      claim_sla_escalations: {
+        Args: { p_minutes?: number };
+        Returns: { id: string; full_name: string; phone: string; created_at: string }[];
+      };
+      claim_reminders: {
+        Args: { p_kind: string; p_demo_24h_seconds?: number; p_demo_2h_seconds?: number };
+        Returns: { booking_id: string; chat_id: number; starts_at: string; demo: boolean }[];
+      };
+      claim_followups: {
+        Args: { p_demo_seconds?: number };
+        Returns: { booking_id: string; chat_id: number; kind: string }[];
+      };
     };
     Enums: {
       age_group: "kids" | "teens" | "adults";

@@ -7,6 +7,7 @@ import { BottomCtaBar } from "@/components/site/bottom-cta-bar";
 import { DemoBanner } from "@/components/site/demo-banner";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
+import { TelegramMiniApp } from "@/components/site/telegram-mini-app";
 import { isDemoMode } from "@/lib/env";
 import { routing } from "@/lib/i18n/routing";
 import "../globals.css";
@@ -63,6 +64,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           </main>
           <Footer />
           <BottomCtaBar />
+          <TelegramMiniApp />
         </NextIntlClientProvider>
       </body>
     </html>
