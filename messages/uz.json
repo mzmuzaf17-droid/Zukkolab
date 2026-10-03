@@ -1,24 +1,34 @@
 {
   "meta": {
     "title": "Zukkolab — ingliz tili, rus tili, matematika va IT kurslari",
-    "description": "Darajangizni bepul aniqlang va sinov darsiga yoziling. Toshkentda 3 ta filial."
+    "description": "Darajangizni bepul aniqlang va sinov darsiga yoziling. Toshkentda 3 ta filial.",
+    "catalogTitle": "Kurslar katalogi",
+    "branchesTitle": "Filiallar",
+    "privacyTitle": "Maxfiylik siyosati"
   },
   "demo": {
-    "banner": "Bu demo: barcha maʼlumotlar toʻqima"
+    "banner": "Bu demo: barcha maʼlumotlar toʻqima",
+    "badge": "Demo"
   },
   "nav": {
+    "home": "Bosh sahifa",
     "courses": "Kurslar",
     "test": "Daraja testi",
     "branches": "Filiallar",
     "prices": "Narxlar",
     "faq": "Savollar",
     "menu": "Menyu",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
     "language": "Til"
   },
   "cta": {
     "trial": "Sinov darsiga yozilish",
+    "trialShort": "Sinov darsi",
     "test": "Testni boshlash",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "allCourses": "Barcha kurslar",
+    "details": "Batafsil"
   },
   "bottomBar": {
     "test": "Test",
@@ -26,14 +36,139 @@
     "telegram": "Telegram"
   },
   "home": {
+    "heroBadge": "Birinchi dars — bepul",
     "heroTitle": "Darajangizni 3 daqiqada bilib oling",
-    "heroSubtitle": "Bepul test, aniq tavsiya va birinchi dars — bepul.",
+    "heroSubtitle": "Bepul test, aniq kurs tavsiyasi va bepul sinov darsi. Ingliz tili, rus tili, matematika va IT — Toshkentdagi 3 ta filialda.",
     "heroPrimary": "Darajangizni bepul aniqlang",
-    "heroSecondary": "Sinov darsiga yoziling"
+    "heroSecondary": "Sinov darsiga yoziling",
+    "stats": {
+      "students": "1 200+",
+      "studentsLabel": "oʻquvchi",
+      "years": "8 yil",
+      "yearsLabel": "tajriba",
+      "rating": "4,9",
+      "ratingLabel": "ota-onalar bahosi"
+    },
+    "directionsTitle": "Yoʻnalishlar",
+    "directionsSubtitle": "Yoʻnalishni tanlang — mos kurslarni koʻrsatamiz.",
+    "coursesCount": "{count} ta kurs",
+    "testTitle": "Darajangizni bepul aniqlang",
+    "testSubtitle": "12 ta savol · 3 daqiqa · natija darhol. Telefon raqami soʻralmaydi.",
+    "testChoose": "Yoʻnalishni tanlang",
+    "featuredTitle": "Ommabop kurslar",
+    "featuredSubtitle": "Yangi guruhlar har oy ochiladi — joylar cheklangan.",
+    "whyTitle": "Nega Zukkolab",
+    "why": {
+      "groupsTitle": "Kichik guruhlar",
+      "groupsText": "8–12 nafar oʻquvchi: oʻqituvchi har birini eshitadi.",
+      "resultTitle": "Natija kafolati",
+      "resultText": "Birinchi oy natija boʻlmasa — keyingi oy bepul.",
+      "recordTitle": "Har dars yozib olinadi",
+      "recordText": "Oʻtkazib yuborsangiz ham, darsni Telegramʼda koʻrasiz.",
+      "parentsTitle": "Ota-onalar xabardor",
+      "parentsText": "Har oy oʻquvchi natijasi boʻyicha qisqa hisobot."
+    },
+    "teachersTitle": "Oʻqituvchilar",
+    "teachersSubtitle": "Sertifikatlangan, amaliyotchi va bolalar bilan til topisha oladigan.",
+    "resultsTitle": "Oʻquvchilarimiz natijalari",
+    "pricesTitle": "Narx va toʻlov",
+    "pricesFrom": "oyiga {price} soʻmdan",
+    "prices": {
+      "monthlyTitle": "Oylik toʻlov",
+      "monthlyText": "Har oy toʻlaysiz, uzoq shartnoma yoʻq.",
+      "upfrontTitle": "3 oy oldindan — 10% chegirma",
+      "upfrontText": "Bir martada toʻlasangiz arzonroq.",
+      "siblingsTitle": "Ikkinchi farzandga 15%",
+      "siblingsText": "Aka-uka va opa-singillar uchun.",
+      "guaranteeTitle": "Natija kafolati",
+      "guaranteeText": "Birinchi oy natija boʻlmasa, keyingi oy bepul."
+    },
+    "branchesTitle": "Filiallar",
+    "branchesSubtitle": "Har bir filial metro yonida.",
+    "faqTitle": "Koʻp beriladigan savollar",
+    "finalTitle": "Birinchi dars — bepul",
+    "finalSubtitle": "Qulay filial va vaqtni tanlang, qolganini menejerimiz tushuntiradi.",
+    "finalTest": "Avval testdan oʻtish",
+    "preview": {
+      "label": "Namuna natija",
+      "level": "Darajangiz",
+      "score": "{score} / {max} toʻgʻri",
+      "recommended": "Tavsiya etilgan kurs"
+    }
+  },
+  "course": {
+    "perMonth": "{price} soʻm / oy",
+    "nextGroup": "Keyingi guruh: {date}",
+    "seatsLeft": "{count} joy qoldi",
+    "full": "Joy qolmadi",
+    "waitlist": "Navbatga yozilish",
+    "duration": "{months} oy",
+    "lessons": "Haftasiga {count} marta · {minutes} daqiqa",
+    "levels": "Daraja: {from} – {to}",
+    "level": "Daraja: {level}",
+    "program": "Dastur",
+    "teacher": "Oʻqituvchi",
+    "groups": "Ochiladigan guruhlar",
+    "groupsEmpty": "Hozircha ochiq guruh yoʻq — sinov darsiga yoziling, yangi guruh ochilganda xabar beramiz.",
+    "start": "Boshlanishi",
+    "schedule": "Jadval",
+    "branch": "Filial",
+    "seats": "Joylar",
+    "bookTrial": "Shu kursga sinov darsi",
+    "takeTest": "Darajani aniqlash",
+    "price": "Narx",
+    "back": "Barcha kurslar",
+    "age": {
+      "kids": "Bolalar (7–12)",
+      "teens": "Oʻsmirlar (12–17)",
+      "adults": "Kattalar (17+)"
+    }
+  },
+  "catalog": {
+    "title": "Kurslar",
+    "subtitle": "Yoʻnalish, yosh va filial boʻyicha tanlang.",
+    "direction": "Yoʻnalish",
+    "age": "Yosh",
+    "branch": "Filial",
+    "all": "Hammasi",
+    "reset": "Filtrni tozalash",
+    "empty": "Bunday kurs topilmadi",
+    "emptyHint": "Filtrni oʻzgartiring yoki tozalang.",
+    "count": "{count} ta kurs"
+  },
+  "levels": {
+    "lang": ["A1–A2", "B1", "B2", "C1"],
+    "math": ["Boshlangʻich", "Oʻrta", "Yuqori", "Olimpiada"]
+  },
+  "teacher": {
+    "experience": "{years} yil tajriba"
+  },
+  "branches": {
+    "title": "Filiallar",
+    "subtitle": "3 ta filial — hammasi metro yonida. Sizga qulayini tanlang.",
+    "route": "Yoʻl koʻrsatish",
+    "yandex": "Yandex Xaritalar",
+    "google": "Google Maps",
+    "call": "Qoʻngʻiroq qilish",
+    "hours": "Ish vaqti"
+  },
+  "testimonials": {
+    "demo": "Demo sharh"
   },
   "footer": {
     "privacy": "Maxfiylik siyosati",
-    "rights": "Barcha huquqlar himoyalangan"
+    "rights": "Barcha huquqlar himoyalangan",
+    "contacts": "Aloqa",
+    "follow": "Ijtimoiy tarmoqlar",
+    "demoNote": "Demo sayt: kurslar, narxlar, oʻqituvchilar va sharhlar toʻqima."
+  },
+  "privacy": {
+    "title": "Maxfiylik siyosati",
+    "updated": "Oxirgi yangilanish: 2026-yil 3-oktabr",
+    "p1": "Zukkolab ariza qoldirganingizda ismingiz va telefon raqamingizni faqat siz bilan bogʻlanish va sinov darsini tashkil qilish uchun saqlaydi.",
+    "p2": "Maʼlumotlar uchinchi shaxslarga sotilmaydi va berilmaydi. Telegram orqali yozilsangiz, eslatmalarni yuborish uchun chat identifikatoringiz saqlanadi.",
+    "p3": "Maʼlumotlaringizni oʻchirishni xohlasangiz, istalgan filialga yoki Telegram botga yozing — 3 ish kunida oʻchiriladi.",
+    "p4": "Bu demo sayt: unga kiritilgan maʼlumotlar faqat namoyish uchun ishlatiladi va muntazam tozalanadi."
   },
   "locales": {
     "uz": "Oʻzbekcha",

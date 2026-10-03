@@ -1,24 +1,34 @@
 {
   "meta": {
     "title": "Zukkolab — English, Russian, Math and IT courses",
-    "description": "Find out your level for free and book a trial lesson. 3 branches in Tashkent."
+    "description": "Find out your level for free and book a trial lesson. 3 branches in Tashkent.",
+    "catalogTitle": "Course catalog",
+    "branchesTitle": "Branches",
+    "privacyTitle": "Privacy policy"
   },
   "demo": {
-    "banner": "This is a demo: all data is fictional"
+    "banner": "This is a demo: all data is fictional",
+    "badge": "Demo"
   },
   "nav": {
+    "home": "Home",
     "courses": "Courses",
     "test": "Level test",
     "branches": "Branches",
     "prices": "Prices",
     "faq": "FAQ",
     "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "language": "Language"
   },
   "cta": {
     "trial": "Book a trial lesson",
+    "trialShort": "Trial lesson",
     "test": "Start the test",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "allCourses": "All courses",
+    "details": "Details"
   },
   "bottomBar": {
     "test": "Test",
@@ -26,14 +36,139 @@
     "telegram": "Telegram"
   },
   "home": {
+    "heroBadge": "First lesson is free",
     "heroTitle": "Find out your level in 3 minutes",
-    "heroSubtitle": "A free test, a clear recommendation and a free first lesson.",
+    "heroSubtitle": "A free test, a clear course recommendation and a free trial lesson. English, Russian, Math and IT — at 3 branches in Tashkent.",
     "heroPrimary": "Check your level for free",
-    "heroSecondary": "Book a trial lesson"
+    "heroSecondary": "Book a trial lesson",
+    "stats": {
+      "students": "1,200+",
+      "studentsLabel": "students",
+      "years": "8 years",
+      "yearsLabel": "of experience",
+      "rating": "4.9",
+      "ratingLabel": "parent rating"
+    },
+    "directionsTitle": "Subjects",
+    "directionsSubtitle": "Pick a subject and we'll show matching courses.",
+    "coursesCount": "{count, plural, one {# course} other {# courses}}",
+    "testTitle": "Check your level for free",
+    "testSubtitle": "12 questions · 3 minutes · instant result. No phone number needed.",
+    "testChoose": "Choose a subject",
+    "featuredTitle": "Popular courses",
+    "featuredSubtitle": "New groups start every month — seats are limited.",
+    "whyTitle": "Why Zukkolab",
+    "why": {
+      "groupsTitle": "Small groups",
+      "groupsText": "8–12 students, so the teacher hears everyone.",
+      "resultTitle": "Results guaranteed",
+      "resultText": "No progress in the first month — the next month is free.",
+      "recordTitle": "Every lesson recorded",
+      "recordText": "Missed a class? Watch it in Telegram.",
+      "parentsTitle": "Parents stay informed",
+      "parentsText": "A short monthly progress report."
+    },
+    "teachersTitle": "Teachers",
+    "teachersSubtitle": "Certified, experienced and great with kids.",
+    "resultsTitle": "Our students' results",
+    "pricesTitle": "Prices and payment",
+    "pricesFrom": "from {price} UZS per month",
+    "prices": {
+      "monthlyTitle": "Monthly payment",
+      "monthlyText": "Pay month by month, no long contracts.",
+      "upfrontTitle": "3 months upfront — 10% off",
+      "upfrontText": "Paying at once costs less.",
+      "siblingsTitle": "15% off for a second child",
+      "siblingsText": "For brothers and sisters.",
+      "guaranteeTitle": "Results guaranteed",
+      "guaranteeText": "No progress in the first month — the next month is free."
+    },
+    "branchesTitle": "Branches",
+    "branchesSubtitle": "Every branch is next to a metro station.",
+    "faqTitle": "Frequently asked questions",
+    "finalTitle": "Your first lesson is free",
+    "finalSubtitle": "Pick a branch and time that suit you — our manager will explain the rest.",
+    "finalTest": "Take the test first",
+    "preview": {
+      "label": "Sample result",
+      "level": "Your level",
+      "score": "{score} / {max} correct",
+      "recommended": "Recommended course"
+    }
+  },
+  "course": {
+    "perMonth": "{price} UZS / month",
+    "nextGroup": "Next group: {date}",
+    "seatsLeft": "{count, plural, one {# seat left} other {# seats left}}",
+    "full": "Fully booked",
+    "waitlist": "Join the waitlist",
+    "duration": "{months, plural, one {# month} other {# months}}",
+    "lessons": "{count, plural, one {Once} other {# times}} a week · {minutes} min",
+    "levels": "Level: {from} – {to}",
+    "level": "Level: {level}",
+    "program": "Programme",
+    "teacher": "Teacher",
+    "groups": "Upcoming groups",
+    "groupsEmpty": "No open groups right now — book a trial lesson and we'll let you know when a new one opens.",
+    "start": "Starts",
+    "schedule": "Schedule",
+    "branch": "Branch",
+    "seats": "Seats",
+    "bookTrial": "Book a trial for this course",
+    "takeTest": "Check my level",
+    "price": "Price",
+    "back": "All courses",
+    "age": {
+      "kids": "Kids (7–12)",
+      "teens": "Teens (12–17)",
+      "adults": "Adults (17+)"
+    }
+  },
+  "catalog": {
+    "title": "Courses",
+    "subtitle": "Filter by subject, age and branch.",
+    "direction": "Subject",
+    "age": "Age",
+    "branch": "Branch",
+    "all": "All",
+    "reset": "Clear filters",
+    "empty": "No courses found",
+    "emptyHint": "Change or clear the filters.",
+    "count": "{count, plural, one {# course} other {# courses}}"
+  },
+  "levels": {
+    "lang": ["A1–A2", "B1", "B2", "C1"],
+    "math": ["Beginner", "Intermediate", "Advanced", "Olympiad"]
+  },
+  "teacher": {
+    "experience": "{years, plural, one {# year} other {# years}} of experience"
+  },
+  "branches": {
+    "title": "Branches",
+    "subtitle": "3 branches, all next to the metro. Pick the one that suits you.",
+    "route": "Get directions",
+    "yandex": "Yandex Maps",
+    "google": "Google Maps",
+    "call": "Call",
+    "hours": "Opening hours"
+  },
+  "testimonials": {
+    "demo": "Demo review"
   },
   "footer": {
     "privacy": "Privacy policy",
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "contacts": "Contacts",
+    "follow": "Social media",
+    "demoNote": "Demo site: courses, prices, teachers and reviews are fictional."
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "updated": "Last updated: 3 October 2026",
+    "p1": "Zukkolab stores your name and phone number only to contact you and arrange your trial lesson.",
+    "p2": "We never sell or share your data with third parties. If you sign up via Telegram, we store your chat ID to send reminders.",
+    "p3": "To delete your data, contact any branch or our Telegram bot — we'll delete it within 3 business days.",
+    "p4": "This is a demo site: any data entered here is used for demonstration only and is cleared regularly."
   },
   "locales": {
     "uz": "Oʻzbekcha",
