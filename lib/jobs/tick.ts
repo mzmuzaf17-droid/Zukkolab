@@ -90,5 +90,13 @@ export async function runTick() {
   await step("reminders2h", () => processReminders("2h"));
   await step("followups", () => processFollowups());
 
+  // 7. AI suhbatlari 30 kun saqlanadi (9-bo'lim).
+  await step("aiCleanup", async () => {
+    const before = new Date(Date.now() - 30 * 24 * 60 * 60_000).toISOString();
+    const { count, error } = await db.from("ai_messages").delete({ count: "exact" }).lt("created_at", before);
+    if (error) throw new Error(error.message);
+    return count ?? 0;
+  });
+
   return report;
 }

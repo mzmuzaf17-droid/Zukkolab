@@ -236,7 +236,11 @@
     "shareText": "My level is {level}. What's yours? Free 3-minute test:",
     "copied": "Link copied",
     "retake": "Retake",
-    "other": "Another subject"
+    "other": "Another subject",
+    "storyKicker": "My result",
+    "storyChallenge": "And you? Find your level in 3 minutes",
+    "storyFree": "Free test · no sign-up",
+    "downloadStory": "Story image"
   },
   "booking": {
     "title": "Book a trial lesson",
@@ -359,5 +363,34 @@
     "setupDone": "✅ Group connected. New leads will arrive here.",
     "setupDenied": "Only group admins can connect it.",
     "stats": "📊 Today: {leads} leads · {bookings} bookings · {paid} payments"
+  },
+  "ai": {
+    "button": "Ask a question",
+    "title": "Zukkolab assistant",
+    "intro": "Hi! Ask about courses, prices, branches or the trial lesson.",
+    "presets": [
+      "How much are the courses?",
+      "Which branch is closest to me?",
+      "Which course suits a 10-year-old?"
+    ],
+    "placeholder": "Type your question…",
+    "send": "Send",
+    "typing": "Typing…",
+    "close": "Close",
+    "note": "Answers are automatic. A manager will confirm the details.",
+    "error": "Couldn’t get an answer. Please try again.",
+    "cta": {
+      "test": "Take the level test",
+      "trial": "Book a trial lesson",
+      "operator": "Leave a request"
+    },
+    "unknown": "Our manager will answer this one precisely. Leave a request and we’ll call you back soon.",
+    "tooYoung": "We accept children from age 7. We’ll be glad to see you when your child turns 7!",
+    "forAge": "Courses for age {age}:",
+    "courseLine": "{title} — {price} UZS per month",
+    "courseInfo": "{title}: {lessons} times a week, {minutes} minutes each, {months} months. Price — {price} UZS per month.",
+    "branchesIntro": "Our branches:",
+    "branchLine": "{name} — {address}",
+    "pickAfter": "The first trial lesson is free — pick a branch and time that suit you."
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, CalendarCheck, RotateCcw, Share2 } from "lucide-react";
+import { ArrowLeft, CalendarCheck, ImageDown, RotateCcw, Share2 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
@@ -211,13 +211,36 @@ export function LevelTest({
     result.kind === "interest" ? t("trackText") : (t.raw("explain") as string[])[(result.level ?? 1) - 1];
   const shareUrl = `${window.location.origin}/${locale}/test/${result.direction}?ref=${result.attemptId}`;
 
+  const storyParams = new URLSearchParams({
+    l: locale,
+    d: result.direction,
+    ...(result.level != null && {
+      lv: String(result.level),
+      s: String(result.score),
+      m: String(result.maxScore),
+    }),
+    ...(result.track && { tr: result.track }),
+  });
+  const storyUrl = `/api/share/${result.attemptId}?${storyParams}`;
+
+  // v1.1, 4-qaror: telefonda story rasmi + ?ref= havola birga ulashiladi; kompyuterda havola nusxalanadi.
   async function share() {
-    const text = t("shareText", { level: label });
+    const text = `${t("shareText", { level: label })} ${shareUrl}`;
     if (navigator.share) {
-      await navigator.share({ title: "Zukkolab", text, url: shareUrl }).catch(() => undefined);
+      let files: File[] | undefined;
+      try {
+        const blob = await (await fetch(storyUrl)).blob();
+        const file = new File([blob], "zukkolab-natija.png", { type: "image/png" });
+        if (navigator.canShare?.({ files: [file] })) files = [file];
+      } catch {
+        // Rasm tayyor bo'lmasa — faqat havola.
+      }
+      await navigator
+        .share(files ? { files, text } : { title: "Zukkolab", text, url: shareUrl })
+        .catch(() => undefined);
       return;
     }
-    await navigator.clipboard.writeText(`${text} ${shareUrl}`);
+    await navigator.clipboard.writeText(text);
     setCopied(true);
   }
 
@@ -274,6 +297,10 @@ export function LevelTest({
           <Share2 className="size-4" aria-hidden />
           {copied ? t("copied") : t("share")}
         </button>
+        <a href={storyUrl} download="zukkolab-natija.png" className={buttonClass("ghost")}>
+          <ImageDown className="size-4" aria-hidden />
+          {t("downloadStory")}
+        </a>
         <button type="button" onClick={load} className={buttonClass("ghost")}>
           <RotateCcw className="size-4" aria-hidden />
           {t("retake")}

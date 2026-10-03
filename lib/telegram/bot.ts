@@ -9,6 +9,7 @@ import {
   seatsLeft,
   todayInTashkent,
 } from "@/lib/data/content";
+import { askAssistant } from "@/lib/ai";
 import { createTelegramLead } from "@/lib/data/leads";
 import { formatAmount, formatTime } from "@/lib/format";
 import { pick } from "@/lib/i18n/pick";
@@ -440,10 +441,36 @@ export function createBot(token: string) {
     );
   });
 
-  // Menyudan tashqari matn: hozircha yo'naltirish (AI yordamchi 6-kunda).
+  // Menyudan tashqari har qanday erkin matn — AI yordamchiga (9-bo'lim); javob ostida bitta harakat tugmasi.
   privateChat.on("message:text", async (ctx) => {
     const locale = await localeOf(ctx);
-    await ctx.reply(botT(locale)("unknown"), { reply_markup: mainMenu(locale) });
+    const text = ctx.message.text.trim();
+    if (text.startsWith("/")) {
+      await ctx.reply(botT(locale)("unknown"), { reply_markup: mainMenu(locale) });
+      return;
+    }
+    await ctx.replyWithChatAction("typing").catch(() => undefined);
+    const reply = await askAssistant({
+      sessionId: `tg:${ctx.chat.id}`,
+      message: text.slice(0, 500),
+      locale,
+      channel: "telegram",
+    });
+    const t = anyT(locale);
+    if ("rateLimited" in reply) {
+      await ctx.reply(t("errors.RATE_LIMITED"));
+      return;
+    }
+    const app = (path: string) => siteUrl(`/${locale}${path}?tg=1`);
+    const kb =
+      reply.cta === "test"
+        ? new InlineKeyboard().webApp(t("ai.cta.test"), app("/test"))
+        : reply.cta === "trial"
+          ? new InlineKeyboard().webApp(t("ai.cta.trial"), app("/sinov-darsi"))
+          : reply.cta === "operator"
+            ? new InlineKeyboard().text(botT(locale)("menu.operator"), "m:operator")
+            : undefined;
+    await ctx.reply(reply.text, { reply_markup: kb });
   });
 
   return bot;

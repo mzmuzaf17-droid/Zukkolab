@@ -59,3 +59,10 @@ export const testSubmitSchema = z.object({
   answers: z.record(z.string(), z.string().max(4)),
   locale,
 });
+
+// POST /api/ai/chat (11-bo'lim).
+export const aiChatSchema = z.object({
+  sessionId: z.uuid(),
+  message: z.string().trim().min(1).max(500),
+  locale,
+});

@@ -11,6 +11,8 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Story rasmi shriftlari serverless funksiyaga qo'shiladi.
+  outputFileTracingIncludes: { "/api/share/[attemptId]": ["./assets/fonts/**"] },
   images: {
     remotePatterns: [{ protocol: "https", hostname: "*.supabase.co" }],
   },

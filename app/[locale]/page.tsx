@@ -268,7 +268,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </Section>
 
       {/* Yakuniy blok */}
-      <section className="mx-auto w-full max-w-6xl px-4 pb-8 md:pb-16">
+      <section id="ariza" className="mx-auto w-full max-w-6xl scroll-mt-24 px-4 pb-8 md:pb-16">
         <div className="bg-brand grid gap-8 rounded-[24px] px-5 py-10 text-white md:px-10 md:py-14 lg:grid-cols-[1fr_420px] lg:items-center">
           <div>
             <h2 className="font-display text-[28px] leading-tight font-bold md:text-[40px]">

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { AiChat } from "@/components/ai/ai-chat";
 import { BottomCtaBar } from "@/components/site/bottom-cta-bar";
 import { DemoBanner } from "@/components/site/demo-banner";
 import { Footer } from "@/components/site/footer";
@@ -50,6 +51,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           </main>
           <Footer />
           <BottomCtaBar />
+          <AiChat />
           <TelegramMiniApp />
         </NextIntlClientProvider>
       </body>
