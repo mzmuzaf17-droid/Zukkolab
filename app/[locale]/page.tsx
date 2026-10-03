@@ -9,6 +9,7 @@ import {
   Video,
 } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { LeadForm } from "@/components/forms/lead-form";
 import { BranchCard } from "@/components/site/branch-card";
 import { CourseCard } from "@/components/site/course-card";
 import { DirectionIcon } from "@/components/site/direction-icon";
@@ -52,6 +53,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     getFaq(),
   ]);
   const tt = await getTranslations("testimonials");
+  const tl = await getTranslations("leadForm");
   const directionById = new Map(directions.map((d) => [d.id, d]));
   const featured = courses.filter((c) => c.is_featured).slice(0, 6);
   const minPrice = Math.min(...courses.map((c) => c.price_monthly));
@@ -267,18 +269,28 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Yakuniy blok */}
       <section className="mx-auto w-full max-w-6xl px-4 pb-8 md:pb-16">
-        <div className="bg-brand rounded-[24px] px-5 py-10 text-white md:px-10 md:py-14">
-          <h2 className="font-display text-[28px] leading-tight font-bold md:text-[40px]">
-            {t("finalTitle")}
-          </h2>
-          <p className="mt-3 max-w-xl text-white/80 md:text-lg">{t("finalSubtitle")}</p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="/sinov-darsi" size="lg">
-              {tc("trial")}
-            </ButtonLink>
-            <ButtonLink href="/test" size="lg" className="border-2 border-white/40 bg-transparent text-white">
-              {t("finalTest")}
-            </ButtonLink>
+        <div className="bg-brand grid gap-8 rounded-[24px] px-5 py-10 text-white md:px-10 md:py-14 lg:grid-cols-[1fr_420px] lg:items-center">
+          <div>
+            <h2 className="font-display text-[28px] leading-tight font-bold md:text-[40px]">
+              {t("finalTitle")}
+            </h2>
+            <p className="mt-3 max-w-xl text-white/80 md:text-lg">{t("finalSubtitle")}</p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <ButtonLink href="/sinov-darsi" size="lg">
+                {tc("trial")}
+              </ButtonLink>
+              <ButtonLink
+                href="/test"
+                size="lg"
+                className="border-2 border-white/40 bg-transparent text-white"
+              >
+                {t("finalTest")}
+              </ButtonLink>
+            </div>
+          </div>
+          <div className="space-y-3">
+            <p className="font-semibold">{tl("subtitle")}</p>
+            <LeadForm directions={directions.map((d) => ({ slug: d.slug, name: pick(d, "name", locale) }))} />
           </div>
         </div>
       </section>

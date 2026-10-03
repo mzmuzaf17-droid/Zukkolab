@@ -22,3 +22,14 @@ describe("telHref", () => {
     expect(telHref("+998 (71) 200-10-10")).toBe("tel:+998712001010");
   });
 });
+
+describe("Tashkent time helpers", () => {
+  it("converts UTC to Tashkent (UTC+5)", async () => {
+    const { formatDateTime, tashkentDate, formatTime, weekdayShort } = await import("@/lib/format");
+    expect(tashkentDate("2026-10-13T20:30:00Z")).toBe("2026-10-14");
+    expect(formatTime("2026-10-14T13:00:00Z")).toBe("18:00");
+    expect(formatDateTime("2026-10-14T13:00:00Z", "uz")).toBe("14-oktabr, 18:00");
+    expect(formatDateTime("2026-10-14T13:00:00Z", "ru")).toBe("14 октября, 18:00");
+    expect(weekdayShort("2026-10-14", "uz")).toBe("Ch");
+  });
+});

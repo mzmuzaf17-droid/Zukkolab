@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatUzPhone, normalizeUzPhone } from "@/lib/phone";
+import { formatUzPhone, maskUzPhone, normalizeUzPhone } from "@/lib/phone";
 
 describe("normalizeUzPhone", () => {
   it.each([
@@ -19,5 +19,17 @@ describe("normalizeUzPhone", () => {
 describe("formatUzPhone", () => {
   it("formats E.164 for display", () => {
     expect(formatUzPhone("+998901234567")).toBe("+998 (90) 123-45-67");
+  });
+});
+
+describe("maskUzPhone", () => {
+  it.each([
+    ["", "+998"],
+    ["9", "+998 (9"],
+    ["90", "+998 (90)"],
+    ["901234567", "+998 (90) 123-45-67"],
+    ["+998 90 123 45 67 89", "+998 (90) 123-45-67"],
+  ])("%s → %s", (input, expected) => {
+    expect(maskUzPhone(input)).toBe(expected);
   });
 });

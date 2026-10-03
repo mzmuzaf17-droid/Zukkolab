@@ -14,7 +14,8 @@ export type Group = Tables<"groups">;
 
 type Strip<T> = Omit<T, "created_at" | "updated_at">;
 type FixtureGroup = Omit<Strip<Group>, "start_date"> & { start_in_days: number };
-type Fixture = {
+export type Fixture = {
+  test_questions: (Strip<Tables<"test_questions">> & { is_active?: boolean; weight?: number })[];
   directions: Strip<Direction>[];
   branches: Strip<Branch>[];
   courses: Strip<Course>[];
@@ -25,7 +26,7 @@ type Fixture = {
 };
 
 // DATA_SOURCE=fixture — faqat lokal ishlab chiqish uchun (Supabase'ga tarmoq yo'q bo'lsa).
-const useFixture = process.env.DATA_SOURCE === "fixture";
+export const useFixture = process.env.DATA_SOURCE === "fixture";
 
 export function todayInTashkent(): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: brand.timeZone }).format(new Date());
@@ -37,7 +38,7 @@ function addDays(isoDate: string, days: number): string {
   return d.toISOString().slice(0, 10);
 }
 
-const loadFixture = cache(async (): Promise<Fixture> => {
+export const loadFixture = cache(async (): Promise<Fixture> => {
   const mod = await import("./fixtures/content.json");
   return mod.default as unknown as Fixture;
 });

@@ -42,5 +42,21 @@ for c in courses:
         groups.append({"id": U("g", c["slug"], k), "course_id": c["id"], "branch_id": branches[br]["id"], "teacher_id": teacher,
                        "start_in_days": off, "schedule_text_uz": su[sch], "schedule_text_ru": sr[sch], "schedule_text_en": se[sch],
                        "capacity": 12, "enrolled_count": enrolled, "is_open": True})
-print(json.dumps({"directions": dirs, "branches": branches, "courses": courses, "teachers": teachers, "faq": faq,
+# Test savollari: gen_seed.py dagi bank bilan bir xil (correct_key faqat serverda ishlatiladi).
+same, tri = ns["same"], ns["tri"]
+K = ns["K"]
+questions = []
+for slug, bank, conv in [("english", ns["english"], same), ("russian", ns["russian"], same)]:
+    for lvl, items in bank.items():
+        for i, (text, opts, c) in enumerate(items):
+            questions.append({"id": U("q", slug, lvl, i), "direction_id": dir_id[slug], "level": lvl, "question": conv(text),
+                              "options": [{"key": k, "text": same(o)} for k, o in zip(K, opts)], "correct_key": c, "sort": lvl * 10 + i})
+for lvl, items in ns["math"].items():
+    for i, (text, opts, c) in enumerate(items):
+        questions.append({"id": U("q", "math", lvl, i), "direction_id": dir_id["math"], "level": lvl, "question": tri(*text),
+                          "options": [{"key": k, "text": tri(*o) if isinstance(o, tuple) else same(o)} for k, o in zip(K, opts)], "correct_key": c, "sort": lvl * 10 + i})
+for i, (text, options) in enumerate(ns["it"]):
+    questions.append({"id": U("q", "it", i), "direction_id": dir_id["it"], "level": 1, "question": tri(*text),
+                      "options": [{"key": K[j], "text": tri(*t), "scores": sc} for j, (t, sc) in enumerate(options)], "correct_key": None, "sort": i + 1})
+print(json.dumps({"test_questions": questions, "directions": dirs, "branches": branches, "courses": courses, "teachers": teachers, "faq": faq,
                   "testimonials": testimonials, "groups": groups}, ensure_ascii=False, indent=1))
