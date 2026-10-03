@@ -1,0 +1,4274 @@
+{
+  "test_questions": [
+    {
+      "id": "22cc768d-07dc-595b-9441-a1c0107705f4",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 1,
+      "question": {
+        "uz": "She ___ a student.",
+        "ru": "She ___ a student.",
+        "en": "She ___ a student."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "am",
+            "ru": "am",
+            "en": "am"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "is",
+            "ru": "is",
+            "en": "is"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "are",
+            "ru": "are",
+            "en": "are"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "be",
+            "ru": "be",
+            "en": "be"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 10
+    },
+    {
+      "id": "4b64ec08-eb18-5e77-b246-bb204064c1c2",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 1,
+      "question": {
+        "uz": "I ___ to school every day.",
+        "ru": "I ___ to school every day.",
+        "en": "I ___ to school every day."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "goes",
+            "ru": "goes",
+            "en": "goes"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "going",
+            "ru": "going",
+            "en": "going"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "go",
+            "ru": "go",
+            "en": "go"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "gone",
+            "ru": "gone",
+            "en": "gone"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 11
+    },
+    {
+      "id": "5e18ddd2-25d3-5082-928c-424369226ca3",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 1,
+      "question": {
+        "uz": "There ___ two apples on the table.",
+        "ru": "There ___ two apples on the table.",
+        "en": "There ___ two apples on the table."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "is",
+            "ru": "is",
+            "en": "is"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "are",
+            "ru": "are",
+            "en": "are"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "am",
+            "ru": "am",
+            "en": "am"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "be",
+            "ru": "be",
+            "en": "be"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 12
+    },
+    {
+      "id": "a9f54f9a-1af3-5ea9-b9fd-7a2ab78cadd1",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 1,
+      "question": {
+        "uz": "What is the opposite of “hot”?",
+        "ru": "What is the opposite of “hot”?",
+        "en": "What is the opposite of “hot”?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "cold",
+            "ru": "cold",
+            "en": "cold"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "warm",
+            "ru": "warm",
+            "en": "warm"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "big",
+            "ru": "big",
+            "en": "big"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "fast",
+            "ru": "fast",
+            "en": "fast"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 13
+    },
+    {
+      "id": "3d4598e7-a6db-5d2f-84dc-5e478b591319",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 1,
+      "question": {
+        "uz": "___ you like coffee?",
+        "ru": "___ you like coffee?",
+        "en": "___ you like coffee?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "Does",
+            "ru": "Does",
+            "en": "Does"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "Is",
+            "ru": "Is",
+            "en": "Is"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "Do",
+            "ru": "Do",
+            "en": "Do"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "Are",
+            "ru": "Are",
+            "en": "Are"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 14
+    },
+    {
+      "id": "315d1137-ec77-5f1e-a5fa-bc10a8cecaac",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 2,
+      "question": {
+        "uz": "If it rains tomorrow, we ___ at home.",
+        "ru": "If it rains tomorrow, we ___ at home.",
+        "en": "If it rains tomorrow, we ___ at home."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "stay",
+            "ru": "stay",
+            "en": "stay"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "will stay",
+            "ru": "will stay",
+            "en": "will stay"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "stayed",
+            "ru": "stayed",
+            "en": "stayed"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "would stayed",
+            "ru": "would stayed",
+            "en": "would stayed"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 20
+    },
+    {
+      "id": "e9111b7f-a12a-5abe-8202-698fdd5eb6dc",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 2,
+      "question": {
+        "uz": "I have lived here ___ 2019.",
+        "ru": "I have lived here ___ 2019.",
+        "en": "I have lived here ___ 2019."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "for",
+            "ru": "for",
+            "en": "for"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "since",
+            "ru": "since",
+            "en": "since"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "from",
+            "ru": "from",
+            "en": "from"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "at",
+            "ru": "at",
+            "en": "at"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 21
+    },
+    {
+      "id": "1aec1750-0bac-582d-884e-8e8fd58e7c0e",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 2,
+      "question": {
+        "uz": "She asked me where ___.",
+        "ru": "She asked me where ___.",
+        "en": "She asked me where ___."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "did I live",
+            "ru": "did I live",
+            "en": "did I live"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "I lived",
+            "ru": "I lived",
+            "en": "I lived"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "do I live",
+            "ru": "do I live",
+            "en": "do I live"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "I do live",
+            "ru": "I do live",
+            "en": "I do live"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 22
+    },
+    {
+      "id": "a719532d-2e14-5291-81b9-da8b0d250eda",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 2,
+      "question": {
+        "uz": "This is the ___ film I have ever seen.",
+        "ru": "This is the ___ film I have ever seen.",
+        "en": "This is the ___ film I have ever seen."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "more interesting",
+            "ru": "more interesting",
+            "en": "more interesting"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "most interesting",
+            "ru": "most interesting",
+            "en": "most interesting"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "interestinger",
+            "ru": "interestinger",
+            "en": "interestinger"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "much interesting",
+            "ru": "much interesting",
+            "en": "much interesting"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 23
+    },
+    {
+      "id": "1f63e064-5b00-5ece-9398-66ceff395bf2",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 2,
+      "question": {
+        "uz": "I'm looking forward ___ you.",
+        "ru": "I'm looking forward ___ you.",
+        "en": "I'm looking forward ___ you."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "to see",
+            "ru": "to see",
+            "en": "to see"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "see",
+            "ru": "see",
+            "en": "see"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "to seeing",
+            "ru": "to seeing",
+            "en": "to seeing"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "seeing",
+            "ru": "seeing",
+            "en": "seeing"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 24
+    },
+    {
+      "id": "1f29db33-3fe1-5392-960c-52847e819060",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 3,
+      "question": {
+        "uz": "By the time we arrived, the film ___.",
+        "ru": "By the time we arrived, the film ___.",
+        "en": "By the time we arrived, the film ___."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "already started",
+            "ru": "already started",
+            "en": "already started"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "has already started",
+            "ru": "has already started",
+            "en": "has already started"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "had already started",
+            "ru": "had already started",
+            "en": "had already started"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "was already start",
+            "ru": "was already start",
+            "en": "was already start"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 30
+    },
+    {
+      "id": "114b216a-ecab-5b71-925d-b1f84655b42e",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 3,
+      "question": {
+        "uz": "I wish I ___ more time to study.",
+        "ru": "I wish I ___ more time to study.",
+        "en": "I wish I ___ more time to study."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "have",
+            "ru": "have",
+            "en": "have"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "had",
+            "ru": "had",
+            "en": "had"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "will have",
+            "ru": "will have",
+            "en": "will have"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "am having",
+            "ru": "am having",
+            "en": "am having"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 31
+    },
+    {
+      "id": "2a5ecb8a-f09f-55a7-b9eb-e9fdbe50ec6f",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 3,
+      "question": {
+        "uz": "The report ___ by the manager yesterday.",
+        "ru": "The report ___ by the manager yesterday.",
+        "en": "The report ___ by the manager yesterday."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "was approved",
+            "ru": "was approved",
+            "en": "was approved"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "approved",
+            "ru": "approved",
+            "en": "approved"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "has approved",
+            "ru": "has approved",
+            "en": "has approved"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "was approving",
+            "ru": "was approving",
+            "en": "was approving"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 32
+    },
+    {
+      "id": "fce511ce-6901-5058-8a02-d9cf3f19a4ee",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 3,
+      "question": {
+        "uz": "He denied ___ the window.",
+        "ru": "He denied ___ the window.",
+        "en": "He denied ___ the window."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "to break",
+            "ru": "to break",
+            "en": "to break"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "breaking",
+            "ru": "breaking",
+            "en": "breaking"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "break",
+            "ru": "break",
+            "en": "break"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "broke",
+            "ru": "broke",
+            "en": "broke"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 33
+    },
+    {
+      "id": "7aae532f-09c5-55f6-8169-2410dab14958",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 3,
+      "question": {
+        "uz": "Choose the closest meaning to “reluctant”.",
+        "ru": "Choose the closest meaning to “reluctant”.",
+        "en": "Choose the closest meaning to “reluctant”."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "eager",
+            "ru": "eager",
+            "en": "eager"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "unwilling",
+            "ru": "unwilling",
+            "en": "unwilling"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "careful",
+            "ru": "careful",
+            "en": "careful"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "tired",
+            "ru": "tired",
+            "en": "tired"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 34
+    },
+    {
+      "id": "5190ed10-76d2-5709-b6fa-26e59b07fb71",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 4,
+      "question": {
+        "uz": "Hardly ___ the meeting started when the fire alarm went off.",
+        "ru": "Hardly ___ the meeting started when the fire alarm went off.",
+        "en": "Hardly ___ the meeting started when the fire alarm went off."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "had",
+            "ru": "had",
+            "en": "had"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "has",
+            "ru": "has",
+            "en": "has"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "did",
+            "ru": "did",
+            "en": "did"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "was",
+            "ru": "was",
+            "en": "was"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 40
+    },
+    {
+      "id": "8d103a97-5059-5276-ba23-bb5371806c0b",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 4,
+      "question": {
+        "uz": "Not until later ___ how serious the problem was.",
+        "ru": "Not until later ___ how serious the problem was.",
+        "en": "Not until later ___ how serious the problem was."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "we realised",
+            "ru": "we realised",
+            "en": "we realised"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "did we realise",
+            "ru": "did we realise",
+            "en": "did we realise"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "we did realise",
+            "ru": "we did realise",
+            "en": "we did realise"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "realised we",
+            "ru": "realised we",
+            "en": "realised we"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 41
+    },
+    {
+      "id": "ea603239-74e1-5829-9464-f3705629c4e4",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 4,
+      "question": {
+        "uz": "Had I known about the traffic, I ___ earlier.",
+        "ru": "Had I known about the traffic, I ___ earlier.",
+        "en": "Had I known about the traffic, I ___ earlier."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "would leave",
+            "ru": "would leave",
+            "en": "would leave"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "would have left",
+            "ru": "would have left",
+            "en": "would have left"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "will leave",
+            "ru": "will leave",
+            "en": "will leave"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "left",
+            "ru": "left",
+            "en": "left"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 42
+    },
+    {
+      "id": "7aacf95b-7dd5-583d-b2a6-e4c065080a16",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 4,
+      "question": {
+        "uz": "The proposal was rejected on the ___ that it was too expensive.",
+        "ru": "The proposal was rejected on the ___ that it was too expensive.",
+        "en": "The proposal was rejected on the ___ that it was too expensive."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "grounds",
+            "ru": "grounds",
+            "en": "grounds"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "reasons",
+            "ru": "reasons",
+            "en": "reasons"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "basis",
+            "ru": "basis",
+            "en": "basis"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "causes",
+            "ru": "causes",
+            "en": "causes"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 43
+    },
+    {
+      "id": "848d6ebb-1eb5-5054-8f38-4dd9c4d5d380",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "level": 4,
+      "question": {
+        "uz": "Choose the word closest to “meticulous”.",
+        "ru": "Choose the word closest to “meticulous”.",
+        "en": "Choose the word closest to “meticulous”."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "careless",
+            "ru": "careless",
+            "en": "careless"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "thorough",
+            "ru": "thorough",
+            "en": "thorough"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "quick",
+            "ru": "quick",
+            "en": "quick"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "generous",
+            "ru": "generous",
+            "en": "generous"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 44
+    },
+    {
+      "id": "014c25cc-6cc4-5ca2-8058-55711131cda2",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 1,
+      "question": {
+        "uz": "Как ___ зовут?",
+        "ru": "Как ___ зовут?",
+        "en": "Как ___ зовут?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "тебя",
+            "ru": "тебя",
+            "en": "тебя"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "ты",
+            "ru": "ты",
+            "en": "ты"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "тебе",
+            "ru": "тебе",
+            "en": "тебе"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "твой",
+            "ru": "твой",
+            "en": "твой"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 10
+    },
+    {
+      "id": "e2661bc6-d65b-52ce-bce3-629cfa5336a6",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 1,
+      "question": {
+        "uz": "Я ___ в Ташкенте.",
+        "ru": "Я ___ в Ташкенте.",
+        "en": "Я ___ в Ташкенте."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "живёт",
+            "ru": "живёт",
+            "en": "живёт"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "живу",
+            "ru": "живу",
+            "en": "живу"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "живут",
+            "ru": "живут",
+            "en": "живут"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "жить",
+            "ru": "жить",
+            "en": "жить"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 11
+    },
+    {
+      "id": "ea14a7df-2b46-5026-9eb9-a525a3f5b337",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 1,
+      "question": {
+        "uz": "Это ___ книга.",
+        "ru": "Это ___ книга.",
+        "en": "Это ___ книга."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "мой",
+            "ru": "мой",
+            "en": "мой"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "моё",
+            "ru": "моё",
+            "en": "моё"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "моя",
+            "ru": "моя",
+            "en": "моя"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "мои",
+            "ru": "мои",
+            "en": "мои"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 12
+    },
+    {
+      "id": "8acc18ec-46bd-5b8e-a4b3-5cf71ef93991",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 1,
+      "question": {
+        "uz": "У меня есть ___.",
+        "ru": "У меня есть ___.",
+        "en": "У меня есть ___."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "сестра",
+            "ru": "сестра",
+            "en": "сестра"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "сестру",
+            "ru": "сестру",
+            "en": "сестру"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "сестре",
+            "ru": "сестре",
+            "en": "сестре"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "сестрой",
+            "ru": "сестрой",
+            "en": "сестрой"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 13
+    },
+    {
+      "id": "926832f1-1c73-55dd-9f33-512342761e26",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 1,
+      "question": {
+        "uz": "Мы ___ в школу утром.",
+        "ru": "Мы ___ в школу утром.",
+        "en": "Мы ___ в школу утром."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "иду",
+            "ru": "иду",
+            "en": "иду"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "идёшь",
+            "ru": "идёшь",
+            "en": "идёшь"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "идём",
+            "ru": "идём",
+            "en": "идём"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "идут",
+            "ru": "идут",
+            "en": "идут"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 14
+    },
+    {
+      "id": "b7514a4b-fbf8-59e8-b6de-34f6df046848",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 2,
+      "question": {
+        "uz": "Я давно не видел ___ брата.",
+        "ru": "Я давно не видел ___ брата.",
+        "en": "Я давно не видел ___ брата."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "мой",
+            "ru": "мой",
+            "en": "мой"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "моего",
+            "ru": "моего",
+            "en": "моего"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "моему",
+            "ru": "моему",
+            "en": "моему"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "моим",
+            "ru": "моим",
+            "en": "моим"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 20
+    },
+    {
+      "id": "486427fc-60c6-598e-aad0-ca55be9298d0",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 2,
+      "question": {
+        "uz": "Завтра я ___ домашнее задание.",
+        "ru": "Завтра я ___ домашнее задание.",
+        "en": "Завтра я ___ домашнее задание."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "делал",
+            "ru": "делал",
+            "en": "делал"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "сделаю",
+            "ru": "сделаю",
+            "en": "сделаю"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "сделал",
+            "ru": "сделал",
+            "en": "сделал"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "делала",
+            "ru": "делала",
+            "en": "делала"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 21
+    },
+    {
+      "id": "ecd82e01-6d41-5c58-8d81-bca1c170109c",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 2,
+      "question": {
+        "uz": "Она интересуется ___.",
+        "ru": "Она интересуется ___.",
+        "en": "Она интересуется ___."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "музыка",
+            "ru": "музыка",
+            "en": "музыка"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "музыку",
+            "ru": "музыку",
+            "en": "музыку"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "музыкой",
+            "ru": "музыкой",
+            "en": "музыкой"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "музыке",
+            "ru": "музыке",
+            "en": "музыке"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 22
+    },
+    {
+      "id": "62311268-f1f2-514a-a1b6-f502f5b9a354",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 2,
+      "question": {
+        "uz": "Мы говорили ___ новом фильме.",
+        "ru": "Мы говорили ___ новом фильме.",
+        "en": "Мы говорили ___ новом фильме."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "о",
+            "ru": "о",
+            "en": "о"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "об",
+            "ru": "об",
+            "en": "об"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "в",
+            "ru": "в",
+            "en": "в"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "на",
+            "ru": "на",
+            "en": "на"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 23
+    },
+    {
+      "id": "95c88687-1a41-540f-a9dd-bfd7e63d602b",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 2,
+      "question": {
+        "uz": "Если будет хорошая погода, мы ___ в парк.",
+        "ru": "Если будет хорошая погода, мы ___ в парк.",
+        "en": "Если будет хорошая погода, мы ___ в парк."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "пошли бы",
+            "ru": "пошли бы",
+            "en": "пошли бы"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "пойдём",
+            "ru": "пойдём",
+            "en": "пойдём"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "шли",
+            "ru": "шли",
+            "en": "шли"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "пойти",
+            "ru": "пойти",
+            "en": "пойти"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 24
+    },
+    {
+      "id": "398766dc-c02d-5868-b47d-b3a1a98775ea",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 3,
+      "question": {
+        "uz": "Книга, ___ я прочитал, очень интересная.",
+        "ru": "Книга, ___ я прочитал, очень интересная.",
+        "en": "Книга, ___ я прочитал, очень интересная."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "который",
+            "ru": "который",
+            "en": "который"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "которая",
+            "ru": "которая",
+            "en": "которая"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "которую",
+            "ru": "которую",
+            "en": "которую"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "которой",
+            "ru": "которой",
+            "en": "которой"
+          }
+        }
+      ],
+      "correct_key": "c",
+      "sort": 30
+    },
+    {
+      "id": "838eb85e-adc2-5c1b-8381-42256376d88c",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 3,
+      "question": {
+        "uz": "Он пришёл, ___ урок уже закончился.",
+        "ru": "Он пришёл, ___ урок уже закончился.",
+        "en": "Он пришёл, ___ урок уже закончился."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "чтобы",
+            "ru": "чтобы",
+            "en": "чтобы"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "когда",
+            "ru": "когда",
+            "en": "когда"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "если",
+            "ru": "если",
+            "en": "если"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "хотя",
+            "ru": "хотя",
+            "en": "хотя"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 31
+    },
+    {
+      "id": "a5092a03-2577-5f51-9398-72d73b48326e",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 3,
+      "question": {
+        "uz": "Нам нужно ___ к экзамену.",
+        "ru": "Нам нужно ___ к экзамену.",
+        "en": "Нам нужно ___ к экзамену."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "подготовиться",
+            "ru": "подготовиться",
+            "en": "подготовиться"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "подготовится",
+            "ru": "подготовится",
+            "en": "подготовится"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "подготовимся",
+            "ru": "подготовимся",
+            "en": "подготовимся"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "подготовка",
+            "ru": "подготовка",
+            "en": "подготовка"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 32
+    },
+    {
+      "id": "2677e928-b654-504b-b5c1-a26369b41880",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 3,
+      "question": {
+        "uz": "Подберите синоним к слову «быстро».",
+        "ru": "Подберите синоним к слову «быстро».",
+        "en": "Подберите синоним к слову «быстро»."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "медленно",
+            "ru": "медленно",
+            "en": "медленно"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "стремительно",
+            "ru": "стремительно",
+            "en": "стремительно"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "спокойно",
+            "ru": "спокойно",
+            "en": "спокойно"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "тихо",
+            "ru": "тихо",
+            "en": "тихо"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 33
+    },
+    {
+      "id": "6147328c-aadc-565c-ae28-3435b7aa0ee4",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 3,
+      "question": {
+        "uz": "Я хочу, чтобы ты ___ мне завтра.",
+        "ru": "Я хочу, чтобы ты ___ мне завтра.",
+        "en": "Я хочу, чтобы ты ___ мне завтра."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "позвонишь",
+            "ru": "позвонишь",
+            "en": "позвонишь"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "позвонил",
+            "ru": "позвонил",
+            "en": "позвонил"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "звонишь",
+            "ru": "звонишь",
+            "en": "звонишь"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "позвонить",
+            "ru": "позвонить",
+            "en": "позвонить"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 34
+    },
+    {
+      "id": "c2959909-2a70-5295-9057-3d543c8c1a0d",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 4,
+      "question": {
+        "uz": "Несмотря ___ дождь, мы пошли гулять.",
+        "ru": "Несмотря ___ дождь, мы пошли гулять.",
+        "en": "Несмотря ___ дождь, мы пошли гулять."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "на",
+            "ru": "на",
+            "en": "на"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "в",
+            "ru": "в",
+            "en": "в"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "о",
+            "ru": "о",
+            "en": "о"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "за",
+            "ru": "за",
+            "en": "за"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 40
+    },
+    {
+      "id": "4dece4b6-f423-5c9a-8505-9e55ecaefa9d",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 4,
+      "question": {
+        "uz": "Выберите правильно написанное слово.",
+        "ru": "Выберите правильно написанное слово.",
+        "en": "Выберите правильно написанное слово."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "расчёт",
+            "ru": "расчёт",
+            "en": "расчёт"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "рассчёт",
+            "ru": "рассчёт",
+            "en": "рассчёт"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "росчёт",
+            "ru": "росчёт",
+            "en": "росчёт"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "расщёт",
+            "ru": "расщёт",
+            "en": "расщёт"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 41
+    },
+    {
+      "id": "ae15bb58-1253-5655-bb9e-a3fd6b01fc04",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 4,
+      "question": {
+        "uz": "Ему было не ___ смеха.",
+        "ru": "Ему было не ___ смеха.",
+        "en": "Ему было не ___ смеха."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "к",
+            "ru": "к",
+            "en": "к"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "до",
+            "ru": "до",
+            "en": "до"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "для",
+            "ru": "для",
+            "en": "для"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "от",
+            "ru": "от",
+            "en": "от"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 42
+    },
+    {
+      "id": "0aa5e287-4161-54ce-a771-8a59d188b78a",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 4,
+      "question": {
+        "uz": "Выражение «бить баклуши» означает:",
+        "ru": "Выражение «бить баклуши» означает:",
+        "en": "Выражение «бить баклуши» означает:"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "много работать",
+            "ru": "много работать",
+            "en": "много работать"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "бездельничать",
+            "ru": "бездельничать",
+            "en": "бездельничать"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "драться",
+            "ru": "драться",
+            "en": "драться"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "готовить еду",
+            "ru": "готовить еду",
+            "en": "готовить еду"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 43
+    },
+    {
+      "id": "f1efeed7-8578-577a-bc3e-390011cb7a98",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "level": 4,
+      "question": {
+        "uz": "Какое слово пишется с НЕ слитно?",
+        "ru": "Какое слово пишется с НЕ слитно?",
+        "en": "Какое слово пишется с НЕ слитно?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "(не)был",
+            "ru": "(не)был",
+            "en": "(не)был"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "(не)навидеть",
+            "ru": "(не)навидеть",
+            "en": "(не)навидеть"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "(не)могу",
+            "ru": "(не)могу",
+            "en": "(не)могу"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "(не)знал",
+            "ru": "(не)знал",
+            "en": "(не)знал"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 44
+    },
+    {
+      "id": "09aef183-0f6c-56e2-a31f-4b7e75a26480",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 1,
+      "question": {
+        "uz": "15 + 27 = ?",
+        "ru": "15 + 27 = ?",
+        "en": "15 + 27 = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "32",
+            "ru": "32",
+            "en": "32"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "42",
+            "ru": "42",
+            "en": "42"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "43",
+            "ru": "43",
+            "en": "43"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "52",
+            "ru": "52",
+            "en": "52"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 10
+    },
+    {
+      "id": "a829548d-8582-5f15-b3c8-9cdf51ad259b",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 1,
+      "question": {
+        "uz": "8 × 7 = ?",
+        "ru": "8 × 7 = ?",
+        "en": "8 × 7 = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "54",
+            "ru": "54",
+            "en": "54"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "56",
+            "ru": "56",
+            "en": "56"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "63",
+            "ru": "63",
+            "en": "63"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "48",
+            "ru": "48",
+            "en": "48"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 11
+    },
+    {
+      "id": "67af16db-19c2-55af-b08a-cede0f76c2e7",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 1,
+      "question": {
+        "uz": "100 − 37 = ?",
+        "ru": "100 − 37 = ?",
+        "en": "100 − 37 = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "63",
+            "ru": "63",
+            "en": "63"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "73",
+            "ru": "73",
+            "en": "73"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "67",
+            "ru": "67",
+            "en": "67"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "53",
+            "ru": "53",
+            "en": "53"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 12
+    },
+    {
+      "id": "16b2895e-c7b8-57d2-aabb-65f0efc76361",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 1,
+      "question": {
+        "uz": "1/2 + 1/4 = ?",
+        "ru": "1/2 + 1/4 = ?",
+        "en": "1/2 + 1/4 = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "2/6",
+            "ru": "2/6",
+            "en": "2/6"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "3/4",
+            "ru": "3/4",
+            "en": "3/4"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "1/3",
+            "ru": "1/3",
+            "en": "1/3"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "2/4",
+            "ru": "2/4",
+            "en": "2/4"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 13
+    },
+    {
+      "id": "407732fa-9a93-57ea-bad1-7dfa8edc5bb3",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 1,
+      "question": {
+        "uz": "36 ni 4 ga boʻling.",
+        "ru": "Разделите 36 на 4.",
+        "en": "Divide 36 by 4."
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "8",
+            "ru": "8",
+            "en": "8"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "9",
+            "ru": "9",
+            "en": "9"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "6",
+            "ru": "6",
+            "en": "6"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "12",
+            "ru": "12",
+            "en": "12"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 14
+    },
+    {
+      "id": "aea22fe6-f90e-584f-b321-507d253f3748",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 2,
+      "question": {
+        "uz": "Tenglamani yeching: 3x + 5 = 20",
+        "ru": "Решите уравнение: 3x + 5 = 20",
+        "en": "Solve: 3x + 5 = 20"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "3",
+            "ru": "3",
+            "en": "3"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "5",
+            "ru": "5",
+            "en": "5"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "7",
+            "ru": "7",
+            "en": "7"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "25/3",
+            "ru": "25/3",
+            "en": "25/3"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 20
+    },
+    {
+      "id": "e1446641-bdf1-56a3-9594-7ef6dd12f803",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 2,
+      "question": {
+        "uz": "150 ning 20% i nechaga teng?",
+        "ru": "Чему равны 20% от 150?",
+        "en": "What is 20% of 150?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "20",
+            "ru": "20",
+            "en": "20"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "30",
+            "ru": "30",
+            "en": "30"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "15",
+            "ru": "15",
+            "en": "15"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "35",
+            "ru": "35",
+            "en": "35"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 21
+    },
+    {
+      "id": "9230d07a-573e-5b83-977b-117e67e633a7",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 2,
+      "question": {
+        "uz": "Tomonlari 6 va 4 boʻlgan toʻgʻri toʻrtburchak yuzi:",
+        "ru": "Площадь прямоугольника со сторонами 6 и 4:",
+        "en": "Area of a rectangle with sides 6 and 4:"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "20",
+            "ru": "20",
+            "en": "20"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "24",
+            "ru": "24",
+            "en": "24"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "10",
+            "ru": "10",
+            "en": "10"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "48",
+            "ru": "48",
+            "en": "48"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 22
+    },
+    {
+      "id": "b2bba615-5e9e-524f-a415-443280b9136b",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 2,
+      "question": {
+        "uz": "(−3)² = ?",
+        "ru": "(−3)² = ?",
+        "en": "(−3)² = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "−9",
+            "ru": "−9",
+            "en": "−9"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "9",
+            "ru": "9",
+            "en": "9"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "6",
+            "ru": "6",
+            "en": "6"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "−6",
+            "ru": "−6",
+            "en": "−6"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 23
+    },
+    {
+      "id": "4d7daf64-9a73-5466-a2be-c96784235ce3",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 2,
+      "question": {
+        "uz": "4, 8 va 12 sonlarining oʻrta arifmetigi:",
+        "ru": "Среднее арифметическое чисел 4, 8 и 12:",
+        "en": "The mean of 4, 8 and 12:"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "6",
+            "ru": "6",
+            "en": "6"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "8",
+            "ru": "8",
+            "en": "8"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "24",
+            "ru": "24",
+            "en": "24"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "12",
+            "ru": "12",
+            "en": "12"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 24
+    },
+    {
+      "id": "879f253f-569f-51da-aaa0-fab291fedbce",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 3,
+      "question": {
+        "uz": "x² − 5x + 6 = 0 tenglamaning ildizlari:",
+        "ru": "Корни уравнения x² − 5x + 6 = 0:",
+        "en": "Roots of x² − 5x + 6 = 0:"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "1 va 6",
+            "ru": "1 и 6",
+            "en": "1 and 6"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "2 va 3",
+            "ru": "2 и 3",
+            "en": "2 and 3"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "−2 va −3",
+            "ru": "−2 и −3",
+            "en": "−2 and −3"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "−1 va 6",
+            "ru": "−1 и 6",
+            "en": "−1 and 6"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 30
+    },
+    {
+      "id": "d353d318-3231-52a9-84fa-acb82ba3d565",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 3,
+      "question": {
+        "uz": "log₂ 32 = ?",
+        "ru": "log₂ 32 = ?",
+        "en": "log₂ 32 = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "4",
+            "ru": "4",
+            "en": "4"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "5",
+            "ru": "5",
+            "en": "5"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "6",
+            "ru": "6",
+            "en": "6"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "16",
+            "ru": "16",
+            "en": "16"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 31
+    },
+    {
+      "id": "37b169bb-a04d-5b4a-be8e-130b613f0aad",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 3,
+      "question": {
+        "uz": "Radiusi 3 boʻlgan doira yuzi:",
+        "ru": "Площадь круга радиусом 3:",
+        "en": "Area of a circle with radius 3:"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "6π",
+            "ru": "6π",
+            "en": "6π"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "9π",
+            "ru": "9π",
+            "en": "9π"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "3π",
+            "ru": "3π",
+            "en": "3π"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "18π",
+            "ru": "18π",
+            "en": "18π"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 32
+    },
+    {
+      "id": "ac28a4a9-bc84-5ed2-9f6b-1f675fe8664a",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 3,
+      "question": {
+        "uz": "sin 30° = ?",
+        "ru": "sin 30° = ?",
+        "en": "sin 30° = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "1/2",
+            "ru": "1/2",
+            "en": "1/2"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "√3/2",
+            "ru": "√3/2",
+            "en": "√3/2"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "√2/2",
+            "ru": "√2/2",
+            "en": "√2/2"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "1",
+            "ru": "1",
+            "en": "1"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 33
+    },
+    {
+      "id": "24af642b-23e2-5006-a77e-0f8c3a06576c",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 3,
+      "question": {
+        "uz": "3, 7, 11, … arifmetik progressiyaning 10-hadi:",
+        "ru": "10-й член арифметической прогрессии 3, 7, 11, …:",
+        "en": "The 10th term of the arithmetic sequence 3, 7, 11, …:"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "39",
+            "ru": "39",
+            "en": "39"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "43",
+            "ru": "43",
+            "en": "43"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "40",
+            "ru": "40",
+            "en": "40"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "35",
+            "ru": "35",
+            "en": "35"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 34
+    },
+    {
+      "id": "bfd11198-bf38-5539-bb4e-b7b54ed45aef",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 4,
+      "question": {
+        "uz": "1 + 2 + 3 + … + 100 = ?",
+        "ru": "1 + 2 + 3 + … + 100 = ?",
+        "en": "1 + 2 + 3 + … + 100 = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "5000",
+            "ru": "5000",
+            "en": "5000"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "5050",
+            "ru": "5050",
+            "en": "5050"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "5100",
+            "ru": "5100",
+            "en": "5100"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "10100",
+            "ru": "10100",
+            "en": "10100"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 40
+    },
+    {
+      "id": "d9dde9a6-318a-57da-8309-8abe0be40b76",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 4,
+      "question": {
+        "uz": "Oltiburchakning nechta diagonali bor?",
+        "ru": "Сколько диагоналей у шестиугольника?",
+        "en": "How many diagonals does a hexagon have?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "6",
+            "ru": "6",
+            "en": "6"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "9",
+            "ru": "9",
+            "en": "9"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "12",
+            "ru": "12",
+            "en": "12"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "15",
+            "ru": "15",
+            "en": "15"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 41
+    },
+    {
+      "id": "630ff171-1c71-573c-9e69-c2a6eee32191",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 4,
+      "question": {
+        "uz": "2²⁰²⁶ sonining oxirgi raqami:",
+        "ru": "Последняя цифра числа 2²⁰²⁶:",
+        "en": "The last digit of 2²⁰²⁶:"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "2",
+            "ru": "2",
+            "en": "2"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "4",
+            "ru": "4",
+            "en": "4"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "6",
+            "ru": "6",
+            "en": "6"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "8",
+            "ru": "8",
+            "en": "8"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 42
+    },
+    {
+      "id": "aa2cf08f-b275-5312-9566-189411f32c3c",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 4,
+      "question": {
+        "uz": "7 ga boʻlinadigan ikki xonali sonlar nechta?",
+        "ru": "Сколько двузначных чисел делятся на 7?",
+        "en": "How many two-digit numbers are divisible by 7?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "12",
+            "ru": "12",
+            "en": "12"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "13",
+            "ru": "13",
+            "en": "13"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "14",
+            "ru": "14",
+            "en": "14"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "15",
+            "ru": "15",
+            "en": "15"
+          }
+        }
+      ],
+      "correct_key": "b",
+      "sort": 43
+    },
+    {
+      "id": "76825080-6714-5755-bd78-f5b790eff955",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "level": 4,
+      "question": {
+        "uz": "a + b = 7 va ab = 12 boʻlsa, a² + b² = ?",
+        "ru": "Если a + b = 7 и ab = 12, то a² + b² = ?",
+        "en": "If a + b = 7 and ab = 12, then a² + b² = ?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "25",
+            "ru": "25",
+            "en": "25"
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "37",
+            "ru": "37",
+            "en": "37"
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "49",
+            "ru": "49",
+            "en": "49"
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "24",
+            "ru": "24",
+            "en": "24"
+          }
+        }
+      ],
+      "correct_key": "a",
+      "sort": 44
+    },
+    {
+      "id": "463030c2-5e0a-5892-9d8a-33e8450ccfa2",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "level": 1,
+      "question": {
+        "uz": "Boʻsh vaqtingizda nima qilishni yoqtirasiz?",
+        "ru": "Чем вы любите заниматься в свободное время?",
+        "en": "What do you enjoy doing in your free time?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "Rasm chizish va chiroyli narsalar yaratish",
+            "ru": "Рисовать и создавать красивые вещи",
+            "en": "Drawing and creating beautiful things"
+          },
+          "scores": {
+            "design": 2
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "Mantiqiy jumboqlar yechish",
+            "ru": "Решать логические головоломки",
+            "en": "Solving logic puzzles"
+          },
+          "scores": {
+            "backend": 2
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "Sayt va ilovalar qanday koʻrinishini oʻzgartirish",
+            "ru": "Менять, как выглядят сайты и приложения",
+            "en": "Changing how websites and apps look"
+          },
+          "scores": {
+            "frontend": 2
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "Oʻyin oʻynash va ular qanday ishlashini bilish",
+            "ru": "Играть в игры и разбираться, как они устроены",
+            "en": "Playing games and figuring out how they work"
+          },
+          "scores": {
+            "python_kids": 2
+          }
+        }
+      ],
+      "correct_key": null,
+      "sort": 1
+    },
+    {
+      "id": "f715d48a-9938-58f2-8fda-e03ef753a109",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "level": 1,
+      "question": {
+        "uz": "Qaysi natija sizni koʻproq quvontiradi?",
+        "ru": "Какой результат порадует вас больше?",
+        "en": "Which result would make you happiest?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "Hamma koʻradigan chiroyli sahifa",
+            "ru": "Красивая страница, которую видят все",
+            "en": "A beautiful page everyone can see"
+          },
+          "scores": {
+            "frontend": 2,
+            "design": 1
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "Tez va xatosiz ishlaydigan tizim",
+            "ru": "Система, которая работает быстро и без ошибок",
+            "en": "A system that runs fast with no errors"
+          },
+          "scores": {
+            "backend": 2
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "Odamlarga yoqadigan logo yoki banner",
+            "ru": "Логотип или баннер, который нравится людям",
+            "en": "A logo or banner people love"
+          },
+          "scores": {
+            "design": 2
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "Oʻzim yasagan kichik oʻyin",
+            "ru": "Маленькая игра, которую я сделал сам",
+            "en": "A small game I built myself"
+          },
+          "scores": {
+            "python_kids": 2
+          }
+        }
+      ],
+      "correct_key": null,
+      "sort": 2
+    },
+    {
+      "id": "9077afba-90c3-58c8-a4ab-22e7306fc1b7",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "level": 1,
+      "question": {
+        "uz": "Yoshingiz nechada?",
+        "ru": "Сколько вам лет?",
+        "en": "How old are you?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "9–13",
+            "ru": "9–13",
+            "en": "9–13"
+          },
+          "scores": {
+            "python_kids": 3
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "14–17",
+            "ru": "14–17",
+            "en": "14–17"
+          },
+          "scores": {
+            "frontend": 1,
+            "design": 1
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "18 va undan katta",
+            "ru": "18 и старше",
+            "en": "18 or older"
+          },
+          "scores": {
+            "frontend": 1,
+            "backend": 1,
+            "design": 1
+          }
+        }
+      ],
+      "correct_key": null,
+      "sort": 3
+    },
+    {
+      "id": "fc81454d-f326-54ad-b0e9-1130840544c5",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "level": 1,
+      "question": {
+        "uz": "Qaysi fan sizga osonroq?",
+        "ru": "Какой предмет даётся вам легче?",
+        "en": "Which subject comes easiest to you?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "Matematika",
+            "ru": "Математика",
+            "en": "Math"
+          },
+          "scores": {
+            "backend": 2
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "Tasviriy sanʼat",
+            "ru": "Изобразительное искусство",
+            "en": "Art"
+          },
+          "scores": {
+            "design": 2
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "Informatika",
+            "ru": "Информатика",
+            "en": "Computer science"
+          },
+          "scores": {
+            "frontend": 1,
+            "backend": 1
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "Hammasi qiziq, lekin oʻynab oʻrganishni yoqtiraman",
+            "ru": "Всё интересно, но люблю учиться играя",
+            "en": "Everything — but I like learning through play"
+          },
+          "scores": {
+            "python_kids": 2
+          }
+        }
+      ],
+      "correct_key": null,
+      "sort": 4
+    },
+    {
+      "id": "58f1efa3-835f-5f3f-a7ad-854efd8c0b37",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "level": 1,
+      "question": {
+        "uz": "Qanday ishlashni afzal koʻrasiz?",
+        "ru": "Как вам больше нравится работать?",
+        "en": "How do you prefer to work?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "Natijani darhol ekranda koʻrish",
+            "ru": "Сразу видеть результат на экране",
+            "en": "Seeing the result on screen right away"
+          },
+          "scores": {
+            "frontend": 2
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "Koʻrinmasa ham, ichki mantiqni qurish",
+            "ru": "Строить внутреннюю логику, даже если её не видно",
+            "en": "Building the logic underneath, even if it is invisible"
+          },
+          "scores": {
+            "backend": 2
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "Rang, shrift va kompozitsiya bilan ishlash",
+            "ru": "Работать с цветом, шрифтом и композицией",
+            "en": "Working with colour, type and layout"
+          },
+          "scores": {
+            "design": 2
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "Qadam-baqadam, oʻyin orqali",
+            "ru": "Шаг за шагом, через игру",
+            "en": "Step by step, through play"
+          },
+          "scores": {
+            "python_kids": 2
+          }
+        }
+      ],
+      "correct_key": null,
+      "sort": 5
+    },
+    {
+      "id": "7131093a-69f6-5e9b-9cc5-5fb4764bc26b",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "level": 1,
+      "question": {
+        "uz": "Kelajakda kim boʻlishni xohlaysiz?",
+        "ru": "Кем вы хотите стать в будущем?",
+        "en": "What would you like to become?"
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": {
+            "uz": "Frontend dasturchi",
+            "ru": "Frontend-разработчиком",
+            "en": "A frontend developer"
+          },
+          "scores": {
+            "frontend": 3
+          }
+        },
+        {
+          "key": "b",
+          "text": {
+            "uz": "Backend dasturchi",
+            "ru": "Backend-разработчиком",
+            "en": "A backend developer"
+          },
+          "scores": {
+            "backend": 3
+          }
+        },
+        {
+          "key": "c",
+          "text": {
+            "uz": "UI/UX dizayner",
+            "ru": "UI/UX-дизайнером",
+            "en": "A UI/UX designer"
+          },
+          "scores": {
+            "design": 3
+          }
+        },
+        {
+          "key": "d",
+          "text": {
+            "uz": "Hali bilmayman, sinab koʻrmoqchiman",
+            "ru": "Пока не знаю, хочу попробовать",
+            "en": "Not sure yet — I want to try"
+          },
+          "scores": {
+            "python_kids": 2
+          }
+        }
+      ],
+      "correct_key": null,
+      "sort": 6
+    }
+  ],
+  "directions": [
+    {
+      "id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "slug": "english",
+      "name_uz": "Ingliz tili",
+      "name_ru": "Английский язык",
+      "name_en": "English",
+      "icon": "languages",
+      "color": "#6D4AFF",
+      "has_test": true,
+      "is_active": true,
+      "sort": 1
+    },
+    {
+      "id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "slug": "russian",
+      "name_uz": "Rus tili",
+      "name_ru": "Русский язык",
+      "name_en": "Russian",
+      "icon": "book-open",
+      "color": "#FF6B57",
+      "has_test": true,
+      "is_active": true,
+      "sort": 2
+    },
+    {
+      "id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "slug": "math",
+      "name_uz": "Matematika",
+      "name_ru": "Математика",
+      "name_en": "Mathematics",
+      "icon": "sigma",
+      "color": "#14121F",
+      "has_test": true,
+      "is_active": true,
+      "sort": 3
+    },
+    {
+      "id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "slug": "it",
+      "name_uz": "IT va dasturlash",
+      "name_ru": "IT и программирование",
+      "name_en": "IT and coding",
+      "icon": "code",
+      "color": "#2F9E6B",
+      "has_test": true,
+      "is_active": true,
+      "sort": 4
+    },
+    {
+      "id": "f2984929-1aa3-5c42-830e-f05b7c4787ef",
+      "slug": "abiturient",
+      "name_uz": "Abituriyentlar",
+      "name_ru": "Абитуриенты",
+      "name_en": "University prep",
+      "icon": "graduation-cap",
+      "color": "#E2A400",
+      "has_test": true,
+      "is_active": true,
+      "sort": 5
+    }
+  ],
+  "branches": [
+    {
+      "id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "slug": "chilonzor",
+      "name_uz": "Chilonzor",
+      "name_ru": "Чиланзар",
+      "name_en": "Chilanzar",
+      "address_uz": "Chilonzor tumani, Bunyodkor shoh koʻchasi, 12-uy",
+      "address_ru": "Чиланзарский район, проспект Бунёдкор, 12",
+      "address_en": "12 Bunyodkor Avenue, Chilanzar district",
+      "landmark_uz": "Novza metro bekati yonida",
+      "landmark_ru": "Рядом со станцией метро Новза",
+      "landmark_en": "Next to Novza metro station",
+      "lat": 41.2826,
+      "lng": 69.2125,
+      "phone": "+998712001010",
+      "working_hours_uz": "Du–Sh: 09:00–20:00, Ya: dam olish",
+      "working_hours_ru": "Пн–Сб: 09:00–20:00, Вс: выходной",
+      "working_hours_en": "Mon–Sat: 9:00–20:00, Sun: closed",
+      "photo_url": null,
+      "is_active": true,
+      "sort": 1
+    },
+    {
+      "id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "slug": "yunusobod",
+      "name_uz": "Yunusobod",
+      "name_ru": "Юнусабад",
+      "name_en": "Yunusabad",
+      "address_uz": "Yunusobod tumani, Amir Temur shoh koʻchasi, 108-uy",
+      "address_ru": "Юнусабадский район, проспект Амира Темура, 108",
+      "address_en": "108 Amir Temur Avenue, Yunusabad district",
+      "landmark_uz": "Yunusobod metro bekati, 3-chiqish",
+      "landmark_ru": "Станция метро Юнусабад, выход 3",
+      "landmark_en": "Yunusabad metro station, exit 3",
+      "lat": 41.3647,
+      "lng": 69.287,
+      "phone": "+998712002020",
+      "working_hours_uz": "Du–Sh: 09:00–20:00, Ya: dam olish",
+      "working_hours_ru": "Пн–Сб: 09:00–20:00, Вс: выходной",
+      "working_hours_en": "Mon–Sat: 9:00–20:00, Sun: closed",
+      "photo_url": null,
+      "is_active": true,
+      "sort": 2
+    },
+    {
+      "id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "slug": "mirzo-ulugbek",
+      "name_uz": "Mirzo Ulugʻbek",
+      "name_ru": "Мирзо-Улугбек",
+      "name_en": "Mirzo Ulugbek",
+      "address_uz": "Mirzo Ulugʻbek tumani, Buyuk Ipak Yoʻli koʻchasi, 45-uy",
+      "address_ru": "Мирзо-Улугбекский район, улица Буюк Ипак Йули, 45",
+      "address_en": "45 Buyuk Ipak Yuli Street, Mirzo Ulugbek district",
+      "landmark_uz": "Buyuk Ipak Yoʻli metro bekati qarshisida",
+      "landmark_ru": "Напротив станции метро Буюк Ипак Йули",
+      "landmark_en": "Opposite Buyuk Ipak Yuli metro station",
+      "lat": 41.326,
+      "lng": 69.327,
+      "phone": "+998712003030",
+      "working_hours_uz": "Du–Sh: 09:00–20:00, Ya: dam olish",
+      "working_hours_ru": "Пн–Сб: 09:00–20:00, Вс: выходной",
+      "working_hours_en": "Mon–Sat: 9:00–20:00, Sun: closed",
+      "photo_url": null,
+      "is_active": true,
+      "sort": 3
+    }
+  ],
+  "courses": [
+    {
+      "id": "6e7b5e70-6988-535e-8617-ad5a71f09dea",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "slug": "english-kids",
+      "title_uz": "Bolalar uchun ingliz tili",
+      "title_ru": "Английский для детей",
+      "title_en": "English for Kids",
+      "description_uz": "7–11 yoshli bolalar uchun oʻyin, qoʻshiq va multfilmlar orqali ingliz tili. Har darsda gapirish amaliyoti.",
+      "description_ru": "Английский для детей 7–11 лет через игры, песни и мультфильмы. Разговорная практика на каждом уроке.",
+      "description_en": "English for children aged 7–11 through games, songs and cartoons. Speaking practice in every lesson.",
+      "program_uz": [
+        "Alifbo va talaffuz",
+        "Kundalik soʻzlar: oila, maktab, hayvonlar",
+        "Oddiy jumlalar tuzish",
+        "Qoʻshiq va rolli oʻyinlar"
+      ],
+      "program_ru": [
+        "Алфавит и произношение",
+        "Повседневные слова: семья, школа, животные",
+        "Простые предложения",
+        "Песни и ролевые игры"
+      ],
+      "program_en": [
+        "Alphabet and pronunciation",
+        "Everyday words: family, school, animals",
+        "Building simple sentences",
+        "Songs and role plays"
+      ],
+      "level_from": 1,
+      "level_to": 2,
+      "age_group": "kids",
+      "duration_months": 9,
+      "lessons_per_week": 3,
+      "lesson_minutes": 60,
+      "price_monthly": 600000,
+      "is_featured": false,
+      "is_active": true,
+      "sort": 1
+    },
+    {
+      "id": "909bcd3e-b1af-5e41-b37f-c90fa034295e",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "slug": "general-english",
+      "title_uz": "General English",
+      "title_ru": "General English",
+      "title_en": "General English",
+      "description_uz": "Boshlangʻichdan B2 gacha: grammatika, lugʻat va erkin muloqot. Har 2 oyda daraja nazorati.",
+      "description_ru": "С нуля до B2: грамматика, лексика и свободное общение. Контроль уровня каждые 2 месяца.",
+      "description_en": "From beginner to B2: grammar, vocabulary and fluent conversation. Level check every 2 months.",
+      "program_uz": [
+        "Grammatika asoslari",
+        "Soʻz boyligi: 1500+ soʻz",
+        "Speaking club har hafta",
+        "Daraja imtihoni"
+      ],
+      "program_ru": [
+        "Основы грамматики",
+        "Словарный запас: 1500+ слов",
+        "Speaking club каждую неделю",
+        "Экзамен на уровень"
+      ],
+      "program_en": ["Grammar foundations", "Vocabulary: 1,500+ words", "Weekly speaking club", "Level exam"],
+      "level_from": 1,
+      "level_to": 3,
+      "age_group": "teens",
+      "duration_months": 6,
+      "lessons_per_week": 3,
+      "lesson_minutes": 90,
+      "price_monthly": 750000,
+      "is_featured": true,
+      "is_active": true,
+      "sort": 2
+    },
+    {
+      "id": "1f1e6315-b586-5e51-9d22-22796d58334f",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "slug": "ielts-intensive",
+      "title_uz": "IELTS Intensive",
+      "title_ru": "IELTS Intensive",
+      "title_en": "IELTS Intensive",
+      "description_uz": "B1 dan boshlab IELTS 7.0+ ga tayyorlov: 4 ta koʻnikma, haftalik mock test va individual feedback.",
+      "description_ru": "Подготовка к IELTS 7.0+ с уровня B1: 4 навыка, еженедельный mock-тест и индивидуальный разбор.",
+      "description_en": "IELTS 7.0+ preparation from B1: all 4 skills, weekly mock test and individual feedback.",
+      "program_uz": [
+        "Listening va Reading strategiyalari",
+        "Writing Task 1 va 2",
+        "Speaking: Part 1–3",
+        "Har hafta mock test"
+      ],
+      "program_ru": [
+        "Стратегии Listening и Reading",
+        "Writing Task 1 и 2",
+        "Speaking: Part 1–3",
+        "Mock-тест каждую неделю"
+      ],
+      "program_en": [
+        "Listening and Reading strategies",
+        "Writing Task 1 and 2",
+        "Speaking: Parts 1–3",
+        "Weekly mock test"
+      ],
+      "level_from": 2,
+      "level_to": 4,
+      "age_group": "teens",
+      "duration_months": 4,
+      "lessons_per_week": 5,
+      "lesson_minutes": 90,
+      "price_monthly": 1100000,
+      "is_featured": true,
+      "is_active": true,
+      "sort": 3
+    },
+    {
+      "id": "5e772d1f-51f2-5204-90aa-3d14767dd8ad",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "slug": "russian-kids",
+      "title_uz": "Bolalar uchun rus tili",
+      "title_ru": "Русский для детей",
+      "title_en": "Russian for Kids",
+      "description_uz": "Maktabga tayyorgarlik va 1–4-sinf oʻquvchilari uchun rus tili: oʻqish, yozish va soʻzlashuv.",
+      "description_ru": "Русский язык для дошкольников и учеников 1–4 классов: чтение, письмо и разговор.",
+      "description_en": "Russian for preschoolers and grades 1–4: reading, writing and speaking.",
+      "program_uz": ["Alifbo va oʻqish", "Yozuv va imlo", "Soʻzlashuv mavzulari", "Ertak va sheʼrlar"],
+      "program_ru": ["Алфавит и чтение", "Письмо и орфография", "Разговорные темы", "Сказки и стихи"],
+      "program_en": [
+        "Alphabet and reading",
+        "Writing and spelling",
+        "Conversation topics",
+        "Fairy tales and poems"
+      ],
+      "level_from": 1,
+      "level_to": 2,
+      "age_group": "kids",
+      "duration_months": 9,
+      "lessons_per_week": 3,
+      "lesson_minutes": 60,
+      "price_monthly": 550000,
+      "is_featured": false,
+      "is_active": true,
+      "sort": 4
+    },
+    {
+      "id": "da41f88b-88e8-5f62-a93c-03bd08e6ad41",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "slug": "russian-general",
+      "title_uz": "Rus tili: soʻzlashuv va grammatika",
+      "title_ru": "Русский язык: разговор и грамматика",
+      "title_en": "Russian: Speaking and Grammar",
+      "description_uz": "Oʻsmirlar va kattalar uchun: kelishiklar, feʼllar va erkin muloqot. Ish va oʻqish uchun rus tili.",
+      "description_ru": "Для подростков и взрослых: падежи, глаголы и свободное общение. Русский для учёбы и работы.",
+      "description_en": "For teens and adults: cases, verbs and fluent conversation. Russian for study and work.",
+      "program_uz": [
+        "Kelishiklar tizimi",
+        "Feʼl turlari va zamonlar",
+        "Ish suhbati va hujjatlar",
+        "Erkin muloqot klubi"
+      ],
+      "program_ru": [
+        "Система падежей",
+        "Виды глагола и времена",
+        "Деловое общение и документы",
+        "Разговорный клуб"
+      ],
+      "program_en": [
+        "The case system",
+        "Verb aspects and tenses",
+        "Business talk and documents",
+        "Conversation club"
+      ],
+      "level_from": 1,
+      "level_to": 4,
+      "age_group": "adults",
+      "duration_months": 6,
+      "lessons_per_week": 3,
+      "lesson_minutes": 90,
+      "price_monthly": 650000,
+      "is_featured": false,
+      "is_active": true,
+      "sort": 5
+    },
+    {
+      "id": "eeba710b-08a3-5cd1-94da-699f6fa32b1a",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "slug": "math-school",
+      "title_uz": "Maktab matematikasi",
+      "title_ru": "Школьная математика",
+      "title_en": "School Math",
+      "description_uz": "5–9-sinflar uchun: mavzularni tushunib oʻrganish, baholarni oshirish va nazorat ishlariga tayyorgarlik.",
+      "description_ru": "Для 5–9 классов: понимание тем, рост оценок и подготовка к контрольным.",
+      "description_en": "For grades 5–9: understanding topics, better grades and test preparation.",
+      "program_uz": [
+        "Kasrlar va foizlar",
+        "Tenglamalar",
+        "Geometriya asoslari",
+        "Nazorat ishiga tayyorgarlik"
+      ],
+      "program_ru": ["Дроби и проценты", "Уравнения", "Основы геометрии", "Подготовка к контрольным"],
+      "program_en": ["Fractions and percentages", "Equations", "Geometry basics", "Test preparation"],
+      "level_from": 1,
+      "level_to": 3,
+      "age_group": "teens",
+      "duration_months": 9,
+      "lessons_per_week": 3,
+      "lesson_minutes": 90,
+      "price_monthly": 600000,
+      "is_featured": false,
+      "is_active": true,
+      "sort": 6
+    },
+    {
+      "id": "4fb7f1ac-4b09-5b18-86e2-6240b5cfb62f",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "slug": "math-olympiad",
+      "title_uz": "Olimpiada matematikasi",
+      "title_ru": "Олимпиадная математика",
+      "title_en": "Olympiad Math",
+      "description_uz": "Kuchli oʻquvchilar uchun: nostandart masalalar, kombinatorika va sonlar nazariyasi. Tuman va shahar olimpiadalariga tayyorlov.",
+      "description_ru": "Для сильных учеников: нестандартные задачи, комбинаторика и теория чисел. Подготовка к районным и городским олимпиадам.",
+      "description_en": "For strong students: non-standard problems, combinatorics and number theory. Preparation for district and city olympiads.",
+      "program_uz": [
+        "Sonlar nazariyasi",
+        "Kombinatorika",
+        "Olimpiada geometriyasi",
+        "Har oy sinov olimpiadasi"
+      ],
+      "program_ru": [
+        "Теория чисел",
+        "Комбинаторика",
+        "Олимпиадная геометрия",
+        "Пробная олимпиада каждый месяц"
+      ],
+      "program_en": ["Number theory", "Combinatorics", "Olympiad geometry", "Monthly mock olympiad"],
+      "level_from": 3,
+      "level_to": 4,
+      "age_group": "teens",
+      "duration_months": 9,
+      "lessons_per_week": 2,
+      "lesson_minutes": 120,
+      "price_monthly": 800000,
+      "is_featured": true,
+      "is_active": true,
+      "sort": 7
+    },
+    {
+      "id": "65d39742-3e14-5a14-8fb1-0bdc80f792ee",
+      "direction_id": "f2984929-1aa3-5c42-830e-f05b7c4787ef",
+      "slug": "abiturient-dtm",
+      "title_uz": "Abituriyent: DTM tayyorlov",
+      "title_ru": "Абитуриент: подготовка к DTM",
+      "title_en": "University Entrance Prep",
+      "description_uz": "Oliy oʻquv yurtiga kirish testlariga tayyorlov: matematika va asosiy fan, haftalik DTM formatidagi sinov testlari.",
+      "description_ru": "Подготовка к вступительным тестам в вуз: математика и профильный предмет, еженедельные пробные тесты в формате DTM.",
+      "description_en": "Preparation for university entrance tests: math and a core subject, weekly mock tests in DTM format.",
+      "program_uz": [
+        "Matematika: barcha mavzular",
+        "Asosiy fan boʻyicha chuqur tayyorlov",
+        "Haftalik DTM sinov testi",
+        "Vaqtni boshqarish strategiyasi"
+      ],
+      "program_ru": [
+        "Математика: все темы",
+        "Углублённая подготовка по профильному предмету",
+        "Еженедельный пробный тест DTM",
+        "Стратегия управления временем"
+      ],
+      "program_en": [
+        "Math: all topics",
+        "In-depth core subject preparation",
+        "Weekly DTM mock test",
+        "Time management strategy"
+      ],
+      "level_from": 1,
+      "level_to": 4,
+      "age_group": "teens",
+      "duration_months": 8,
+      "lessons_per_week": 5,
+      "lesson_minutes": 120,
+      "price_monthly": 900000,
+      "is_featured": true,
+      "is_active": true,
+      "sort": 8
+    },
+    {
+      "id": "18083b86-7cf9-55e4-aa19-dcfd9efbcc61",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "slug": "python-kids",
+      "title_uz": "Bolalar uchun Python",
+      "title_ru": "Python для детей",
+      "title_en": "Python for Kids",
+      "description_uz": "9–13 yoshli bolalar uchun: oʻyinlar yaratish orqali dasturlash mantiqini oʻrganish.",
+      "description_ru": "Для детей 9–13 лет: изучаем логику программирования, создавая игры.",
+      "description_en": "For kids aged 9–13: learning programming logic by building games.",
+      "program_uz": [
+        "Scratchʼdan Pythonʼga",
+        "Oʻzgaruvchilar va sikllar",
+        "Birinchi oʻyin",
+        "Yakuniy loyiha taqdimoti"
+      ],
+      "program_ru": ["От Scratch к Python", "Переменные и циклы", "Первая игра", "Защита итогового проекта"],
+      "program_en": [
+        "From Scratch to Python",
+        "Variables and loops",
+        "Your first game",
+        "Final project demo"
+      ],
+      "level_from": 1,
+      "level_to": 4,
+      "age_group": "kids",
+      "duration_months": 6,
+      "lessons_per_week": 2,
+      "lesson_minutes": 90,
+      "price_monthly": 700000,
+      "is_featured": false,
+      "is_active": true,
+      "sort": 9
+    },
+    {
+      "id": "2c192603-8961-5378-ba4a-328714a7bd36",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "slug": "frontend",
+      "title_uz": "Frontend dasturlash",
+      "title_ru": "Frontend-разработка",
+      "title_en": "Frontend Development",
+      "description_uz": "HTML, CSS, JavaScript va React: noldan portfolio bilan ishga tayyor darajagacha.",
+      "description_ru": "HTML, CSS, JavaScript и React: с нуля до готового к работе уровня с портфолио.",
+      "description_en": "HTML, CSS, JavaScript and React: from zero to job-ready with a portfolio.",
+      "program_uz": ["HTML va CSS", "JavaScript asoslari", "React", "Portfolio uchun 3 ta loyiha"],
+      "program_ru": ["HTML и CSS", "Основы JavaScript", "React", "3 проекта для портфолио"],
+      "program_en": ["HTML and CSS", "JavaScript basics", "React", "3 portfolio projects"],
+      "level_from": 1,
+      "level_to": 4,
+      "age_group": "adults",
+      "duration_months": 8,
+      "lessons_per_week": 3,
+      "lesson_minutes": 120,
+      "price_monthly": 1200000,
+      "is_featured": true,
+      "is_active": true,
+      "sort": 10
+    },
+    {
+      "id": "e402162c-c535-5621-be69-72e265447ec8",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "slug": "backend-python",
+      "title_uz": "Backend: Python va Django",
+      "title_ru": "Backend: Python и Django",
+      "title_en": "Backend: Python and Django",
+      "description_uz": "Server dasturlash: Python, maʼlumotlar bazasi, API va deploy. Real loyiha jamoada.",
+      "description_ru": "Серверная разработка: Python, базы данных, API и деплой. Реальный проект в команде.",
+      "description_en": "Server-side development: Python, databases, APIs and deployment. A real team project.",
+      "program_uz": ["Python asoslari", "SQL va PostgreSQL", "Django va REST API", "Jamoaviy loyiha"],
+      "program_ru": ["Основы Python", "SQL и PostgreSQL", "Django и REST API", "Командный проект"],
+      "program_en": ["Python basics", "SQL and PostgreSQL", "Django and REST APIs", "Team project"],
+      "level_from": 1,
+      "level_to": 4,
+      "age_group": "adults",
+      "duration_months": 8,
+      "lessons_per_week": 3,
+      "lesson_minutes": 120,
+      "price_monthly": 1200000,
+      "is_featured": false,
+      "is_active": true,
+      "sort": 11
+    },
+    {
+      "id": "dc35a07a-464b-5088-a48d-6d2e37fc0edb",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "slug": "ui-ux-design",
+      "title_uz": "UI/UX dizayn",
+      "title_ru": "UI/UX-дизайн",
+      "title_en": "UI/UX Design",
+      "description_uz": "Figmaʼda ilova va saytlar dizayni: foydalanuvchi tadqiqoti, prototip va portfolio.",
+      "description_ru": "Дизайн приложений и сайтов в Figma: исследование пользователей, прототип и портфолио.",
+      "description_en": "App and web design in Figma: user research, prototyping and a portfolio.",
+      "program_uz": ["Dizayn asoslari va kompozitsiya", "Figma", "UX tadqiqot va prototip", "Portfolio keys"],
+      "program_ru": [
+        "Основы дизайна и композиция",
+        "Figma",
+        "UX-исследование и прототип",
+        "Кейс для портфолио"
+      ],
+      "program_en": [
+        "Design basics and composition",
+        "Figma",
+        "UX research and prototyping",
+        "Portfolio case study"
+      ],
+      "level_from": 1,
+      "level_to": 4,
+      "age_group": "adults",
+      "duration_months": 5,
+      "lessons_per_week": 3,
+      "lesson_minutes": 120,
+      "price_monthly": 1000000,
+      "is_featured": false,
+      "is_active": true,
+      "sort": 12
+    }
+  ],
+  "teachers": [
+    {
+      "id": "82471ce5-f420-5c9a-a527-f6e47b3382ff",
+      "full_name": "Dilnoza Karimova",
+      "photo_url": null,
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "experience_years": 7,
+      "certificates": ["IELTS 8.5", "CELTA"],
+      "bio_uz": "IELTS boʻyicha 300 dan ortiq oʻquvchini 7.0+ natijaga olib chiqqan. Darslarida koʻproq gapirtiradi.",
+      "bio_ru": "Подготовила более 300 учеников к IELTS 7.0+. На уроках больше всего говорят ученики.",
+      "bio_en": "Has taken 300+ students to IELTS 7.0+. In her lessons, students do most of the talking.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 1
+    },
+    {
+      "id": "6b1e2012-e4ce-5d5e-b5cf-6785c31dc479",
+      "full_name": "Jasur Toshmatov",
+      "photo_url": null,
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "experience_years": 5,
+      "certificates": ["IELTS 8.0", "TKT"],
+      "bio_uz": "Bolalar va oʻsmirlar bilan ishlaydi. Oʻyin va loyihalar orqali oʻqitadi.",
+      "bio_ru": "Работает с детьми и подростками. Учит через игры и проекты.",
+      "bio_en": "Works with kids and teens. Teaches through games and projects.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 2
+    },
+    {
+      "id": "3b68749e-b967-5c55-bfb1-e64b8bb698b2",
+      "full_name": "Svetlana Kim",
+      "photo_url": null,
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "experience_years": 12,
+      "certificates": ["Rus filologiyasi magistri"],
+      "bio_uz": "12 yillik tajriba. Grammatikani jadval va misollar bilan oson tushuntiradi.",
+      "bio_ru": "12 лет опыта. Объясняет грамматику просто — через схемы и примеры.",
+      "bio_en": "12 years of experience. Makes grammar simple with charts and examples.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 3
+    },
+    {
+      "id": "9739d1d5-82d9-5b96-9b56-ad15cc00a50b",
+      "full_name": "Bekzod Yusupov",
+      "photo_url": null,
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "experience_years": 9,
+      "certificates": ["Respublika olimpiadasi gʻolibi", "Olimpiada murabbiyi"],
+      "bio_uz": "Oʻquvchilari shahar olimpiadalarida 40 dan ortiq sovrin olgan.",
+      "bio_ru": "Его ученики взяли более 40 призов на городских олимпиадах.",
+      "bio_en": "His students have won 40+ prizes at city olympiads.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 4
+    },
+    {
+      "id": "1e261434-fb9b-5424-8eea-d7cd7ba744de",
+      "full_name": "Malika Ergasheva",
+      "photo_url": null,
+      "direction_id": "f2984929-1aa3-5c42-830e-f05b7c4787ef",
+      "experience_years": 8,
+      "certificates": ["DTM 189 ball", "Pedagogika magistri"],
+      "bio_uz": "Abituriyentlarni DTM formatida tayyorlaydi; har hafta sinov testi va tahlil.",
+      "bio_ru": "Готовит абитуриентов в формате DTM: еженедельный пробный тест и разбор.",
+      "bio_en": "Prepares applicants in DTM format: a weekly mock test with review.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 5
+    },
+    {
+      "id": "2be5d7fe-8198-557e-9610-5e008cb2f064",
+      "full_name": "Sardor Aliyev",
+      "photo_url": null,
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "experience_years": 6,
+      "certificates": ["Senior Frontend Developer", "React"],
+      "bio_uz": "Mahalliy IT kompaniyada senior frontend dasturchi. Darsda real loyihalar ustida ishlaydi.",
+      "bio_ru": "Senior frontend-разработчик в местной IT-компании. На уроках — реальные проекты.",
+      "bio_en": "Senior frontend developer at a local IT company. Lessons are built around real projects.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 6
+    },
+    {
+      "id": "f812e01f-7a3c-55b7-8e6a-861c0cd23d3a",
+      "full_name": "Nodira Saidova",
+      "photo_url": null,
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "experience_years": 5,
+      "certificates": ["Product Designer", "Google UX Certificate"],
+      "bio_uz": "Mahsulot dizayneri. 20 dan ortiq ilova va sayt dizaynini yaratgan.",
+      "bio_ru": "Продуктовый дизайнер. Создала дизайн более 20 приложений и сайтов.",
+      "bio_en": "Product designer. Has designed 20+ apps and websites.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 7
+    },
+    {
+      "id": "42138d41-2d18-58d3-9463-353b0e73fdd1",
+      "full_name": "Timur Abdullayev",
+      "photo_url": null,
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "experience_years": 7,
+      "certificates": ["Python Developer", "Django"],
+      "bio_uz": "Backend dasturchi va bolalar uchun Python oʻqituvchisi. Murakkabni oddiy tilda tushuntiradi.",
+      "bio_ru": "Backend-разработчик и преподаватель Python для детей. Объясняет сложное простым языком.",
+      "bio_en": "Backend developer and Python teacher for kids. Explains complex things in plain words.",
+      "video_url": null,
+      "is_active": true,
+      "sort": 8
+    }
+  ],
+  "faq": [
+    {
+      "id": "bb785886-72ed-598a-9f0b-b92d6c20e4a2",
+      "question_uz": "Sinov darsi haqiqatan bepulmi?",
+      "question_ru": "Пробный урок действительно бесплатный?",
+      "question_en": "Is the trial lesson really free?",
+      "answer_uz": "Ha, birinchi sinov darsi toʻliq bepul va hech qanday majburiyat yoʻq. Darsdan keyin oʻzingiz qaror qilasiz.",
+      "answer_ru": "Да, первый пробный урок полностью бесплатный и ни к чему не обязывает. После урока вы решаете сами.",
+      "answer_en": "Yes, the first trial lesson is completely free with no obligation. You decide after the lesson.",
+      "is_active": true,
+      "sort": 1
+    },
+    {
+      "id": "dda0ba00-6f70-5409-bceb-96cc7c29c47d",
+      "question_uz": "Narxlar qancha?",
+      "question_ru": "Сколько стоит обучение?",
+      "question_en": "How much do courses cost?",
+      "answer_uz": "Kurslar oyiga 550 000 soʻmdan 1 200 000 soʻmgacha. Aniq narx kurs sahifasida koʻrsatilgan.",
+      "answer_ru": "Курсы стоят от 550 000 до 1 200 000 сумов в месяц. Точная цена указана на странице курса.",
+      "answer_en": "Courses cost from 550,000 to 1,200,000 UZS per month. The exact price is on each course page.",
+      "is_active": true,
+      "sort": 2
+    },
+    {
+      "id": "981caf21-3a4a-539a-826b-2baf1fd84ce4",
+      "question_uz": "Boʻlib toʻlash mumkinmi?",
+      "question_ru": "Можно ли платить частями?",
+      "question_en": "Can I pay in instalments?",
+      "answer_uz": "Ha, toʻlov har oy amalga oshiriladi. 3 oy uchun oldindan toʻlasangiz — 10% chegirma.",
+      "answer_ru": "Да, оплата помесячная. При оплате за 3 месяца вперёд — скидка 10%.",
+      "answer_en": "Yes, payment is monthly. Pay for 3 months upfront and get 10% off.",
+      "is_active": true,
+      "sort": 3
+    },
+    {
+      "id": "707f00ac-23f4-5dae-827e-cd395d3dce59",
+      "question_uz": "Chegirmalar bormi?",
+      "question_ru": "Есть ли скидки?",
+      "question_en": "Are there any discounts?",
+      "answer_uz": "Aka-uka va opa-singillar uchun ikkinchi farzandga 15% chegirma. Doʻstini olib kelgan oʻquvchiga 1 hafta bepul.",
+      "answer_ru": "Для братьев и сестёр — скидка 15% на второго ребёнка. Привёл друга — неделя обучения бесплатно.",
+      "answer_en": "Siblings get 15% off for the second child. Bring a friend and get one week free.",
+      "is_active": true,
+      "sort": 4
+    },
+    {
+      "id": "ff9b8467-abb3-52da-963f-065df6e84456",
+      "question_uz": "Guruhda nechta oʻquvchi boʻladi?",
+      "question_ru": "Сколько учеников в группе?",
+      "question_en": "How many students are in a group?",
+      "answer_uz": "Guruhlarda 8 tadan 12 tagacha oʻquvchi. Bolalar guruhlarida — 10 tagacha.",
+      "answer_ru": "В группах от 8 до 12 учеников. В детских группах — до 10.",
+      "answer_en": "Groups have 8 to 12 students. Kids' groups have up to 10.",
+      "is_active": true,
+      "sort": 5
+    },
+    {
+      "id": "e868df43-19a7-5024-a8ba-c65848299691",
+      "question_uz": "Agar natija boʻlmasa-chi?",
+      "question_ru": "А если не будет результата?",
+      "question_en": "What if I don't see results?",
+      "answer_uz": "Birinchi oy oxirida oʻquvchi darajasi tekshiriladi. Natija boʻlmasa, keyingi oy bepul.",
+      "answer_ru": "В конце первого месяца проверяем уровень. Если результата нет — следующий месяц бесплатно.",
+      "answer_en": "We check the student's level at the end of the first month. No progress means the next month is free.",
+      "is_active": true,
+      "sort": 6
+    },
+    {
+      "id": "23c35479-5814-5ada-8961-3e0a415c9c17",
+      "question_uz": "Darslar qaysi tilda oʻtadi?",
+      "question_ru": "На каком языке проходят занятия?",
+      "question_en": "What language are classes taught in?",
+      "answer_uz": "Tushuntirishlar oʻzbek yoki rus tilida — guruh tanlovingizga qarab. Til kurslarida asosiy amaliyot oʻqitilayotgan tilda.",
+      "answer_ru": "Объяснения на узбекском или русском — по выбору группы. На языковых курсах основная практика — на изучаемом языке.",
+      "answer_en": "Explanations are in Uzbek or Russian depending on the group. Language courses practise mostly in the target language.",
+      "is_active": true,
+      "sort": 7
+    },
+    {
+      "id": "ce03baa4-0088-5294-b09f-5b43ef53abe7",
+      "question_uz": "Darsni oʻtkazib yuborsam nima boʻladi?",
+      "question_ru": "Что если я пропущу урок?",
+      "question_en": "What if I miss a class?",
+      "answer_uz": "Har bir dars yozib olinadi va Telegram guruhga yuboriladi. Oʻqituvchi bilan qoʻshimcha konsultatsiya ham bor.",
+      "answer_ru": "Каждый урок записывается и отправляется в Telegram-группу. Есть дополнительные консультации с преподавателем.",
+      "answer_en": "Every lesson is recorded and shared in the Telegram group. Extra consultations with the teacher are available.",
+      "is_active": true,
+      "sort": 8
+    },
+    {
+      "id": "2aafc4dc-5f0a-5def-8093-b1a4b269d35f",
+      "question_uz": "Qaysi filial menga yaqin?",
+      "question_ru": "Какой филиал ближе ко мне?",
+      "question_en": "Which branch is closest to me?",
+      "answer_uz": "Bizda 3 ta filial bor: Chilonzor (Novza metro), Yunusobod (Yunusobod metro) va Mirzo Ulugʻbek (Buyuk Ipak Yoʻli metro).",
+      "answer_ru": "У нас 3 филиала: Чиланзар (метро Новза), Юнусабад (метро Юнусабад) и Мирзо-Улугбек (метро Буюк Ипак Йули).",
+      "answer_en": "We have 3 branches: Chilanzar (Novza metro), Yunusabad (Yunusabad metro) and Mirzo Ulugbek (Buyuk Ipak Yuli metro).",
+      "is_active": true,
+      "sort": 9
+    },
+    {
+      "id": "b195100d-3871-5855-aa0d-097862692dc7",
+      "question_uz": "Necha yoshdan qabul qilasiz?",
+      "question_ru": "С какого возраста принимаете?",
+      "question_en": "From what age do you accept students?",
+      "answer_uz": "7 yoshdan boshlab. 7–11 yoshli bolalar uchun alohida oʻyin uslubidagi kurslar bor.",
+      "answer_ru": "С 7 лет. Для детей 7–11 лет есть отдельные курсы в игровом формате.",
+      "answer_en": "From age 7. Children aged 7–11 have separate game-based courses.",
+      "is_active": true,
+      "sort": 10
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "52b1c7d1-6edb-556e-99c1-8d45213192ab",
+      "name": "Aziz, 17",
+      "direction_id": "3d9dfaa8-f733-56a5-93ed-c1d33309ce7f",
+      "achievement_uz": "IELTS 7.5",
+      "achievement_ru": "IELTS 7.5",
+      "achievement_en": "IELTS 7.5",
+      "text_uz": "4 oyda 5.5 dan 7.5 ga chiqdim. Har hafta mock test eng koʻp yordam berdi.",
+      "text_ru": "За 4 месяца поднялся с 5.5 до 7.5. Больше всего помогли еженедельные mock-тесты.",
+      "text_en": "I went from 5.5 to 7.5 in 4 months. The weekly mock tests helped the most.",
+      "photo_url": null,
+      "video_url": null,
+      "is_demo": true,
+      "is_active": true,
+      "sort": 1
+    },
+    {
+      "id": "a374435a-299b-55ab-bf3b-4b7182730b8e",
+      "name": "Madina, 15",
+      "direction_id": "90060f64-a2a0-5c61-ab44-b1d47ca6204f",
+      "achievement_uz": "Shahar olimpiadasi, 2-oʻrin",
+      "achievement_ru": "Городская олимпиада, 2 место",
+      "achievement_en": "City olympiad, 2nd place",
+      "text_uz": "Oldin olimpiada masalalaridan qoʻrqardim, endi ularni yechish eng qiziq mashgʻulotim.",
+      "text_ru": "Раньше боялась олимпиадных задач, теперь это моё любимое занятие.",
+      "text_en": "I used to be afraid of olympiad problems — now solving them is my favourite thing.",
+      "photo_url": null,
+      "video_url": null,
+      "is_demo": true,
+      "is_active": true,
+      "sort": 2
+    },
+    {
+      "id": "e875ef80-fa15-5717-8d84-822732bf98cf",
+      "name": "Sevara opa (ota-ona)",
+      "direction_id": "60bf96cc-a38b-5ba1-92a8-cdd378acf402",
+      "achievement_uz": "Oʻgʻli 3 oyda erkin gapira boshladi",
+      "achievement_ru": "Сын за 3 месяца заговорил свободно",
+      "achievement_en": "Her son speaks freely after 3 months",
+      "text_uz": "Oʻgʻlim maktabda rus tilidan qiynalardi. 3 oyda baholari 5 ga chiqdi, endi oʻzi kitob oʻqiydi.",
+      "text_ru": "Сыну было тяжело с русским в школе. За 3 месяца оценки выросли до пятёрок, теперь он сам читает книги.",
+      "text_en": "My son struggled with Russian at school. In 3 months his grades went up to top marks and now he reads books himself.",
+      "photo_url": null,
+      "video_url": null,
+      "is_demo": true,
+      "is_active": true,
+      "sort": 3
+    },
+    {
+      "id": "5e454aa7-4524-5bbd-a8c9-e253d958964f",
+      "name": "Javohir, 22",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "achievement_uz": "Junior Frontend dasturchi",
+      "achievement_ru": "Junior Frontend-разработчик",
+      "achievement_en": "Junior Frontend Developer",
+      "text_uz": "Kurs tugashidan oldin portfoliodagi loyiham bilan ishga qabul qilindim.",
+      "text_ru": "Меня взяли на работу ещё до окончания курса — благодаря проекту из портфолио.",
+      "text_en": "I got hired before the course ended thanks to my portfolio project.",
+      "photo_url": null,
+      "video_url": null,
+      "is_demo": true,
+      "is_active": true,
+      "sort": 4
+    },
+    {
+      "id": "1b487788-3253-5067-af03-8e0e43bdc850",
+      "name": "Shahzoda, 18",
+      "direction_id": "f2984929-1aa3-5c42-830e-f05b7c4787ef",
+      "achievement_uz": "DTM: 184 ball, grant",
+      "achievement_ru": "DTM: 184 балла, грант",
+      "achievement_en": "DTM: 184 points, scholarship",
+      "text_uz": "Haftalik sinov testlari imtihonda hayajonni yoʻqotdi. Grant asosida oʻqishga kirdim.",
+      "text_ru": "Еженедельные пробные тесты сняли волнение на экзамене. Поступила на грант.",
+      "text_en": "Weekly mock tests took away my exam nerves. I got into university on a scholarship.",
+      "photo_url": null,
+      "video_url": null,
+      "is_demo": true,
+      "is_active": true,
+      "sort": 5
+    },
+    {
+      "id": "82b65b67-b02b-5cc9-8185-71d62565aeb3",
+      "name": "Bobur, 10",
+      "direction_id": "dc56114b-9383-52c0-a3c1-1c10fa0c5682",
+      "achievement_uz": "Birinchi oʻyinini yaratdi",
+      "achievement_ru": "Создал свою первую игру",
+      "achievement_en": "Built his first game",
+      "text_uz": "Pythonʼda oʻzim oʻyin yasadim va uni doʻstlarimga koʻrsatdim!",
+      "text_ru": "Я сам сделал игру на Python и показал её друзьям!",
+      "text_en": "I made my own game in Python and showed it to my friends!",
+      "photo_url": null,
+      "video_url": null,
+      "is_demo": true,
+      "is_active": true,
+      "sort": 6
+    }
+  ],
+  "groups": [
+    {
+      "id": "212b9bec-8fd8-5f15-a37a-cc7a3c69804e",
+      "course_id": "6e7b5e70-6988-535e-8617-ad5a71f09dea",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "6b1e2012-e4ce-5d5e-b5cf-6785c31dc479",
+      "start_in_days": 8,
+      "schedule_text_uz": "Se, Pa, Sha · 18:00–19:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 18:00–19:30",
+      "schedule_text_en": "Tue, Thu, Sat · 18:00–19:30",
+      "capacity": 12,
+      "enrolled_count": 10,
+      "is_open": true
+    },
+    {
+      "id": "5e3a654e-d246-554c-aed9-d56de499ff06",
+      "course_id": "6e7b5e70-6988-535e-8617-ad5a71f09dea",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "6b1e2012-e4ce-5d5e-b5cf-6785c31dc479",
+      "start_in_days": 20,
+      "schedule_text_uz": "Du, Chor, Ju · 10:00–11:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 10:00–11:30",
+      "schedule_text_en": "Mon, Wed, Fri · 10:00–11:30",
+      "capacity": 12,
+      "enrolled_count": 4,
+      "is_open": true
+    },
+    {
+      "id": "aa1fc4a4-d182-5398-aec3-efb7aa9cbf5c",
+      "course_id": "909bcd3e-b1af-5e41-b37f-c90fa034295e",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "82471ce5-f420-5c9a-a527-f6e47b3382ff",
+      "start_in_days": 13,
+      "schedule_text_uz": "Du, Chor, Ju · 10:00–11:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 10:00–11:30",
+      "schedule_text_en": "Mon, Wed, Fri · 10:00–11:30",
+      "capacity": 12,
+      "enrolled_count": 11,
+      "is_open": true
+    },
+    {
+      "id": "c13df85e-004b-5eb8-947a-5bd08d54140e",
+      "course_id": "909bcd3e-b1af-5e41-b37f-c90fa034295e",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "82471ce5-f420-5c9a-a527-f6e47b3382ff",
+      "start_in_days": 23,
+      "schedule_text_uz": "Se, Pa, Sha · 15:00–16:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 15:00–16:30",
+      "schedule_text_en": "Tue, Thu, Sat · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 5,
+      "is_open": true
+    },
+    {
+      "id": "0c9e3cda-f636-5192-9bd2-5e5a2fd6153e",
+      "course_id": "1f1e6315-b586-5e51-9d22-22796d58334f",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "6b1e2012-e4ce-5d5e-b5cf-6785c31dc479",
+      "start_in_days": 6,
+      "schedule_text_uz": "Se, Pa, Sha · 15:00–16:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 15:00–16:30",
+      "schedule_text_en": "Tue, Thu, Sat · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 9,
+      "is_open": true
+    },
+    {
+      "id": "f2a281f9-b77c-53c0-b051-0638a1e50936",
+      "course_id": "1f1e6315-b586-5e51-9d22-22796d58334f",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "6b1e2012-e4ce-5d5e-b5cf-6785c31dc479",
+      "start_in_days": 26,
+      "schedule_text_uz": "Du, Chor, Ju · 15:00–16:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 15:00–16:30",
+      "schedule_text_en": "Mon, Wed, Fri · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 6,
+      "is_open": true
+    },
+    {
+      "id": "c5c9ba9e-36e0-5927-a2c0-3c95128da391",
+      "course_id": "5e772d1f-51f2-5204-90aa-3d14767dd8ad",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "3b68749e-b967-5c55-bfb1-e64b8bb698b2",
+      "start_in_days": 11,
+      "schedule_text_uz": "Du, Chor, Ju · 15:00–16:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 15:00–16:30",
+      "schedule_text_en": "Mon, Wed, Fri · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 10,
+      "is_open": true
+    },
+    {
+      "id": "eff3fa35-3334-59ec-b7aa-ef32ee798dc5",
+      "course_id": "5e772d1f-51f2-5204-90aa-3d14767dd8ad",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "3b68749e-b967-5c55-bfb1-e64b8bb698b2",
+      "start_in_days": 19,
+      "schedule_text_uz": "Se, Pa, Sha · 18:00–19:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 18:00–19:30",
+      "schedule_text_en": "Tue, Thu, Sat · 18:00–19:30",
+      "capacity": 12,
+      "enrolled_count": 7,
+      "is_open": true
+    },
+    {
+      "id": "e471b8b4-944b-55f8-9192-a1a66d319446",
+      "course_id": "da41f88b-88e8-5f62-a93c-03bd08e6ad41",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "3b68749e-b967-5c55-bfb1-e64b8bb698b2",
+      "start_in_days": 4,
+      "schedule_text_uz": "Se, Pa, Sha · 18:00–19:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 18:00–19:30",
+      "schedule_text_en": "Tue, Thu, Sat · 18:00–19:30",
+      "capacity": 12,
+      "enrolled_count": 11,
+      "is_open": true
+    },
+    {
+      "id": "f3d1b8c4-ab9f-5f8b-83a7-1ab411b406a8",
+      "course_id": "da41f88b-88e8-5f62-a93c-03bd08e6ad41",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "3b68749e-b967-5c55-bfb1-e64b8bb698b2",
+      "start_in_days": 22,
+      "schedule_text_uz": "Du, Chor, Ju · 10:00–11:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 10:00–11:30",
+      "schedule_text_en": "Mon, Wed, Fri · 10:00–11:30",
+      "capacity": 12,
+      "enrolled_count": 3,
+      "is_open": true
+    },
+    {
+      "id": "a6bfe830-f265-5574-9838-2b23e3515534",
+      "course_id": "eeba710b-08a3-5cd1-94da-699f6fa32b1a",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "9739d1d5-82d9-5b96-9b56-ad15cc00a50b",
+      "start_in_days": 9,
+      "schedule_text_uz": "Du, Chor, Ju · 10:00–11:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 10:00–11:30",
+      "schedule_text_en": "Mon, Wed, Fri · 10:00–11:30",
+      "capacity": 12,
+      "enrolled_count": 9,
+      "is_open": true
+    },
+    {
+      "id": "ac38c701-2703-5773-be1f-a43b1a15c241",
+      "course_id": "eeba710b-08a3-5cd1-94da-699f6fa32b1a",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "9739d1d5-82d9-5b96-9b56-ad15cc00a50b",
+      "start_in_days": 25,
+      "schedule_text_uz": "Se, Pa, Sha · 15:00–16:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 15:00–16:30",
+      "schedule_text_en": "Tue, Thu, Sat · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 4,
+      "is_open": true
+    },
+    {
+      "id": "30ea569b-966b-5c16-a35d-5e06b6a503b3",
+      "course_id": "4fb7f1ac-4b09-5b18-86e2-6240b5cfb62f",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "9739d1d5-82d9-5b96-9b56-ad15cc00a50b",
+      "start_in_days": 14,
+      "schedule_text_uz": "Se, Pa, Sha · 15:00–16:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 15:00–16:30",
+      "schedule_text_en": "Tue, Thu, Sat · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 10,
+      "is_open": true
+    },
+    {
+      "id": "c12b7459-f7aa-53a9-9149-7bcb0bc2ad32",
+      "course_id": "4fb7f1ac-4b09-5b18-86e2-6240b5cfb62f",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "9739d1d5-82d9-5b96-9b56-ad15cc00a50b",
+      "start_in_days": 18,
+      "schedule_text_uz": "Du, Chor, Ju · 15:00–16:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 15:00–16:30",
+      "schedule_text_en": "Mon, Wed, Fri · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 5,
+      "is_open": true
+    },
+    {
+      "id": "653a7123-3bdc-571a-b0ae-7936749d38b2",
+      "course_id": "65d39742-3e14-5a14-8fb1-0bdc80f792ee",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "1e261434-fb9b-5424-8eea-d7cd7ba744de",
+      "start_in_days": 7,
+      "schedule_text_uz": "Du, Chor, Ju · 15:00–16:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 15:00–16:30",
+      "schedule_text_en": "Mon, Wed, Fri · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 11,
+      "is_open": true
+    },
+    {
+      "id": "c29c1541-d7f6-5888-a797-d4ce63f263a2",
+      "course_id": "65d39742-3e14-5a14-8fb1-0bdc80f792ee",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "1e261434-fb9b-5424-8eea-d7cd7ba744de",
+      "start_in_days": 21,
+      "schedule_text_uz": "Se, Pa, Sha · 18:00–19:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 18:00–19:30",
+      "schedule_text_en": "Tue, Thu, Sat · 18:00–19:30",
+      "capacity": 12,
+      "enrolled_count": 6,
+      "is_open": true
+    },
+    {
+      "id": "d8ff7271-5301-5db9-a480-2cca9efbe161",
+      "course_id": "18083b86-7cf9-55e4-aa19-dcfd9efbcc61",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "2be5d7fe-8198-557e-9610-5e008cb2f064",
+      "start_in_days": 12,
+      "schedule_text_uz": "Se, Pa, Sha · 18:00–19:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 18:00–19:30",
+      "schedule_text_en": "Tue, Thu, Sat · 18:00–19:30",
+      "capacity": 12,
+      "enrolled_count": 9,
+      "is_open": true
+    },
+    {
+      "id": "d5fbdb40-5172-5cef-b38a-6c0cb788a6ed",
+      "course_id": "18083b86-7cf9-55e4-aa19-dcfd9efbcc61",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "2be5d7fe-8198-557e-9610-5e008cb2f064",
+      "start_in_days": 24,
+      "schedule_text_uz": "Du, Chor, Ju · 10:00–11:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 10:00–11:30",
+      "schedule_text_en": "Mon, Wed, Fri · 10:00–11:30",
+      "capacity": 12,
+      "enrolled_count": 7,
+      "is_open": true
+    },
+    {
+      "id": "eebfdc1d-312a-565a-ac23-a59a9ae47e16",
+      "course_id": "2c192603-8961-5378-ba4a-328714a7bd36",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "f812e01f-7a3c-55b7-8e6a-861c0cd23d3a",
+      "start_in_days": 5,
+      "schedule_text_uz": "Du, Chor, Ju · 10:00–11:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 10:00–11:30",
+      "schedule_text_en": "Mon, Wed, Fri · 10:00–11:30",
+      "capacity": 12,
+      "enrolled_count": 10,
+      "is_open": true
+    },
+    {
+      "id": "34ea0a00-d828-5682-93da-ad0020ff589d",
+      "course_id": "2c192603-8961-5378-ba4a-328714a7bd36",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "f812e01f-7a3c-55b7-8e6a-861c0cd23d3a",
+      "start_in_days": 17,
+      "schedule_text_uz": "Se, Pa, Sha · 15:00–16:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 15:00–16:30",
+      "schedule_text_en": "Tue, Thu, Sat · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 3,
+      "is_open": true
+    },
+    {
+      "id": "705356fa-c26e-51b5-af5e-15f28f65c2fd",
+      "course_id": "e402162c-c535-5621-be69-72e265447ec8",
+      "branch_id": "3cd5cd9f-5d94-5501-8b42-9a0940cc9520",
+      "teacher_id": "42138d41-2d18-58d3-9463-353b0e73fdd1",
+      "start_in_days": 10,
+      "schedule_text_uz": "Se, Pa, Sha · 15:00–16:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 15:00–16:30",
+      "schedule_text_en": "Tue, Thu, Sat · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 11,
+      "is_open": true
+    },
+    {
+      "id": "40038b80-0e31-51ca-937b-ca7894e87ed7",
+      "course_id": "e402162c-c535-5621-be69-72e265447ec8",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "42138d41-2d18-58d3-9463-353b0e73fdd1",
+      "start_in_days": 20,
+      "schedule_text_uz": "Du, Chor, Ju · 15:00–16:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 15:00–16:30",
+      "schedule_text_en": "Mon, Wed, Fri · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 4,
+      "is_open": true
+    },
+    {
+      "id": "161c8b3d-e3cc-505d-a6ae-e1c5da49a2a6",
+      "course_id": "dc35a07a-464b-5088-a48d-6d2e37fc0edb",
+      "branch_id": "ce9708b8-0538-577b-bedb-268c358965a2",
+      "teacher_id": "2be5d7fe-8198-557e-9610-5e008cb2f064",
+      "start_in_days": 3,
+      "schedule_text_uz": "Du, Chor, Ju · 15:00–16:30",
+      "schedule_text_ru": "Пн, Ср, Пт · 15:00–16:30",
+      "schedule_text_en": "Mon, Wed, Fri · 15:00–16:30",
+      "capacity": 12,
+      "enrolled_count": 9,
+      "is_open": true
+    },
+    {
+      "id": "67263d78-0dd5-5bf1-9f5d-8ecef3895ad8",
+      "course_id": "dc35a07a-464b-5088-a48d-6d2e37fc0edb",
+      "branch_id": "e2f23514-8e11-53bb-b219-7491e8540f74",
+      "teacher_id": "2be5d7fe-8198-557e-9610-5e008cb2f064",
+      "start_in_days": 23,
+      "schedule_text_uz": "Se, Pa, Sha · 18:00–19:30",
+      "schedule_text_ru": "Вт, Чт, Сб · 18:00–19:30",
+      "schedule_text_en": "Tue, Thu, Sat · 18:00–19:30",
+      "capacity": 12,
+      "enrolled_count": 5,
+      "is_open": true
+    }
+  ]
+}
