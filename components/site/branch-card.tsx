@@ -11,7 +11,7 @@ export async function BranchCard({ branch }: { branch: Branch }) {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations("branches");
   const linkClass =
-    "border-line inline-flex min-h-11 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold hover:bg-ink/5";
+    "border-line hover:bg-ink/5 flex min-h-12 items-center justify-center gap-1.5 rounded-xl border px-2 text-center text-sm leading-tight font-semibold";
 
   return (
     <article className="border-line flex h-full flex-col gap-4 rounded-[20px] border bg-white p-5">
@@ -30,32 +30,35 @@ export async function BranchCard({ branch }: { branch: Branch }) {
           <Clock className="text-brand mt-0.5 size-4 shrink-0" aria-hidden />
           <span>{pick(branch, "working_hours", locale)}</span>
         </li>
-        <li className="flex gap-2">
-          <Phone className="text-brand mt-0.5 size-4 shrink-0" aria-hidden />
-          <a href={telHref(branch.phone)} className="hover:text-ink underline-offset-2 hover:underline">
-            {formatUzPhone(branch.phone)}
-          </a>
-        </li>
       </ul>
-      <div className="mt-auto flex flex-wrap gap-2" aria-label={t("route")}>
+      <div className="mt-auto space-y-2">
         <a
-          href={yandexRouteLink(branch.lat, branch.lng)}
-          className={linkClass}
-          target="_blank"
-          rel="noopener"
+          href={telHref(branch.phone)}
+          className="bg-ink/5 hover:bg-ink/10 flex min-h-12 items-center justify-center gap-2 rounded-xl px-3 font-semibold tabular-nums"
         >
-          <Navigation className="size-4" aria-hidden />
-          {t("yandex")}
+          <Phone className="size-4" aria-hidden />
+          {formatUzPhone(branch.phone)}
         </a>
-        <a
-          href={googleRouteLink(branch.lat, branch.lng)}
-          className={linkClass}
-          target="_blank"
-          rel="noopener"
-        >
-          <Navigation className="size-4" aria-hidden />
-          {t("google")}
-        </a>
+        <div className="grid grid-cols-2 gap-2" aria-label={t("route")}>
+          <a
+            href={yandexRouteLink(branch.lat, branch.lng)}
+            className={linkClass}
+            target="_blank"
+            rel="noopener"
+          >
+            <Navigation className="size-4 shrink-0" aria-hidden />
+            {t("yandex")}
+          </a>
+          <a
+            href={googleRouteLink(branch.lat, branch.lng)}
+            className={linkClass}
+            target="_blank"
+            rel="noopener"
+          >
+            <Navigation className="size-4 shrink-0" aria-hidden />
+            {t("google")}
+          </a>
+        </div>
       </div>
     </article>
   );

@@ -35,9 +35,14 @@ import { Link } from "@/lib/i18n/navigation";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
 import { alternates } from "@/lib/seo";
-import { textOn } from "@/lib/utils";
+import { cn, textOn } from "@/lib/utils";
 
 export const revalidate = 60;
+
+// Telefonda ro'yxatlar gorizontal karusel: sahifa qisqaradi, keyingi karta chetdan ko'rinib turadi.
+const CAROUSEL =
+  "-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0";
+const SLIDE = "w-[85%] shrink-0 snap-start sm:w-auto";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
@@ -187,23 +192,24 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </ButtonLink>
         }
       >
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className={cn(CAROUSEL, "lg:grid-cols-3")}>
           {featured.map((c) => (
-            <CourseCard
-              key={c.id}
-              course={c}
-              direction={directionById.get(c.direction_id)}
-              nextGroup={nextGroupFor(c.id, groups)}
-            />
+            <div key={c.id} className={SLIDE}>
+              <CourseCard
+                course={c}
+                direction={directionById.get(c.direction_id)}
+                nextGroup={nextGroupFor(c.id, groups)}
+              />
+            </div>
           ))}
         </div>
       </Section>
 
       {/* Nega Zukkolab */}
       <Section title={t("whyTitle")} className="pt-0 md:pt-0">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4">
           {why.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="bg-brand/5 rounded-[20px] p-5">
+            <div key={title} className="bg-brand/5 rounded-[20px] p-4 md:p-5">
               <Icon className="text-brand size-7" aria-hidden />
               <h3 className="mt-4 font-semibold">{title}</h3>
               <p className="text-ink/75 mt-1 text-sm">{text}</p>
@@ -225,11 +231,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Natijalar */}
       <Section title={t("resultsTitle")} className="pt-0 md:pt-0">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className={cn(CAROUSEL, "lg:grid-cols-3")}>
           {testimonials.map((item) => (
             <figure
               key={item.id}
-              className="border-line flex flex-col gap-4 rounded-[20px] border bg-white p-5"
+              className={cn(SLIDE, "border-line flex flex-col gap-4 rounded-[20px] border bg-white p-5")}
             >
               <div className="flex flex-wrap items-center gap-2">
                 <Badge tone="brand">{pick(item, "achievement", locale)}</Badge>
@@ -251,9 +257,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         title={t("pricesTitle")}
         subtitle={t("pricesFrom", { price: formatAmount(minPrice, locale) })}
       >
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4">
           {prices.map((p) => (
-            <div key={p.title} className="border-line rounded-[20px] border bg-white p-5">
+            <div key={p.title} className="border-line rounded-[20px] border bg-white p-4 md:p-5">
               <h3 className="font-semibold">{p.title}</h3>
               <p className="text-muted mt-1 text-sm">{p.text}</p>
             </div>
@@ -263,9 +269,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Filiallar */}
       <Section title={t("branchesTitle")} subtitle={t("branchesSubtitle")} className="pt-0 md:pt-0">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className={cn(CAROUSEL, "sm:grid-cols-3")}>
           {branches.map((b) => (
-            <BranchCard key={b.id} branch={b} />
+            <div key={b.id} className={SLIDE}>
+              <BranchCard branch={b} />
+            </div>
           ))}
         </div>
       </Section>

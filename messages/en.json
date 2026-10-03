@@ -41,7 +41,8 @@
   "bottomBar": {
     "test": "Test",
     "trial": "Trial lesson",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "ask": "Ask"
   },
   "home": {
     "heroBadge": "First lesson is free",
@@ -256,11 +257,7 @@
     "loadingSlots": "Loading free times…",
     "noSlots": "No free times at this branch in the coming days — please pick another branch.",
     "fullName": "Your name",
-    "fullNameHint": "Parent or the student",
     "phone": "Phone number",
-    "studentName": "Student's name",
-    "studentNameHint": "If you're booking for your child",
-    "studentAge": "Student's age",
     "optional": "optional",
     "consent": "I agree to the processing of my personal data",
     "privacy": "Privacy policy",
@@ -271,7 +268,14 @@
     "network": "Connection lost. Your details are saved — please send again.",
     "retry": "Send again",
     "changeSlot": "Pick another time",
-    "tgContact": "📱 Use my Telegram number"
+    "tgContact": "📱 Use my Telegram number",
+    "forWhom": "Who is the lesson for?",
+    "forChild": "My child",
+    "forSelf": "Myself",
+    "childName": "Child’s name",
+    "childAge": "Age",
+    "parentName": "Your name",
+    "phoneHint": "Reminders and the manager’s call go to this number"
   },
   "thanks": {
     "title": "You're booked!",
