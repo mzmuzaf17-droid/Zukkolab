@@ -52,6 +52,8 @@ export function BookingWizard({
   const [phone, setPhone] = useState("");
   const [studentName, setStudentName] = useState("");
   const [studentAge, setStudentAge] = useState("");
+  // Ota-ona farzandini yozadimi yoki o'quvchi o'zini — farzand ismi va yoshi faqat birinchi holatda so'raladi.
+  const [forChild, setForChild] = useState(true);
   const [consent, setConsent] = useState(false);
   const [website, setWebsite] = useState("");
   const [errors, setErrors] = useState<Errors>({});
@@ -102,9 +104,9 @@ export function BookingWizard({
       case "phone":
         return isValidPhone(phone) ? undefined : tv("phone");
       case "studentName":
-        return !studentName || isValidName(studentName) ? undefined : tv("name");
+        return !forChild || isValidName(studentName) ? undefined : tv("name");
       case "studentAge": {
-        if (!studentAge) return undefined;
+        if (!forChild) return undefined;
         const n = Number(studentAge);
         return Number.isInteger(n) && n >= 3 && n <= 80 ? undefined : tv("age");
       }
@@ -132,8 +134,8 @@ export function BookingWizard({
           slotId: selectedSlot.id,
           fullName,
           phone,
-          studentName: studentName || undefined,
-          studentAge: studentAge ? Number(studentAge) : undefined,
+          studentName: forChild ? studentName : undefined,
+          studentAge: forChild ? Number(studentAge) : undefined,
           courseSlug: initial.course,
           testAttemptId: initial.attempt,
           demo: initial.demo,
@@ -346,7 +348,56 @@ export function BookingWizard({
               time: formatTime(selectedSlot.startsAt),
             })}
           </p>
-          <Field label={t("fullName")} hint={t("fullNameHint")} error={errors.fullName}>
+          <fieldset className="space-y-2">
+            <legend className="mb-2 text-sm font-semibold">{t("forWhom")}</legend>
+            <div className="grid grid-cols-2 gap-2">
+              {([true, false] as const).map((child) => (
+                <button
+                  key={String(child)}
+                  type="button"
+                  aria-pressed={forChild === child}
+                  onClick={() => {
+                    setForChild(child);
+                    setErrors((e) => ({ ...e, studentName: undefined, studentAge: undefined }));
+                  }}
+                  className={cn(
+                    "min-h-12 rounded-[14px] border-2 px-2 text-[15px] leading-tight font-semibold",
+                    forChild === child ? "border-brand bg-brand/5 text-brand" : "border-line bg-white",
+                  )}
+                >
+                  {child ? t("forChild") : t("forSelf")}
+                </button>
+              ))}
+            </div>
+          </fieldset>
+          {forChild && (
+            <div className="grid grid-cols-[1fr_96px] gap-3">
+              <Field label={t("childName")} error={errors.studentName}>
+                {(p) => (
+                  <input
+                    {...p}
+                    className={inputClass}
+                    value={studentName}
+                    onChange={(e) => setStudentName(e.target.value)}
+                    onBlur={() => blur("studentName")}
+                  />
+                )}
+              </Field>
+              <Field label={t("childAge")} error={errors.studentAge}>
+                {(p) => (
+                  <input
+                    {...p}
+                    className={inputClass}
+                    inputMode="numeric"
+                    value={studentAge}
+                    onChange={(e) => setStudentAge(e.target.value.replace(/\D/g, "").slice(0, 2))}
+                    onBlur={() => blur("studentAge")}
+                  />
+                )}
+              </Field>
+            </div>
+          )}
+          <Field label={forChild ? t("parentName") : t("fullName")} error={errors.fullName}>
             {(p) => (
               <input
                 {...p}
@@ -358,7 +409,7 @@ export function BookingWizard({
               />
             )}
           </Field>
-          <Field label={t("phone")} error={errors.phone}>
+          <Field label={t("phone")} hint={t("phoneHint")} error={errors.phone}>
             {(p) => <PhoneInput {...p} value={phone} onChange={setPhone} onBlur={() => blur("phone")} />}
           </Field>
           {webApp?.requestContact && (
@@ -378,36 +429,6 @@ export function BookingWizard({
               {t("tgContact")}
             </button>
           )}
-          <div className="grid gap-4 sm:grid-cols-[1fr_140px]">
-            <Field
-              label={t("studentName")}
-              hint={t("studentNameHint")}
-              optional={t("optional")}
-              error={errors.studentName}
-            >
-              {(p) => (
-                <input
-                  {...p}
-                  className={inputClass}
-                  value={studentName}
-                  onChange={(e) => setStudentName(e.target.value)}
-                  onBlur={() => blur("studentName")}
-                />
-              )}
-            </Field>
-            <Field label={t("studentAge")} optional={t("optional")} error={errors.studentAge}>
-              {(p) => (
-                <input
-                  {...p}
-                  className={inputClass}
-                  inputMode="numeric"
-                  value={studentAge}
-                  onChange={(e) => setStudentAge(e.target.value.replace(/\D/g, "").slice(0, 2))}
-                  onBlur={() => blur("studentAge")}
-                />
-              )}
-            </Field>
-          </div>
           <div className="space-y-1">
             <label className="flex min-h-11 items-start gap-3 text-sm">
               <input

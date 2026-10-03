@@ -257,11 +257,7 @@
     "loadingSlots": "Boʻsh vaqtlar yuklanmoqda…",
     "noSlots": "Bu filialda yaqin kunlarda boʻsh vaqt yoʻq — boshqa filialni tanlang.",
     "fullName": "Ismingiz",
-    "fullNameHint": "Ota-ona yoki oʻquvchining oʻzi",
     "phone": "Telefon raqami",
-    "studentName": "Oʻquvchi ismi",
-    "studentNameHint": "Agar farzandingizni yozayotgan boʻlsangiz",
-    "studentAge": "Oʻquvchi yoshi",
     "optional": "ixtiyoriy",
     "consent": "Shaxsiy maʼlumotlarim qayta ishlanishiga roziman",
     "privacy": "Maxfiylik siyosati",
@@ -272,7 +268,14 @@
     "network": "Internet uzildi. Maʼlumotlaringiz saqlandi — qayta yuboring.",
     "retry": "Qayta yuborish",
     "changeSlot": "Boshqa vaqt tanlash",
-    "tgContact": "📱 Telegramdagi raqamimni yuborish"
+    "tgContact": "📱 Telegramdagi raqamimni yuborish",
+    "forWhom": "Kim uchun yozilyapsiz?",
+    "forChild": "Farzandim uchun",
+    "forSelf": "Oʻzim uchun",
+    "childName": "Farzandingiz ismi",
+    "childAge": "Yoshi",
+    "parentName": "Sizning ismingiz",
+    "phoneHint": "Eslatmalar va menejer qoʻngʻirogʻi shu raqamga"
   },
   "thanks": {
     "title": "Siz yozildingiz!",

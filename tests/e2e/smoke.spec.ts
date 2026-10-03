@@ -9,7 +9,11 @@ test("sinov darsiga yozilish: yo'nalish → vaqt → forma → rahmat", async ({
   await page.locator("fieldset").nth(1).locator("button[aria-pressed]").first().click({ timeout: 15_000 });
   await page.getByRole("button", { name: "Davom etish" }).click();
 
-  await page.getByLabel("Ismingiz").fill("Test Ota-ona");
+  // Standart — "Farzandim uchun": farzand ismi va yoshi majburiy.
+  await expect(page.getByRole("button", { name: "Farzandim uchun" })).toHaveAttribute("aria-pressed", "true");
+  await page.getByLabel("Farzandingiz ismi").fill("Ali");
+  await page.getByLabel("Yoshi").fill("10");
+  await page.getByLabel("Sizning ismingiz").fill("Test Ota-ona");
   await page.getByLabel("Telefon raqami").fill("901234567");
   await page.getByRole("checkbox").check();
   await page.getByRole("button", { name: "Yozilish" }).click();
@@ -44,6 +48,17 @@ test("AI yordamchi: tayyor savolga javob va harakat tugmasi", async ({ page }) =
   await page.getByRole("button", { name: "Сколько стоит обучение?" }).click();
   await expect(page.getByRole("dialog").getByText(/550\s000/)).toBeVisible();
   await expect(page.getByRole("link", { name: "Записаться на пробный урок" }).last()).toBeVisible();
+});
+
+test("telefon menyusi butun ekranni egallaydi va fon shaffof emas", async ({ page }) => {
+  await page.goto("/uz");
+  await page.getByRole("button", { name: /menyu/i }).first().click();
+  const menu = page.getByRole("dialog");
+  await expect(menu).toBeVisible();
+  const box = await menu.boundingBox();
+  const vp = page.viewportSize()!;
+  expect(box!.height).toBeGreaterThanOrEqual(vp.height - 1);
+  expect(await menu.evaluate((el) => getComputedStyle(el).backgroundColor)).not.toBe("rgba(0, 0, 0, 0)");
 });
 
 test("xavfsizlik sarlavhalari va SEO fayllari", async ({ request }) => {
