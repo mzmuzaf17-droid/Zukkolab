@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { alternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/maxfiylik">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("privacyTitle") };
+  return { title: t("privacyTitle"), alternates: alternates(locale, "/maxfiylik") };
 }
 
 export default async function PrivacyPage({ params }: PageProps<"/[locale]/maxfiylik">) {

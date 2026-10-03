@@ -75,3 +75,27 @@ describe("leadCardText", () => {
     expect(text).toContain("demo");
   });
 });
+
+describe("dailyReportMessage", () => {
+  it("lidlar, manbalar va bugungi sinovlar; HTML ekranlanadi", async () => {
+    const { dailyReportMessage } = await import("@/lib/jobs/tick");
+    const text = dailyReportMessage({
+      leads: 7,
+      sources: { instagram: 4, telegram: 3 },
+      avg_response_min: 9,
+      unanswered: 1,
+      paid: 2,
+      trials_today: [
+        {
+          starts_at: "2026-10-03T13:00:00Z",
+          name: "Aziz <b>",
+          direction: "Ingliz tili",
+          branch: "Chilonzor",
+        },
+      ],
+    });
+    expect(text).toContain("Kecha: 7 ta lid (instagram 4, telegram 3)");
+    expect(text).toContain("9 daq");
+    expect(text).toContain("• 18:00 — Aziz &lt;b&gt; (Ingliz tili, Chilonzor)");
+  });
+});

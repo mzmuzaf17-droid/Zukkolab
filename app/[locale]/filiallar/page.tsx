@@ -4,13 +4,14 @@ import { BranchCard } from "@/components/site/branch-card";
 import { getBranches } from "@/lib/data/content";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
+import { alternates } from "@/lib/seo";
 
 export const revalidate = 60;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/filiallar">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("branchesTitle") };
+  return { title: t("branchesTitle"), alternates: alternates(locale, "/filiallar") };
 }
 
 // OpenStreetMap — kalitsiz va bepul; xarita faqat ko'rinishga yaqinlashganda yuklanadi.

@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { normalizeUzPhone } from "@/lib/phone";
+import { NAME_MAX, NAME_MIN, NAME_PATTERN } from "./rules";
 
 // Bitta Zod sxema — ham forma, ham API uchun (3-bo'lim). Xabarlar — messages/*.json dagi "validation" kalitlari.
 export const phoneSchema = z
@@ -17,9 +18,9 @@ export const phoneSchema = z
 export const nameSchema = z
   .string()
   .trim()
-  .min(2, "name")
-  .max(80, "name")
-  .regex(/^[^<>{}\d]+$/u, "name");
+  .min(NAME_MIN, "name")
+  .max(NAME_MAX, "name")
+  .regex(NAME_PATTERN, "name");
 
 const locale = z.enum(["uz", "ru", "en"]);
 
@@ -57,5 +58,12 @@ export type BookingInput = z.input<typeof bookingSchema>;
 export const testSubmitSchema = z.object({
   attemptToken: z.string().min(10).max(4096),
   answers: z.record(z.string(), z.string().max(4)),
+  locale,
+});
+
+// POST /api/ai/chat (11-bo'lim).
+export const aiChatSchema = z.object({
+  sessionId: z.uuid(),
+  message: z.string().trim().min(1).max(500),
   locale,
 });

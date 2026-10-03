@@ -7,13 +7,15 @@ import { Link } from "@/lib/i18n/navigation";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
 import { isInterestTest } from "@/lib/test-engine";
+import { alternates } from "@/lib/seo";
+import { textOn } from "@/lib/utils";
 
 export const revalidate = 60;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/test">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("testTitle") };
+  return { title: t("testTitle"), alternates: alternates(locale, "/test") };
 }
 
 export default async function TestChooserPage({ params }: PageProps<"/[locale]/test">) {
@@ -36,8 +38,8 @@ export default async function TestChooserPage({ params }: PageProps<"/[locale]/t
               className="group border-line hover:border-ink/30 flex min-h-16 items-center gap-4 rounded-[20px] border bg-white p-4"
             >
               <span
-                className="inline-flex size-12 shrink-0 items-center justify-center rounded-xl text-white"
-                style={{ backgroundColor: d.color }}
+                className="inline-flex size-12 shrink-0 items-center justify-center rounded-xl"
+                style={{ backgroundColor: d.color, color: textOn(d.color) }}
               >
                 <DirectionIcon name={d.icon} className="size-6" />
               </span>

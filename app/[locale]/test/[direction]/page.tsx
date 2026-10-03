@@ -6,6 +6,7 @@ import { getDirections } from "@/lib/data/content";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
 import { levelScale } from "@/lib/levels";
+import { alternates } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return (await getDirections()).filter((d) => d.has_test).map((d) => ({ direction: d.slug }));
@@ -19,6 +20,7 @@ export async function generateMetadata({
   const direction = (await getDirections()).find((d) => d.slug === slug);
   return {
     title: direction ? `${t("testTitle")}: ${pick(direction, "name", locale as Locale)}` : t("testTitle"),
+    alternates: alternates(locale, `/test/${slug}`),
   };
 }
 

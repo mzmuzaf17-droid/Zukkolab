@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 type Tone = "coral" | "brand" | "cta" | "muted" | "ink";
 
 const tones: Record<Tone, string> = {
-  coral: "bg-coral text-white",
+  coral: "bg-coral text-ink",
   brand: "bg-brand text-white",
   cta: "bg-cta text-ink",
   muted: "bg-ink/5 text-muted",

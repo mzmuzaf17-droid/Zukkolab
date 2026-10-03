@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import type { Direction, Teacher } from "@/lib/data/content";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
+import { textOn } from "@/lib/utils";
 
 function initials(name: string) {
   return name
@@ -27,8 +28,11 @@ export async function TeacherCard({
       <div className="flex items-center gap-3">
         {/* Rasm o'rniga initsiallar: demo rasmlari keyinroq qo'shiladi. */}
         <div
-          className="font-display flex size-14 shrink-0 items-center justify-center rounded-2xl text-lg font-bold text-white"
-          style={{ backgroundColor: direction?.color ?? "var(--color-brand)" }}
+          className="font-display flex size-14 shrink-0 items-center justify-center rounded-2xl text-lg font-bold"
+          style={{
+            backgroundColor: direction?.color ?? "var(--color-brand)",
+            color: textOn(direction?.color),
+          }}
           aria-hidden
         >
           {initials(teacher.full_name)}

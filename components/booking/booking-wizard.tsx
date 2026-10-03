@@ -10,7 +10,7 @@ import { buttonClass } from "@/components/ui/button";
 import { formatDateTime, formatDay, formatTime, tashkentDate, weekdayShort } from "@/lib/format";
 import { Link, useRouter } from "@/lib/i18n/navigation";
 import type { Locale } from "@/lib/i18n/routing";
-import { nameSchema, phoneSchema } from "@/lib/schemas/lead";
+import { isValidName, isValidPhone } from "@/lib/schemas/rules";
 import { maskUzPhone } from "@/lib/phone";
 import { cn } from "@/lib/utils";
 
@@ -94,11 +94,11 @@ export function BookingWizard({
   function validateField(field: keyof Errors): string | undefined {
     switch (field) {
       case "fullName":
-        return nameSchema.safeParse(fullName).success ? undefined : tv("name");
+        return isValidName(fullName) ? undefined : tv("name");
       case "phone":
-        return phoneSchema.safeParse(phone).success ? undefined : tv("phone");
+        return isValidPhone(phone) ? undefined : tv("phone");
       case "studentName":
-        return !studentName || nameSchema.safeParse(studentName).success ? undefined : tv("name");
+        return !studentName || isValidName(studentName) ? undefined : tv("name");
       case "studentAge": {
         if (!studentAge) return undefined;
         const n = Number(studentAge);

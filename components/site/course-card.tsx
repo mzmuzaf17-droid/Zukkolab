@@ -6,6 +6,7 @@ import { formatAmount, formatDay } from "@/lib/format";
 import { Link } from "@/lib/i18n/navigation";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
+import { textOn } from "@/lib/utils";
 import { DirectionIcon } from "./direction-icon";
 
 export async function CourseCard({
@@ -28,8 +29,11 @@ export async function CourseCard({
     >
       <div className="flex items-start justify-between gap-3">
         <span
-          className="inline-flex size-10 items-center justify-center rounded-xl text-white"
-          style={{ backgroundColor: direction?.color ?? "var(--color-brand)" }}
+          className="inline-flex size-10 items-center justify-center rounded-xl"
+          style={{
+            backgroundColor: direction?.color ?? "var(--color-brand)",
+            color: textOn(direction?.color),
+          }}
         >
           <DirectionIcon name={direction?.icon ?? ""} className="size-5" />
         </span>

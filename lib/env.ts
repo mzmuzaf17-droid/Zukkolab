@@ -15,6 +15,7 @@ const serverSchema = z.object({
   TURNSTILE_SECRET_KEY: z.string().min(1).optional(),
   AI_PROVIDER: z.enum(["faq", "gemini"]).default("faq"),
   GEMINI_API_KEY: z.string().min(1).optional(),
+  GEMINI_MODEL: z.string().min(1).optional(),
   DEMO_MODE: z.enum(["true", "false"]).default("true"),
 });
 

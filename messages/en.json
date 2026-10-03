@@ -10,7 +10,13 @@
   },
   "demo": {
     "banner": "This is a demo: all data is fictional",
-    "badge": "Demo"
+    "badge": "Demo",
+    "qrTitle": "Scan with your phone",
+    "qrText": "Book a trial lesson for your child — a Telegram reminder arrives in 30 seconds and a second one in 60 seconds. In a real centre these come 24 hours and 2 hours before.",
+    "step1": "Scan the QR code",
+    "step2": "Book a trial lesson and connect Telegram",
+    "step3": "Watch reminders and the manager panel work in real time",
+    "openLink": "Or open the link"
   },
   "nav": {
     "home": "Home",
@@ -230,7 +236,11 @@
     "shareText": "My level is {level}. What's yours? Free 3-minute test:",
     "copied": "Link copied",
     "retake": "Retake",
-    "other": "Another subject"
+    "other": "Another subject",
+    "storyKicker": "My result",
+    "storyChallenge": "And you? Find your level in 3 minutes",
+    "storyFree": "Free test · no sign-up",
+    "downloadStory": "Story image"
   },
   "booking": {
     "title": "Book a trial lesson",
@@ -352,6 +362,42 @@
     "enroll": "🔥 {name} wants to join a group — call now!",
     "setupDone": "✅ Group connected. New leads will arrive here.",
     "setupDenied": "Only group admins can connect it.",
-    "stats": "📊 Today: {leads} leads · {bookings} bookings · {paid} payments"
+    "stats": "📊 Today: {leads} leads · {bookings} bookings · {paid} payments",
+    "dailyTitle": "☀️ Daily report",
+    "dailyLeads": "Yesterday: {count} leads",
+    "dailyResponse": "Average first response: {minutes} min",
+    "dailyPaid": "Payments yesterday: {count}",
+    "dailyUnanswered": "Unanswered now: {count}",
+    "dailyTrials": "Trial lessons today ({count}):",
+    "dailyNoTrials": "No trial lessons today."
+  },
+  "ai": {
+    "button": "Ask a question",
+    "title": "Zukkolab assistant",
+    "intro": "Hi! Ask about courses, prices, branches or the trial lesson.",
+    "presets": [
+      "How much are the courses?",
+      "Which branch is closest to me?",
+      "Which course suits a 10-year-old?"
+    ],
+    "placeholder": "Type your question…",
+    "send": "Send",
+    "typing": "Typing…",
+    "close": "Close",
+    "note": "Answers are automatic. A manager will confirm the details.",
+    "error": "Couldn’t get an answer. Please try again.",
+    "cta": {
+      "test": "Take the level test",
+      "trial": "Book a trial lesson",
+      "operator": "Leave a request"
+    },
+    "unknown": "Our manager will answer this one precisely. Leave a request and we’ll call you back soon.",
+    "tooYoung": "We accept children from age 7. We’ll be glad to see you when your child turns 7!",
+    "forAge": "Courses for age {age}:",
+    "courseLine": "{title} — {price} UZS per month",
+    "courseInfo": "{title}: {lessons} times a week, {minutes} minutes each, {months} months. Price — {price} UZS per month.",
+    "branchesIntro": "Our branches:",
+    "branchLine": "{name} — {address}",
+    "pickAfter": "The first trial lesson is free — pick a branch and time that suit you."
   }
 }

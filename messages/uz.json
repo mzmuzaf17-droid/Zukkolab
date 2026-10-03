@@ -10,7 +10,13 @@
   },
   "demo": {
     "banner": "Bu demo: barcha maʼlumotlar toʻqima",
-    "badge": "Demo"
+    "badge": "Demo",
+    "qrTitle": "Telefoningiz bilan skanerlang",
+    "qrText": "Farzandingizni sinov darsiga yozing — 30 soniyadan keyin Telegram’ga eslatma keladi, 60 soniyadan keyin esa ikkinchisi. Haqiqiy markazda bu 24 soat va 2 soat oldin boʻladi.",
+    "step1": "QR kodni skanerlang",
+    "step2": "Sinov darsiga yoziling va Telegram’ni ulang",
+    "step3": "Eslatmalar va menejer paneli real vaqtda ishlashini koʻring",
+    "openLink": "Yoki havolani oching"
   },
   "nav": {
     "home": "Bosh sahifa",
@@ -230,7 +236,11 @@
     "shareText": "Mening darajam — {level}. Sen-chi? Bepul test 3 daqiqa:",
     "copied": "Havola nusxalandi",
     "retake": "Qayta topshirish",
-    "other": "Boshqa yoʻnalish"
+    "other": "Boshqa yoʻnalish",
+    "storyKicker": "Mening natijam",
+    "storyChallenge": "Sen-chi? Darajangni 3 daqiqada bil",
+    "storyFree": "Bepul test · roʻyxatdan oʻtmasdan",
+    "downloadStory": "Story uchun rasm"
   },
   "booking": {
     "title": "Sinov darsiga yozilish",
@@ -352,6 +362,38 @@
     "enroll": "🔥 {name} guruhga yozilmoqchi — qoʻngʻiroq qiling!",
     "setupDone": "✅ Guruh ulandi. Yangi lidlar shu yerga keladi.",
     "setupDenied": "Faqat guruh adminlari ulay oladi.",
-    "stats": "📊 Bugun: {leads} lid · {bookings} bron · {paid} toʻlov"
+    "stats": "📊 Bugun: {leads} lid · {bookings} bron · {paid} toʻlov",
+    "dailyTitle": "☀️ Kunlik hisobot",
+    "dailyLeads": "Kecha: {count} ta lid",
+    "dailyResponse": "Oʻrtacha birinchi javob: {minutes} daq",
+    "dailyPaid": "Kecha toʻlovlar: {count}",
+    "dailyUnanswered": "Hozir javobsiz: {count}",
+    "dailyTrials": "Bugungi sinov darslari ({count}):",
+    "dailyNoTrials": "Bugun sinov darsi yoʻq."
+  },
+  "ai": {
+    "button": "Savol bering",
+    "title": "Zukkolab yordamchisi",
+    "intro": "Salom! Kurslar, narxlar, filiallar yoki sinov darsi haqida soʻrang.",
+    "presets": ["Narxlar qancha?", "Qaysi filial menga yaqin?", "10 yoshli bolaga qaysi kurs?"],
+    "placeholder": "Savolingizni yozing…",
+    "send": "Yuborish",
+    "typing": "Yozmoqda…",
+    "close": "Yopish",
+    "note": "Javoblar avtomatik. Aniq maʼlumotni menejer beradi.",
+    "error": "Javob olib boʻlmadi. Qayta urinib koʻring.",
+    "cta": {
+      "test": "Daraja testini topshirish",
+      "trial": "Sinov darsiga yozilish",
+      "operator": "Ariza qoldirish"
+    },
+    "unknown": "Bu savolga menejerimiz aniq javob beradi. Ariza qoldiring — tez orada qoʻngʻiroq qilamiz.",
+    "tooYoung": "Biz 7 yoshdan qabul qilamiz. Farzandingiz 7 yoshga toʻlganda kutib qolamiz!",
+    "forAge": "{age} yosh uchun mos kurslar:",
+    "courseLine": "{title} — oyiga {price} soʻm",
+    "courseInfo": "{title}: haftasiga {lessons} marta, {minutes} daqiqadan, {months} oy. Narxi — oyiga {price} soʻm.",
+    "branchesIntro": "Filiallarimiz:",
+    "branchLine": "{name} — {address}",
+    "pickAfter": "Birinchi sinov darsi bepul — oʻzingizga qulay filial va vaqtni tanlang."
   }
 }

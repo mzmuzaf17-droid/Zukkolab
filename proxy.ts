@@ -1,5 +1,6 @@
 import createMiddleware from "next-intl/middleware";
-import type { NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
+import { updateSession } from "@/lib/supabase/proxy";
 import { routing } from "@/lib/i18n/routing";
 import { SOURCE_COOKIE, SOURCE_COOKIE_MAX_AGE, type SourceInfo } from "@/lib/leads/source";
 
@@ -22,7 +23,16 @@ function firstTouch(req: NextRequest): SourceInfo | null {
   return Object.keys(info).length ? info : null;
 }
 
-export default function proxy(req: NextRequest) {
+export default async function proxy(req: NextRequest) {
+  // Panel: tilsiz; sessiyasiz foydalanuvchi login sahifasiga (FR-ADM-01, NFR-06).
+  if (req.nextUrl.pathname.startsWith("/admin")) {
+    const { res, user } = await updateSession(req);
+    const isLogin = req.nextUrl.pathname.startsWith("/admin/login");
+    if (!user && !isLogin) return NextResponse.redirect(new URL("/admin/login", req.url));
+    if (user && isLogin) return NextResponse.redirect(new URL("/admin", req.url));
+    return res;
+  }
+
   const res = intl(req);
   const hasNewCampaign = req.nextUrl.searchParams.has("utm_source") || req.nextUrl.searchParams.has("ref");
   if (!req.cookies.has(SOURCE_COOKIE) || hasNewCampaign) {
@@ -41,6 +51,6 @@ export default function proxy(req: NextRequest) {
 }
 
 export const config = {
-  // api, admin, Next ichki fayllari va nuqtali fayllar (favicon.ico, .ics) tilsiz qoladi.
-  matcher: ["/((?!api|admin|_next|_vercel|.*\\..*).*)"],
+  // api, Next ichki fayllari va nuqtali fayllar (favicon.ico, .ics) proxy'dan o'tmaydi; /admin — alohida tarmoq.
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

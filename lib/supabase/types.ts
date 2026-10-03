@@ -656,6 +656,7 @@ export type Database = {
         Returns: boolean;
       };
       reset_demo_data: { Args: never; Returns: Json };
+      admin_dashboard: { Args: { p_from: string }; Returns: Json };
       claim_unnotified_leads: { Args: { p_limit?: number }; Returns: string[] };
       claim_sla_alerts: {
         Args: { p_minutes?: number };
@@ -672,6 +673,10 @@ export type Database = {
       claim_followups: {
         Args: { p_demo_seconds?: number };
         Returns: { booking_id: string; chat_id: number; kind: string }[];
+      };
+      claim_daily_report: {
+        Args: { p_today: string };
+        Returns: Json;
       };
     };
     Enums: {

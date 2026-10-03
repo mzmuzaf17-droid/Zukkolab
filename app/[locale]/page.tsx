@@ -8,6 +8,7 @@ import {
   Users,
   Video,
 } from "lucide-react";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/lead-form";
 import { BranchCard } from "@/components/site/branch-card";
@@ -33,8 +34,15 @@ import { formatAmount } from "@/lib/format";
 import { Link } from "@/lib/i18n/navigation";
 import { pick } from "@/lib/i18n/pick";
 import type { Locale } from "@/lib/i18n/routing";
+import { alternates } from "@/lib/seo";
+import { textOn } from "@/lib/utils";
 
 export const revalidate = 60;
+
+export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
+  const { locale } = await params;
+  return { alternates: alternates(locale) };
+}
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale: raw } = await params;
@@ -130,8 +138,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 className="border-line flex flex-col gap-3 rounded-[20px] border bg-white p-4 transition-transform duration-200 hover:-translate-y-0.5"
               >
                 <span
-                  className="inline-flex size-11 items-center justify-center rounded-xl text-white"
-                  style={{ backgroundColor: d.color }}
+                  className="inline-flex size-11 items-center justify-center rounded-xl"
+                  style={{ backgroundColor: d.color, color: textOn(d.color) }}
                 >
                   <DirectionIcon name={d.icon} className="size-5" />
                 </span>
@@ -268,13 +276,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </Section>
 
       {/* Yakuniy blok */}
-      <section className="mx-auto w-full max-w-6xl px-4 pb-8 md:pb-16">
+      <section id="ariza" className="mx-auto w-full max-w-6xl scroll-mt-24 px-4 pb-8 md:pb-16">
         <div className="bg-brand grid gap-8 rounded-[24px] px-5 py-10 text-white md:px-10 md:py-14 lg:grid-cols-[1fr_420px] lg:items-center">
           <div>
             <h2 className="font-display text-[28px] leading-tight font-bold md:text-[40px]">
               {t("finalTitle")}
             </h2>
-            <p className="mt-3 max-w-xl text-white/80 md:text-lg">{t("finalSubtitle")}</p>
+            <p className="mt-3 max-w-xl text-white md:text-lg">{t("finalSubtitle")}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/sinov-darsi" size="lg">
                 {tc("trial")}
