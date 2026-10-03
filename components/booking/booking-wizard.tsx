@@ -18,6 +18,10 @@ type Option = { slug: string; name: string };
 type Slot = { id: string; startsAt: string; left: number };
 type Errors = Partial<Record<"fullName" | "phone" | "studentName" | "studentAge" | "consent", string>>;
 
+// Telefonda asosiy tugma ekran pastiga yopishib turadi — barmoq yetadigan joyda, kontent ostida qolmaydi.
+const STICKY_ACTIONS =
+  "border-line bg-bg/95 sticky bottom-0 z-30 -mx-4 border-t px-4 pt-3 pb-[max(12px,env(safe-area-inset-bottom))] backdrop-blur md:static md:mx-0 md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none";
+
 export function BookingWizard({
   directions,
   branches,
@@ -232,18 +236,20 @@ export function BookingWizard({
               ))}
             </div>
           </fieldset>
-          <button
-            type="button"
-            disabled={!direction || !branch}
-            onClick={() => {
-              setNotice("");
-              setSlotId("");
-              setStep(2);
-            }}
-            className={buttonClass("primary", "lg", "w-full disabled:opacity-40")}
-          >
-            {t("next")}
-          </button>
+          <div className={STICKY_ACTIONS}>
+            <button
+              type="button"
+              disabled={!direction || !branch}
+              onClick={() => {
+                setNotice("");
+                setSlotId("");
+                setStep(2);
+              }}
+              className={buttonClass("primary", "lg", "w-full disabled:opacity-40")}
+            >
+              {t("next")}
+            </button>
+          </div>
         </div>
       )}
 
@@ -303,7 +309,7 @@ export function BookingWizard({
               </fieldset>
             </>
           )}
-          <div className="flex gap-3">
+          <div className={cn(STICKY_ACTIONS, "flex gap-3")}>
             <button type="button" onClick={() => setStep(1)} className={buttonClass("ghost")}>
               <ArrowLeft className="size-4" aria-hidden />
               {t("back")}
@@ -435,7 +441,7 @@ export function BookingWizard({
               {t("network")}
             </p>
           )}
-          <div className="flex gap-3">
+          <div className={cn(STICKY_ACTIONS, "flex gap-3")}>
             <button type="button" onClick={() => setStep(2)} className={buttonClass("ghost")}>
               <ArrowLeft className="size-4" aria-hidden />
               {t("back")}

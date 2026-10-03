@@ -41,7 +41,8 @@
   "bottomBar": {
     "test": "Тест",
     "trial": "Пробный урок",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "ask": "Вопрос"
   },
   "home": {
     "heroBadge": "Первый урок — бесплатно",

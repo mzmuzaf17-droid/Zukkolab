@@ -75,7 +75,7 @@ export default async function CoursePage({ params }: PageProps<"/[locale]/kursla
   };
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 py-8 md:py-12">
+    <div className="mx-auto w-full max-w-6xl px-4 pt-8 pb-24 md:pt-12 lg:pb-12">
       <Link
         href="/kurslar"
         className="text-muted hover:text-ink inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold"
@@ -125,12 +125,12 @@ export default async function CoursePage({ params }: PageProps<"/[locale]/kursla
             </ul>
           </header>
 
-          {/* Telefonda narx va asosiy tugma darhol ko'rinsin (katta ekranda o'ng ustunda). */}
-          <div className="border-line flex items-center justify-between gap-3 rounded-[20px] border bg-white p-4 lg:hidden">
-            <p className="font-semibold whitespace-nowrap">
+          {/* Telefonda narx va asosiy tugma doim ekran pastida (katta ekranda o'ng ustunda). */}
+          <div className="border-line bg-bg/95 fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-3 border-t px-4 pt-3 pb-[max(12px,env(safe-area-inset-bottom))] backdrop-blur lg:hidden">
+            <p className="leading-tight font-semibold">
               {t("perMonth", { price: formatAmount(course.price_monthly, locale) })}
             </p>
-            <ButtonLink href={trialHref} size="sm">
+            <ButtonLink href={trialHref} size="md">
               {tcta("trialShort")}
             </ButtonLink>
           </div>

@@ -46,9 +46,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         <NextIntlClientProvider>
           {isDemoMode() && <DemoBanner />}
           <Header />
-          <main className="flex flex-1 flex-col pb-[calc(var(--bottom-bar-height)+env(safe-area-inset-bottom))] md:pb-0">
-            {children}
-          </main>
+          <main className="flex flex-1 flex-col">{children}</main>
           <Footer />
           <BottomCtaBar />
           <AiChat />

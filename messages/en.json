@@ -41,7 +41,8 @@
   "bottomBar": {
     "test": "Test",
     "trial": "Trial lesson",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "ask": "Ask"
   },
   "home": {
     "heroBadge": "First lesson is free",

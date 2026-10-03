@@ -10,7 +10,7 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink mt-auto text-white/80">
+    <footer className="bg-ink mt-auto pb-[calc(var(--bottom-bar-height)+env(safe-area-inset-bottom))] text-white/80 md:pb-0">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-12 md:grid-cols-3">
         <div className="space-y-3">
           <div className="text-white [&_a]:text-white">

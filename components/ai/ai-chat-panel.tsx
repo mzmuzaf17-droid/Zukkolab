@@ -93,7 +93,7 @@ export function AiChatPanel({ open, onClose }: { open: boolean; onClose: () => v
       aria-modal="false"
       aria-labelledby="ai-title"
       hidden={!open}
-      className="border-line bg-bg fixed inset-x-2 bottom-[calc(var(--bottom-bar-height)+env(safe-area-inset-bottom)+8px)] z-50 flex max-h-[min(640px,75dvh)] flex-col overflow-hidden rounded-[24px] border shadow-2xl md:inset-x-auto md:right-6 md:bottom-6 md:w-[380px]"
+      className="border-line bg-bg fixed inset-x-0 bottom-0 z-50 flex max-h-[85dvh] flex-col overflow-hidden rounded-t-[24px] border shadow-2xl md:inset-x-auto md:right-6 md:bottom-6 md:max-h-[min(640px,75dvh)] md:w-[380px] md:rounded-[24px]"
     >
       <header className="bg-ink flex items-center justify-between gap-3 px-5 py-4 text-white">
         <h2 id="ai-title" className="font-display text-base font-semibold">
@@ -185,7 +185,9 @@ export function AiChatPanel({ open, onClose }: { open: boolean; onClose: () => v
           <ArrowUp className="size-5" aria-hidden />
         </button>
       </form>
-      <p className="text-muted bg-white px-4 pb-3 text-center text-xs">{t("note")}</p>
+      <p className="text-muted bg-white px-4 pb-[max(12px,env(safe-area-inset-bottom))] text-center text-xs">
+        {t("note")}
+      </p>
     </div>
   );
 }

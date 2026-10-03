@@ -85,8 +85,8 @@ export default async function LeadsPage({ searchParams }: PageProps<"/admin/lead
       <h1 className="font-display text-2xl font-bold md:text-3xl">Lidlar</h1>
       <RealtimeLeads />
 
-      <form className="flex flex-wrap gap-2" action="/admin/leads">
-        <div className="relative min-w-[200px] flex-1">
+      <form className="grid grid-cols-2 gap-2 md:flex md:flex-wrap" action="/admin/leads">
+        <div className="relative col-span-2 min-w-[200px] flex-1">
           <Search className="text-muted absolute top-3.5 left-3 size-4" aria-hidden />
           <input
             name="q"
@@ -98,7 +98,7 @@ export default async function LeadsPage({ searchParams }: PageProps<"/admin/lead
         <select
           name="status"
           defaultValue={filters.status ?? ""}
-          className={cn(inputClass, "w-auto")}
+          className={cn(inputClass, "w-full md:w-auto")}
           aria-label="Holat"
         >
           <option value="">Barcha holatlar</option>
@@ -111,7 +111,7 @@ export default async function LeadsPage({ searchParams }: PageProps<"/admin/lead
         <select
           name="source"
           defaultValue={filters.source ?? ""}
-          className={cn(inputClass, "w-auto")}
+          className={cn(inputClass, "w-full md:w-auto")}
           aria-label="Manba"
         >
           <option value="">Barcha manbalar</option>
@@ -124,7 +124,7 @@ export default async function LeadsPage({ searchParams }: PageProps<"/admin/lead
         <select
           name="direction"
           defaultValue={filters.direction ?? ""}
-          className={cn(inputClass, "w-auto")}
+          className={cn(inputClass, "w-full md:w-auto")}
           aria-label="Yoʻnalish"
         >
           <option value="">Barcha yoʻnalishlar</option>
@@ -144,12 +144,72 @@ export default async function LeadsPage({ searchParams }: PageProps<"/admin/lead
           />
           Meniki
         </label>
-        <button type="submit" className={buttonClass("dark", "md")}>
+        <button type="submit" className={buttonClass("dark", "md", "col-span-2 md:col-span-1")}>
           Filtrlash
         </button>
       </form>
 
-      <div className="border-line overflow-x-auto rounded-[20px] border bg-white">
+      {/* Telefonda — kartalar: ism, holat, SLA va bir bosishda qo'ng'iroq (menejer ko'pincha telefondan ishlaydi). */}
+      <ul className="space-y-2 md:hidden">
+        {(leads ?? []).map((l) => {
+          const sla = l.status === "new" && now - new Date(l.created_at).getTime() > slaMinutes * 60_000;
+          return (
+            <li
+              key={l.id}
+              className={cn(
+                "border-line flex items-center gap-3 rounded-[18px] border bg-white p-3",
+                sla && "border-coral",
+                l.id === openId && "bg-brand/5",
+              )}
+            >
+              <Link
+                href={hrefWith(filters, { lead: l.id })}
+                scroll={false}
+                className="min-w-0 flex-1 space-y-1.5"
+              >
+                <p className="flex items-baseline justify-between gap-2">
+                  <span className="truncate font-semibold">{l.full_name}</span>
+                  <span
+                    className={cn(
+                      "text-muted shrink-0 text-xs",
+                      sla && "bg-coral text-ink rounded-full px-2 py-0.5 font-semibold",
+                    )}
+                  >
+                    {timeAgo(l.created_at, now)}
+                  </span>
+                </p>
+                <p className="flex flex-wrap items-center gap-1.5 text-xs">
+                  <span className={cn("rounded-full px-2 py-0.5 font-semibold", STATUS_TONE[l.status])}>
+                    {STATUS_LABEL[l.status]}
+                  </span>
+                  <span className="text-muted">
+                    {(l.directions as { name_uz: string } | null)?.name_uz ?? "—"} · {sourceLabel(l.source)}
+                    {l.operator_requested && " · operator"}
+                    {l.is_demo_live && " · demo"}
+                  </span>
+                </p>
+              </Link>
+              <a
+                href={telHref(l.phone)}
+                className="bg-cta grid size-12 shrink-0 place-items-center rounded-full"
+                aria-label={`Qoʻngʻiroq: ${formatUzPhone(l.phone)}`}
+              >
+                <Phone className="size-5" aria-hidden />
+              </a>
+            </li>
+          );
+        })}
+        {(leads ?? []).length === 0 && (
+          <li className="text-muted py-10 text-center">
+            Lid topilmadi.{" "}
+            <Link href="/admin/leads" className="text-brand underline">
+              Filtrni tozalash
+            </Link>
+          </li>
+        )}
+      </ul>
+
+      <div className="border-line hidden overflow-x-auto rounded-[20px] border bg-white md:block">
         <table className="w-full min-w-[720px] text-sm">
           <thead className="text-muted text-left">
             <tr className="border-line border-b">
@@ -293,9 +353,9 @@ async function LeadDrawer({ id, closeHref, staffId }: { id: string; closeHref: s
         </Link>
       </div>
 
-      <div className="space-y-6 p-4">
+      <div className="space-y-6 p-4 pb-[max(24px,env(safe-area-inset-bottom))]">
         <div className="flex flex-wrap gap-2">
-          <a href={telHref(lead.phone)} className={buttonClass("primary", "md")}>
+          <a href={telHref(lead.phone)} className={buttonClass("primary", "md", "flex-1 sm:flex-none")}>
             <Phone className="size-4" aria-hidden />
             {formatUzPhone(lead.phone)}
           </a>

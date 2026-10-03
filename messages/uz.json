@@ -41,7 +41,8 @@
   "bottomBar": {
     "test": "Test",
     "trial": "Sinov darsi",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "ask": "Savol"
   },
   "home": {
     "heroBadge": "Birinchi dars — bepul",

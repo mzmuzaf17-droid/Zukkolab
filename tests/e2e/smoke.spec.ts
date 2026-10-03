@@ -40,7 +40,7 @@ test("daraja testi → natija → story rasmi", async ({ page }) => {
 
 test("AI yordamchi: tayyor savolga javob va harakat tugmasi", async ({ page }) => {
   await page.goto("/ru");
-  await page.getByRole("button", { name: "Задать вопрос" }).click();
+  await page.getByRole("button", { name: "Вопрос", exact: true }).click(); // telefonda — pastki paneldagi tab
   await page.getByRole("button", { name: "Сколько стоит обучение?" }).click();
   await expect(page.getByRole("dialog").getByText(/550\s000/)).toBeVisible();
   await expect(page.getByRole("link", { name: "Записаться на пробный урок" }).last()).toBeVisible();
